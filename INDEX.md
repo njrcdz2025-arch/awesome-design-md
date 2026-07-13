@@ -1,6 +1,6 @@
 # awesome-design-md · 索引卡
 
-74 个品牌设计系统的**快速选型索引**。做 UI 生成前，先用本表按行业/风格/色调匹配 1-3 个参考，再读 `design-md/<品牌>/DESIGN.md` 完整规范。
+83 个品牌设计系统的**快速选型索引**（74 家原仓库 + 9 家本地自制垂类研究）。做 UI 生成前，先用本表按行业/风格/色调匹配 1-3 个参考，再读 `design-md/<品牌>/DESIGN.md` 完整规范。
 
 - 完整规范目录：`./design-md/<品牌>/DESIGN.md`
 - 结构化数据：`./INDEX.json`
@@ -137,17 +137,35 @@
 | **voltagent** | `#00d992` | 荧光绿+Agent 编排 |
 | **expo** | `#000000` | 深黑+移动开发者平台 |
 
+### 🛸 无人机 / 相机 / 航拍（本地自制垂类研究）
+适合：硬件产品页、消费电子官网、B2B 工业/防务品牌、Apple 风单品页
+
+| 品牌 | 主色 | 一句话 |
+|---|---|---|
+| **skydio** | `#e63946` | 编辑级 B2B 军工感，白底+黑字+红色作单点任务警示，01–05 编号章节+实时时钟计数器 |
+| **antigravity** | `#ffffff` (dark BG `#000000`) | Insta360 子品牌 A1 单品页，纯黑+电影级航拍+中英双语宣言 "THE FUTURE IS UP — 未来不在远方，而在苍穹之上" |
+| **dji_global** | `#000000` (accent `#0079C1`) | 投资组合级消费航拍平台，纯黑+SVG wordmark+中文诗性 slogan+三子品牌门户（DJI/Osmo/Ronin）+创作者纪录片式 hero |
+| **gopro** | `#000000` (accent `#F5D000`) | 极限运动电商 hero，黑+黄+全大写 128px shout headline+三相机 hero stack+十宫格"按活动购买"+MISSION SERIES 会员纪录片 |
+| **drift** | `#000000` (accent `#B8912C`) | 英式摩托 / 骑行 lifestyle 工业感，黑+editorial serif+金色 `#B8912C` 单点 accent+5-slot 纵向 banner stack+AI-companion 转型叙事 |
+| **panox** | `#1E5AA8` | 全景相机专业工作站，深蓝+双 register 类型系统（sans 产品/serif 叙事）+四产品并列+4-里程碑品牌故事时间线（2020 破局/万米深潜/嫦娥 VR/火神山医院） |
+| **radiomaster** | `#E60023` | Mature Shopify FPV 遥控器卖场，白底+红 accent+全大写 all-caps 章节头+5-tier 产品档次网格+Gap Challenge 社区+ELRS/M2 双协议 chip |
+| **iflight** | `#00B0FF` (dark BG `#0D1117`) | FPV 整机工程实验室，青-on-暗+Titillium 航天字体+品牌站/商城站双域名分工+Learn/Buy 双 CTA+三领域门户（Cinematic/Racing/Education） |
+| **flywoo** | `#F5A623` | Tinywhoop 微型 FPV lifestyle-tech 品牌，温橙+白+Firefly 家族命名 spine+rating+review 社交证明+CNY-first 显式货币+"One Digital VTX. Two flight experiences." 诗性文案 |
+
+> 来源：`experiments/drone-camera-brands-study/`（26 家垂类品牌 Dashboard: https://www.coze.cn/s/GhTf_hqug4w/ ），Top 9 深挖清单**全数产出**（skydio / antigravity / dji_global / gopro / drift / panox / radiomaster / iflight / flywoo，共 9 家）。
+
 ---
 
 ## 按视觉风格反查
 
-- **纯黑极简（Uber/Vercel/Figma 系）**：`uber` `vercel` `figma` `linear.app` `shopify` `hashicorp` `spacex` `wired` `together.ai` `expo` `intercom` `nike` `cal` `webflow` `lamborghini` `ollama`
-- **暗色 + 荧光重音（AI/DevTool）**：`supabase` `mongodb` `voltagent` `nvidia` `clickhouse` `cohere` `sanity` `minimax` `sentry` `mintlify`
-- **奶油/米色暖底（人文温暖）**：`claude` `warp` `lovable` `starbucks` `mastercard` `bmw`
-- **金融紫蓝（专业信任）**：`stripe` `linear.app` `notion` `revolut` `kraken` `superhuman` `composio`
-- **高饱和色带（大胆张力）**：`airbnb` `ferrari` `renault` `pinterest` `mistral.ai` `zapier` `cursor` `replicate` `binance` `vodafone`
-- **摄影/编辑级排版**：`apple` `theverge` `wired` `airtable` `mastercard`
+- **纯黑极简（Uber/Vercel/Figma 系）**：`uber` `vercel` `figma` `linear.app` `shopify` `hashicorp` `spacex` `wired` `together.ai` `expo` `intercom` `nike` `cal` `webflow` `lamborghini` `ollama` `antigravity` `dji_global` `gopro` `drift`
+- **暗色 + 荧光重音（AI/DevTool）**：`supabase` `mongodb` `voltagent` `nvidia` `clickhouse` `cohere` `sanity` `minimax` `sentry` `mintlify` `iflight`
+- **奶油/米色暖底（人文温暖）**：`claude` `warp` `lovable` `starbucks` `mastercard` `bmw` `flywoo`
+- **金融紫蓝（专业信任）**：`stripe` `linear.app` `notion` `revolut` `kraken` `superhuman` `composio` `panox`
+- **高饱和色带（大胆张力）**：`airbnb` `ferrari` `renault` `pinterest` `mistral.ai` `zapier` `cursor` `replicate` `binance` `vodafone` `radiomaster` `gopro`
+- **摄影/编辑级排版**：`apple` `theverge` `wired` `airtable` `mastercard` `skydio` `antigravity` `dji_global` `gopro` `drift` `panox`
 - **手绘/亲和插画感**：`notion` `airbnb` `figma` `miro`
+- **B2B 工业/防务/硬核任务感**：`skydio` `ibm` `hp` `spacex` `nvidia` `iflight`
 
 ---
 

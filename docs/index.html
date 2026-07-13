@@ -1,0 +1,791 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>awesome-design-md · vertical study — 26 家无人机/相机/FPV 品牌的设计语言解剖</title>
+<meta name="description" content="从消费旗舰到工业防务，从运动相机到 FPV 极客——26 家品牌，9 份深度 DESIGN.md，一次把品类语言差异摊开。" />
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+:root{
+  --bg:#0a0a0b;
+  --bg-elev:#111114;
+  --bg-card:#16161a;
+  --bg-card-hover:#1c1c22;
+  --border:rgba(255,255,255,0.08);
+  --border-strong:rgba(255,255,255,0.14);
+  --text:#e8e8ea;
+  --text-mute:#8a8a94;
+  --text-sub:#b5b5bd;
+  --accent:#7ab3ff;
+  --accent-glow:rgba(122,179,255,0.35);
+  --cat-b2b:#5eead4;
+  --cat-poetic:#c4b5fd;
+  --cat-action:#fbbf24;
+  --cat-fpv:#f472b6;
+  --cat-pano:#60a5fa;
+}
+html,body{background:var(--bg);color:var(--text);}
+body{font-family:'Inter','Noto Sans SC',system-ui,sans-serif;font-feature-settings:"ss01";-webkit-font-smoothing:antialiased;}
+.mono{font-family:'JetBrains Mono',ui-monospace,monospace;}
+.zh{font-family:'Noto Sans SC','Inter',sans-serif;}
+
+.nav{background:rgba(10,10,11,0.72);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--border);}
+.card{background:var(--bg-card);border:1px solid var(--border);transition:transform .18s ease, border-color .18s ease, box-shadow .18s ease, background .18s ease;}
+.card:hover{transform:translateY(-2px);border-color:var(--border-strong);background:var(--bg-card-hover);box-shadow:0 8px 30px -12px rgba(122,179,255,0.15);}
+.card-elev{background:var(--bg-elev);border:1px solid var(--border);}
+.chip{background:rgba(255,255,255,0.05);border:1px solid var(--border);color:var(--text-sub);font-family:'JetBrains Mono',ui-monospace,monospace;font-size:11px;letter-spacing:0.02em;padding:3px 9px;border-radius:9999px;white-space:nowrap;}
+.chip-solid{background:rgba(122,179,255,0.10);border:1px solid rgba(122,179,255,0.28);color:#bcd8ff;}
+.swatch{width:22px;height:22px;border-radius:6px;border:1px solid var(--border-strong);flex-shrink:0;box-shadow:inset 0 0 0 1px rgba(0,0,0,0.35);}
+.star-badge{background:linear-gradient(135deg,#facc15 0%,#f59e0b 100%);color:#0a0a0b;font-weight:700;font-size:10px;padding:2px 7px;border-radius:9999px;letter-spacing:0.02em;}
+.section-label{font-family:'JetBrains Mono',ui-monospace,monospace;font-size:11px;letter-spacing:0.24em;color:var(--text-mute);text-transform:uppercase;}
+.gradient-hero{background:radial-gradient(ellipse 80% 60% at 50% -10%,rgba(122,179,255,0.18) 0%,transparent 60%),radial-gradient(ellipse 60% 50% at 90% 20%,rgba(196,181,253,0.08) 0%,transparent 55%);}
+.dot-grid{background-image:radial-gradient(rgba(255,255,255,0.04) 1px,transparent 1px);background-size:22px 22px;}
+a{color:inherit;}
+.link-accent{color:var(--accent);}
+.link-accent:hover{color:#a9cbff;}
+
+/* category tint */
+.cat-b2b{--cat:var(--cat-b2b);}
+.cat-poetic{--cat:var(--cat-poetic);}
+.cat-action{--cat:var(--cat-action);}
+.cat-fpv{--cat:var(--cat-fpv);}
+.cat-pano{--cat:var(--cat-pano);}
+.cat-card{border-left:3px solid var(--cat);}
+.cat-name{color:var(--cat);}
+
+/* top9 card primary tint */
+.tint-card{position:relative;overflow:hidden;}
+.tint-card::before{content:"";position:absolute;inset:0;background:var(--tint,transparent);opacity:.10;pointer-events:none;}
+.tint-card > *{position:relative;}
+
+.arrow-hint{opacity:.55;transition:transform .2s ease, opacity .2s ease;}
+.card:hover .arrow-hint{opacity:1;transform:translateX(3px);}
+
+/* responsive */
+@media (max-width: 640px){
+  .h1-hero{font-size:2.1rem !important;line-height:1.15 !important;}
+}
+</style>
+</head>
+<body class="min-h-screen">
+
+<!-- ① NAV -->
+<nav class="nav sticky top-0 z-50">
+  <div class="max-w-6xl mx-auto px-5 sm:px-6 py-3.5 flex items-center justify-between">
+    <a href="#top" class="flex items-center gap-2.5 group">
+      <span class="inline-block w-2 h-2 rounded-full" style="background:var(--accent);box-shadow:0 0 12px var(--accent-glow);"></span>
+      <span class="mono text-[13px] tracking-tight text-white/90">awesome-design-md</span>
+      <span class="mono text-[11px] text-white/40 hidden sm:inline">· vertical study</span>
+    </a>
+    <div class="flex items-center gap-1 sm:gap-2 text-[12px] sm:text-[13px]">
+      <a href="#insight" class="px-2.5 py-1.5 rounded-md hover:bg-white/5 text-white/70 hover:text-white transition">Insight</a>
+      <a href="#top9" class="px-2.5 py-1.5 rounded-md hover:bg-white/5 text-white/70 hover:text-white transition">Top 9</a>
+      <a href="#all26" class="px-2.5 py-1.5 rounded-md hover:bg-white/5 text-white/70 hover:text-white transition">All 26</a>
+      <a href="#about" class="px-2.5 py-1.5 rounded-md hover:bg-white/5 text-white/70 hover:text-white transition">About</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ② HERO -->
+<section id="top" class="gradient-hero">
+  <div class="dot-grid">
+    <div class="max-w-6xl mx-auto px-5 sm:px-6 pt-20 pb-24 sm:pt-28 sm:pb-28">
+      <div class="section-label mb-6">// vertical study · drone × camera × fpv · 2026</div>
+      <h1 class="h1-hero zh font-bold text-white leading-[1.08] tracking-tight" style="font-size:clamp(2rem,5.2vw,3.6rem);letter-spacing:-0.02em;">
+        26 家无人机 / 相机 / FPV 品牌的<br class="hidden sm:block"/>
+        <span class="text-white">设计语言</span><span style="color:var(--accent);">解剖</span>
+      </h1>
+      <p class="zh mt-5 text-[15px] sm:text-[17px] leading-[1.7] max-w-2xl" style="color:var(--text-sub);">
+        从消费旗舰到工业防务，从运动相机到 FPV 极客，一次把品类差异摊开——<br class="hidden sm:block"/>
+        每一份 DESIGN.md 都从真实首页观察抽出主色、字体、结构与叙事策略。
+      </p>
+
+      <!-- stats -->
+      <div class="flex flex-wrap items-center gap-2 sm:gap-3 mt-8">
+        <div class="card-elev rounded-xl px-4 py-3 flex items-center gap-3">
+          <span class="mono text-2xl font-semibold text-white">26</span>
+          <span class="text-[12px] text-white/60">家品牌</span>
+        </div>
+        <div class="card-elev rounded-xl px-4 py-3 flex items-center gap-3">
+          <span class="mono text-2xl font-semibold" style="color:var(--accent);">9</span>
+          <span class="text-[12px] text-white/60">家深度 <span class="mono">DESIGN.md</span></span>
+        </div>
+        <div class="card-elev rounded-xl px-4 py-3 flex items-center gap-3">
+          <span class="mono text-2xl font-semibold text-white">74</span>
+          <span class="text-[12px] text-white/60">家参考仓库</span>
+        </div>
+      </div>
+
+      <!-- cta -->
+      <div class="mt-9 flex flex-wrap items-center gap-3">
+        <a href="#top9" class="inline-flex items-center gap-2 px-5 py-3 rounded-xl text-[14px] font-medium text-black transition hover:brightness-110" style="background:var(--accent);box-shadow:0 6px 24px -8px var(--accent-glow);">
+          浏览 Top 9 深度解析
+          <span aria-hidden="true">→</span>
+        </a>
+        <a href="#insight" class="inline-flex items-center gap-2 px-5 py-3 rounded-xl text-[14px] font-medium text-white/85 hover:text-white transition border" style="border-color:var(--border-strong);background:rgba(255,255,255,0.02);">
+          先看一句话结论
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ③ INSIGHT -->
+<section id="insight" class="border-t" style="border-color:var(--border);">
+  <div class="max-w-6xl mx-auto px-5 sm:px-6 py-20">
+    <div class="section-label mb-6">// insight · 一句话结论 & 品类语言分界</div>
+
+    <!-- 结论卡 -->
+    <div class="card-elev rounded-2xl p-7 sm:p-10 mb-10">
+      <p class="zh text-[20px] sm:text-[26px] leading-[1.5] font-medium tracking-tight text-white">
+        从 <span style="color:#c4b5fd;">DJI 的诗性极简</span>
+        到 <span style="color:#f472b6;">iFlight 的工程荧光</span>——
+        26 家品牌划出
+        <span class="mono px-1.5 py-0.5 rounded" style="background:rgba(122,179,255,0.14);color:#bcd8ff;">5</span>
+        条清晰的品类语言分界：谁在卖<em class="not-italic" style="color:var(--cat-b2b);">工程</em>、谁在卖<em class="not-italic" style="color:var(--cat-poetic);">诗</em>、谁在卖<em class="not-italic" style="color:var(--cat-action);">运动</em>、谁在卖<em class="not-italic" style="color:var(--cat-fpv);">极客</em>、谁在卖<em class="not-italic" style="color:var(--cat-pano);">全景</em>，一眼可分。
+      </p>
+    </div>
+
+    <!-- 品类分组 5 卡 -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+
+      <div class="card cat-card cat-b2b rounded-xl p-6">
+        <div class="flex items-center justify-between mb-3">
+          <span class="mono text-[11px] tracking-widest cat-name">B2B · 工业防务</span>
+          <span class="swatch" style="background:var(--cat-b2b);"></span>
+        </div>
+        <h3 class="text-white font-semibold text-[16px] mb-2">冷调 + 数据密度 + 工程感</h3>
+        <p class="zh text-[13.5px] leading-relaxed" style="color:var(--text-sub);">
+          用编辑级排版和实时计数把无人机做成"基础设施年报"。红只做状态灯，不做诱惑。
+        </p>
+        <div class="flex flex-wrap gap-1.5 mt-4">
+          <span class="chip">Skydio</span>
+          <span class="chip">Antigravity</span>
+          <span class="chip">Autel Robotics</span>
+        </div>
+      </div>
+
+      <div class="card cat-card cat-poetic rounded-xl p-6">
+        <div class="flex items-center justify-between mb-3">
+          <span class="mono text-[11px] tracking-widest cat-name">消费单品 · 诗性</span>
+          <span class="swatch" style="background:var(--cat-poetic);"></span>
+        </div>
+        <h3 class="text-white font-semibold text-[16px] mb-2">大留白 + 中文 letter-spacing + 摄影级</h3>
+        <p class="zh text-[13.5px] leading-relaxed" style="color:var(--text-sub);">
+          "天地为你所动" / "THE FUTURE IS UP"——用四字诗和苍穹画面把一个 SKU 抬到史诗层。
+        </p>
+        <div class="flex flex-wrap gap-1.5 mt-4">
+          <span class="chip">DJI Global</span>
+          <span class="chip">Antigravity</span>
+          <span class="chip">Insta360</span>
+        </div>
+      </div>
+
+      <div class="card cat-card cat-action rounded-xl p-6">
+        <div class="flex items-center justify-between mb-3">
+          <span class="mono text-[11px] tracking-widest cat-name">运动相机 · 标准</span>
+          <span class="swatch" style="background:var(--cat-action);"></span>
+        </div>
+        <h3 class="text-white font-semibold text-[16px] mb-2">黑黄 / 黑金 + 大字 headline + 十宫格购买</h3>
+        <p class="zh text-[13.5px] leading-relaxed" style="color:var(--text-sub);">
+          高对比 + 按活动分宫格 + 订阅生态——运动相机品类的视觉惯例几乎由 GoPro 一家定义。
+        </p>
+        <div class="flex flex-wrap gap-1.5 mt-4">
+          <span class="chip">GoPro</span>
+          <span class="chip">Drift</span>
+          <span class="chip">AKASO</span>
+          <span class="chip">SJCAM</span>
+        </div>
+      </div>
+
+      <div class="card cat-card cat-fpv rounded-xl p-6">
+        <div class="flex items-center justify-between mb-3">
+          <span class="mono text-[11px] tracking-widest cat-name">FPV · 技术极客</span>
+          <span class="swatch" style="background:var(--cat-fpv);"></span>
+        </div>
+        <h3 class="text-white font-semibold text-[16px] mb-2">白红 / 暗青 / 暖橙 三种极客表达</h3>
+        <p class="zh text-[13.5px] leading-relaxed" style="color:var(--text-sub);">
+          同一个圈子，三种气质：老练卖场（RadioMaster 红）、工程实验室（iFlight 青）、生活温橙（Flywoo）。
+        </p>
+        <div class="flex flex-wrap gap-1.5 mt-4">
+          <span class="chip">RadioMaster</span>
+          <span class="chip">iFlight</span>
+          <span class="chip">Flywoo</span>
+          <span class="chip">GEPRC</span>
+          <span class="chip">BetaFPV</span>
+        </div>
+      </div>
+
+      <div class="card cat-card cat-pano rounded-xl p-6">
+        <div class="flex items-center justify-between mb-3">
+          <span class="mono text-[11px] tracking-widest cat-name">全景相机 · 叙事</span>
+          <span class="swatch" style="background:var(--cat-pano);"></span>
+        </div>
+        <h3 class="text-white font-semibold text-[16px] mb-2">深蓝 + 双 register 类型系统</h3>
+        <p class="zh text-[13.5px] leading-relaxed" style="color:var(--text-sub);">
+          PanoX 用国家叙事讲全景（"嫦娥 VR / 火神山"），QooCam 走轻消费，两种截然不同的中国全景表达。
+        </p>
+        <div class="flex flex-wrap gap-1.5 mt-4">
+          <span class="chip">PanoX</span>
+          <span class="chip">QooCam</span>
+          <span class="chip">Insta360</span>
+        </div>
+      </div>
+
+      <div class="card cat-card rounded-xl p-6" style="--cat:rgba(255,255,255,0.25);">
+        <div class="flex items-center justify-between mb-3">
+          <span class="mono text-[11px] tracking-widest text-white/60">Off-Category · 混合</span>
+          <span class="swatch" style="background:rgba(255,255,255,0.15);"></span>
+        </div>
+        <h3 class="text-white font-semibold text-[16px] mb-2">安防生态 / D2C 代理 / 农业专线</h3>
+        <p class="zh text-[13.5px] leading-relaxed" style="color:var(--text-sub);">
+          EZVIZ 走智能家居生态，DJI Ag 用田野绿讲专业农机，D2C 授权店走 Shopify 电商化——非首页型语言。
+        </p>
+        <div class="flex flex-wrap gap-1.5 mt-4">
+          <span class="chip">EZVIZ</span>
+          <span class="chip">DJI Ag</span>
+          <span class="chip">DJI USA</span>
+          <span class="chip">AutelPilot</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ④ TOP 9 -->
+<section id="top9" class="border-t" style="border-color:var(--border);">
+  <div class="max-w-6xl mx-auto px-5 sm:px-6 py-20">
+    <div class="flex items-baseline justify-between mb-6 flex-wrap gap-3">
+      <div>
+        <div class="section-label mb-2">// top 9 · 深度 design.md</div>
+        <h2 class="zh text-white text-[26px] sm:text-[32px] font-semibold tracking-tight">9 家有完整 DESIGN.md 的品牌</h2>
+      </div>
+      <p class="zh text-[13px] max-w-md" style="color:var(--text-mute);">
+        每一份都是从首页真实观察出发的 metadata + 五节结构分析。点击卡片进入完整规范。
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+
+      <!-- Skydio -->
+      <a href="../design-md/skydio/DESIGN.md" class="card tint-card rounded-xl p-6 block" style="--tint:#e63946;">
+        <div class="flex items-start justify-between mb-4">
+          <div>
+            <div class="mono text-[11px] tracking-widest mb-1" style="color:#f47a83;">B2B · AI DEFENSE</div>
+            <h3 class="text-white font-bold text-[20px] tracking-tight">Skydio</h3>
+          </div>
+          <span class="swatch" style="background:#e63946;"></span>
+        </div>
+        <p class="zh text-[13.5px] leading-relaxed mb-4" style="color:var(--text-sub);">
+          A family of flying robots. — 编辑级白底 + 单点红 + 实时飞行计数器，无人机做成公共安全基础设施。
+        </p>
+        <div class="flex flex-wrap gap-1.5 mb-4">
+          <span class="chip">editorial-white</span>
+          <span class="chip">status-red</span>
+          <span class="chip">defense-report</span>
+        </div>
+        <div class="flex items-center justify-between text-[12px]">
+          <span class="mono" style="color:var(--accent);">Read DESIGN.md</span>
+          <span class="arrow-hint" style="color:var(--accent);">→</span>
+        </div>
+      </a>
+
+      <!-- Antigravity -->
+      <a href="../design-md/antigravity/DESIGN.md" class="card tint-card rounded-xl p-6 block" style="--tint:#7ab3ff;">
+        <div class="flex items-start justify-between mb-4">
+          <div>
+            <div class="mono text-[11px] tracking-widest mb-1" style="color:#7ab3ff;">CONSUMER · 360 PANO</div>
+            <h3 class="text-white font-bold text-[20px] tracking-tight">Antigravity <span class="zh text-white/50 font-normal text-[14px]">影翎</span></h3>
+          </div>
+          <span class="swatch" style="background:#000;"></span>
+        </div>
+        <p class="zh text-[13.5px] leading-relaxed mb-4" style="color:var(--text-sub);">
+          THE FUTURE IS UP — 未来不在远方，而在苍穹之上。纯黑影院式单品叙事，Insta360 子品牌的 A1。
+        </p>
+        <div class="flex flex-wrap gap-1.5 mb-4">
+          <span class="chip">pure-black</span>
+          <span class="chip">bilingual-poetic</span>
+          <span class="chip">mono-product</span>
+        </div>
+        <div class="flex items-center justify-between text-[12px]">
+          <span class="mono" style="color:var(--accent);">Read DESIGN.md</span>
+          <span class="arrow-hint" style="color:var(--accent);">→</span>
+        </div>
+      </a>
+
+      <!-- DJI Global -->
+      <a href="../design-md/dji_global/DESIGN.md" class="card tint-card rounded-xl p-6 block" style="--tint:#c4b5fd;">
+        <div class="flex items-start justify-between mb-4">
+          <div>
+            <div class="mono text-[11px] tracking-widest mb-1" style="color:#c4b5fd;">FULL-LINE · FLAGSHIP</div>
+            <h3 class="text-white font-bold text-[20px] tracking-tight">DJI <span class="zh text-white/50 font-normal text-[14px]">大疆创新</span></h3>
+          </div>
+          <span class="swatch" style="background:#f5f5f5;"></span>
+        </div>
+        <p class="zh text-[13.5px] leading-relaxed mb-4" style="color:var(--text-sub);">
+          天地为你所动。冷灰画布 + 全线 SVG wordmark + 四字诗性 slogan，portfolio-brand 的教科书。
+        </p>
+        <div class="flex flex-wrap gap-1.5 mb-4">
+          <span class="chip">cool-gray-canvas</span>
+          <span class="chip">svg-wordmark</span>
+          <span class="chip">poetic-4-char</span>
+        </div>
+        <div class="flex items-center justify-between text-[12px]">
+          <span class="mono" style="color:var(--accent);">Read DESIGN.md</span>
+          <span class="arrow-hint" style="color:var(--accent);">→</span>
+        </div>
+      </a>
+
+      <!-- GoPro -->
+      <a href="../design-md/gopro/DESIGN.md" class="card tint-card rounded-xl p-6 block" style="--tint:#fbbf24;">
+        <div class="flex items-start justify-between mb-4">
+          <div>
+            <div class="mono text-[11px] tracking-widest mb-1" style="color:#fbbf24;">ACTION CAM · CATEGORY-DEF</div>
+            <h3 class="text-white font-bold text-[20px] tracking-tight">GoPro</h3>
+          </div>
+          <span class="swatch" style="background:#F2C94C;"></span>
+        </div>
+        <p class="zh text-[13.5px] leading-relaxed mb-4" style="color:var(--text-sub);">
+          360 MAX'D。黑黄高对比 + 三机 hero 堆叠 + 十宫格按活动购买 + Subscription 生态。
+        </p>
+        <div class="flex flex-wrap gap-1.5 mb-4">
+          <span class="chip">black-yellow</span>
+          <span class="chip">ultra-bold-caps</span>
+          <span class="chip">commerce-first</span>
+        </div>
+        <div class="flex items-center justify-between text-[12px]">
+          <span class="mono" style="color:var(--accent);">Read DESIGN.md</span>
+          <span class="arrow-hint" style="color:var(--accent);">→</span>
+        </div>
+      </a>
+
+      <!-- Drift -->
+      <a href="../design-md/drift/DESIGN.md" class="card tint-card rounded-xl p-6 block" style="--tint:#B8912C;">
+        <div class="flex items-start justify-between mb-4">
+          <div>
+            <div class="mono text-[11px] tracking-widest mb-1" style="color:#e0b856;">ACTION CAM · MOTO POV</div>
+            <h3 class="text-white font-bold text-[20px] tracking-tight">Drift</h3>
+          </div>
+          <span class="swatch" style="background:#1A1A1A;border-color:#B8912C;"></span>
+        </div>
+        <p class="zh text-[13.5px] leading-relaxed mb-4" style="color:var(--text-sub);">
+          Capture Your Journey. 黑金摩托 POV hero，本轮唯一在首页宣告"品类转型 → AI companion"的品牌。
+        </p>
+        <div class="flex flex-wrap gap-1.5 mb-4">
+          <span class="chip">black-gold</span>
+          <span class="chip">moto-pov-hero</span>
+          <span class="chip">category-pivot</span>
+        </div>
+        <div class="flex items-center justify-between text-[12px]">
+          <span class="mono" style="color:var(--accent);">Read DESIGN.md</span>
+          <span class="arrow-hint" style="color:var(--accent);">→</span>
+        </div>
+      </a>
+
+      <!-- PanoX -->
+      <a href="../design-md/panox/DESIGN.md" class="card tint-card rounded-xl p-6 block" style="--tint:#1E5AA8;">
+        <div class="flex items-start justify-between mb-4">
+          <div>
+            <div class="mono text-[11px] tracking-widest mb-1" style="color:#60a5fa;">360 PANO · STORY</div>
+            <h3 class="text-white font-bold text-[20px] tracking-tight">PanoX <span class="zh text-white/50 font-normal text-[14px]">全景时光</span></h3>
+          </div>
+          <span class="swatch" style="background:#1E5AA8;"></span>
+        </div>
+        <p class="zh text-[13.5px] leading-relaxed mb-4" style="color:var(--text-sub);">
+          5.7K vlog 360° camera。深蓝 + 四里程碑品牌叙事（嫦娥 VR / 火神山）——把技术翻译为国族故事。
+        </p>
+        <div class="flex flex-wrap gap-1.5 mb-4">
+          <span class="chip">deep-blue</span>
+          <span class="chip">4-milestone</span>
+          <span class="chip">brand-story-first</span>
+        </div>
+        <div class="flex items-center justify-between text-[12px]">
+          <span class="mono" style="color:var(--accent);">Read DESIGN.md</span>
+          <span class="arrow-hint" style="color:var(--accent);">→</span>
+        </div>
+      </a>
+
+      <!-- RadioMaster -->
+      <a href="../design-md/radiomaster/DESIGN.md" class="card tint-card rounded-xl p-6 block" style="--tint:#E60023;">
+        <div class="flex items-start justify-between mb-4">
+          <div>
+            <div class="mono text-[11px] tracking-widest mb-1" style="color:#ff6b7a;">FPV · RADIO CTRL</div>
+            <h3 class="text-white font-bold text-[20px] tracking-tight">RadioMaster</h3>
+          </div>
+          <span class="swatch" style="background:#E60023;"></span>
+        </div>
+        <p class="zh text-[13.5px] leading-relaxed mb-4" style="color:var(--text-sub);">
+          白底 + 警戒红 accent + 全大写章节头。老练 Shopify 卖场语言，5 级产品阶梯清晰摊开。
+        </p>
+        <div class="flex flex-wrap gap-1.5 mb-4">
+          <span class="chip">white-red-caps</span>
+          <span class="chip">5-tier-ladder</span>
+          <span class="chip">shopify-mature</span>
+        </div>
+        <div class="flex items-center justify-between text-[12px]">
+          <span class="mono" style="color:var(--accent);">Read DESIGN.md</span>
+          <span class="arrow-hint" style="color:var(--accent);">→</span>
+        </div>
+      </a>
+
+      <!-- iFlight -->
+      <a href="../design-md/iflight/DESIGN.md" class="card tint-card rounded-xl p-6 block" style="--tint:#00B0FF;">
+        <div class="flex items-start justify-between mb-4">
+          <div>
+            <div class="mono text-[11px] tracking-widest mb-1" style="color:#00B0FF;">FPV · TECH-INDUSTRIAL</div>
+            <h3 class="text-white font-bold text-[20px] tracking-tight">iFlight <span class="zh text-white/50 font-normal text-[14px]">亿飞</span></h3>
+          </div>
+          <span class="swatch" style="background:#00B0FF;"></span>
+        </div>
+        <p class="zh text-[13.5px] leading-relaxed mb-4" style="color:var(--text-sub);">
+          Where dreams can fly. 青-on-暗的示波器工程感 + 品牌站/商店站双域分工 + 三应用门户。
+        </p>
+        <div class="flex flex-wrap gap-1.5 mb-4">
+          <span class="chip">cyan-on-dark</span>
+          <span class="chip">brand-shop-split</span>
+          <span class="chip">3-domain-portal</span>
+        </div>
+        <div class="flex items-center justify-between text-[12px]">
+          <span class="mono" style="color:var(--accent);">Read DESIGN.md</span>
+          <span class="arrow-hint" style="color:var(--accent);">→</span>
+        </div>
+      </a>
+
+      <!-- Flywoo -->
+      <a href="../design-md/flywoo/DESIGN.md" class="card tint-card rounded-xl p-6 block" style="--tint:#F5A623;">
+        <div class="flex items-start justify-between mb-4">
+          <div>
+            <div class="mono text-[11px] tracking-widest mb-1" style="color:#F5A623;">FPV · MICRO LIFESTYLE</div>
+            <h3 class="text-white font-bold text-[20px] tracking-tight">Flywoo</h3>
+          </div>
+          <span class="swatch" style="background:#F5A623;"></span>
+        </div>
+        <p class="zh text-[13.5px] leading-relaxed mb-4" style="color:var(--text-sub);">
+          One Digital VTX. Two flight experiences. 温橙 accent + Firefly 家族命名，把 tinywhoop 卖出生活感。
+        </p>
+        <div class="flex flex-wrap gap-1.5 mb-4">
+          <span class="chip">warm-orange</span>
+          <span class="chip">firefly-family</span>
+          <span class="chip">cny-first</span>
+        </div>
+        <div class="flex items-center justify-between text-[12px]">
+          <span class="mono" style="color:var(--accent);">Read DESIGN.md</span>
+          <span class="arrow-hint" style="color:var(--accent);">→</span>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- ⑤ ALL 26 -->
+<section id="all26" class="border-t" style="border-color:var(--border);">
+  <div class="max-w-6xl mx-auto px-5 sm:px-6 py-20">
+    <div class="flex items-baseline justify-between mb-6 flex-wrap gap-3">
+      <div>
+        <div class="section-label mb-2">// all 26 · 全景卡片墙</div>
+        <h2 class="zh text-white text-[26px] sm:text-[32px] font-semibold tracking-tight">26 家品牌全景</h2>
+      </div>
+      <p class="zh text-[13px] max-w-md" style="color:var(--text-mute);">
+        右上角 <span class="star-badge">★ TOP 9</span> 表示已产出完整 DESIGN.md。点击即跳深度页。其余 17 家为原始观察卡。
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3">
+
+      <!-- ⭐ TOP 9 cards linked to DESIGN.md -->
+
+      <a href="../design-md/skydio/DESIGN.md" class="card rounded-xl p-5 block relative">
+        <span class="absolute top-3 right-3 star-badge">★ TOP 9</span>
+        <div class="flex items-center gap-2 mb-2">
+          <span class="swatch" style="background:#e63946;"></span>
+          <h4 class="text-white font-semibold text-[15px]">Skydio</h4>
+        </div>
+        <p class="zh text-[12.5px] leading-snug mb-3" style="color:var(--text-sub);">A family of flying robots — 编辑级白底与 AI 防务定位。</p>
+        <div class="flex flex-wrap gap-1"><span class="chip">AI-defense</span><span class="chip">editorial</span></div>
+      </a>
+
+      <a href="../design-md/antigravity/DESIGN.md" class="card rounded-xl p-5 block relative">
+        <span class="absolute top-3 right-3 star-badge">★ TOP 9</span>
+        <div class="flex items-center gap-2 mb-2">
+          <span class="swatch" style="background:#000000;"></span>
+          <h4 class="text-white font-semibold text-[15px]">Antigravity <span class="zh text-white/45 font-normal text-[12px]">影翎</span></h4>
+        </div>
+        <p class="zh text-[12.5px] leading-snug mb-3" style="color:var(--text-sub);">8K 全景无人机——Insta360 子品牌的黑色单品叙事。</p>
+        <div class="flex flex-wrap gap-1"><span class="chip">360-drone</span><span class="chip">cinematic</span></div>
+      </a>
+
+      <a href="../design-md/dji_global/DESIGN.md" class="card rounded-xl p-5 block relative">
+        <span class="absolute top-3 right-3 star-badge">★ TOP 9</span>
+        <div class="flex items-center gap-2 mb-2">
+          <span class="swatch" style="background:#f5f5f5;"></span>
+          <h4 class="text-white font-semibold text-[15px]">DJI <span class="zh text-white/45 font-normal text-[12px]">大疆创新</span></h4>
+        </div>
+        <p class="zh text-[12.5px] leading-snug mb-3" style="color:var(--text-sub);">天地为你所动——全线消费到农业的 portfolio-brand。</p>
+        <div class="flex flex-wrap gap-1"><span class="chip">full-line</span><span class="chip">flagship</span></div>
+      </a>
+
+      <a href="../design-md/gopro/DESIGN.md" class="card rounded-xl p-5 block relative">
+        <span class="absolute top-3 right-3 star-badge">★ TOP 9</span>
+        <div class="flex items-center gap-2 mb-2">
+          <span class="swatch" style="background:#F2C94C;"></span>
+          <h4 class="text-white font-semibold text-[15px]">GoPro</h4>
+        </div>
+        <p class="zh text-[12.5px] leading-snug mb-3" style="color:var(--text-sub);">360 MAX'D——运动相机品类定义者，黑黄 commerce 语言。</p>
+        <div class="flex flex-wrap gap-1"><span class="chip">action-cam</span><span class="chip">category-def</span></div>
+      </a>
+
+      <a href="../design-md/drift/DESIGN.md" class="card rounded-xl p-5 block relative">
+        <span class="absolute top-3 right-3 star-badge">★ TOP 9</span>
+        <div class="flex items-center gap-2 mb-2">
+          <span class="swatch" style="background:#1A1A1A;border-color:#B8912C;"></span>
+          <h4 class="text-white font-semibold text-[15px]">Drift</h4>
+        </div>
+        <p class="zh text-[12.5px] leading-snug mb-3" style="color:var(--text-sub);">Capture Your Journey——黑金摩托 POV 与 AI companion 转型。</p>
+        <div class="flex flex-wrap gap-1"><span class="chip">moto-pov</span><span class="chip">black-gold</span></div>
+      </a>
+
+      <a href="../design-md/panox/DESIGN.md" class="card rounded-xl p-5 block relative">
+        <span class="absolute top-3 right-3 star-badge">★ TOP 9</span>
+        <div class="flex items-center gap-2 mb-2">
+          <span class="swatch" style="background:#1E5AA8;"></span>
+          <h4 class="text-white font-semibold text-[15px]">PanoX <span class="zh text-white/45 font-normal text-[12px]">全景时光</span></h4>
+        </div>
+        <p class="zh text-[12.5px] leading-snug mb-3" style="color:var(--text-sub);">5.7K 全景相机——深蓝 + 四里程碑国族叙事。</p>
+        <div class="flex flex-wrap gap-1"><span class="chip">deep-blue</span><span class="chip">brand-story</span></div>
+      </a>
+
+      <a href="../design-md/radiomaster/DESIGN.md" class="card rounded-xl p-5 block relative">
+        <span class="absolute top-3 right-3 star-badge">★ TOP 9</span>
+        <div class="flex items-center gap-2 mb-2">
+          <span class="swatch" style="background:#E60023;"></span>
+          <h4 class="text-white font-semibold text-[15px]">RadioMaster</h4>
+        </div>
+        <p class="zh text-[12.5px] leading-snug mb-3" style="color:var(--text-sub);">TX16S MK3 MAX——FPV 遥控器成熟卖场语言。</p>
+        <div class="flex flex-wrap gap-1"><span class="chip">radio-ctrl</span><span class="chip">shopify</span></div>
+      </a>
+
+      <a href="../design-md/iflight/DESIGN.md" class="card rounded-xl p-5 block relative">
+        <span class="absolute top-3 right-3 star-badge">★ TOP 9</span>
+        <div class="flex items-center gap-2 mb-2">
+          <span class="swatch" style="background:#00B0FF;"></span>
+          <h4 class="text-white font-semibold text-[15px]">iFlight <span class="zh text-white/45 font-normal text-[12px]">亿飞</span></h4>
+        </div>
+        <p class="zh text-[12.5px] leading-snug mb-3" style="color:var(--text-sub);">Where dreams can fly——青-on-暗工程实验室气质。</p>
+        <div class="flex flex-wrap gap-1"><span class="chip">tech-industrial</span><span class="chip">cyan</span></div>
+      </a>
+
+      <a href="../design-md/flywoo/DESIGN.md" class="card rounded-xl p-5 block relative">
+        <span class="absolute top-3 right-3 star-badge">★ TOP 9</span>
+        <div class="flex items-center gap-2 mb-2">
+          <span class="swatch" style="background:#F5A623;"></span>
+          <h4 class="text-white font-semibold text-[15px]">Flywoo</h4>
+        </div>
+        <p class="zh text-[12.5px] leading-snug mb-3" style="color:var(--text-sub);">Firefly 家族——温橙 tinywhoop 生活感。</p>
+        <div class="flex flex-wrap gap-1"><span class="chip">tinywhoop</span><span class="chip">warm-orange</span></div>
+      </a>
+
+      <!-- Non-Top-9 cards (17) -->
+
+      <div class="card rounded-xl p-5">
+        <div class="flex items-center gap-2 mb-2">
+          <span class="swatch" style="background:#F26522;"></span>
+          <h4 class="text-white font-semibold text-[15px]">AKASO <span class="zh text-white/45 font-normal text-[12px]">赛纳</span></h4>
+        </div>
+        <p class="zh text-[12.5px] leading-snug mb-3" style="color:var(--text-sub);">AKASO 360 — Your First 360 Action Cam。运动相机 + 全景 + 夜视。</p>
+        <div class="flex flex-wrap gap-1"><span class="chip">action-cam</span><span class="chip">360</span></div>
+      </div>
+
+      <div class="card rounded-xl p-5">
+        <div class="flex items-center gap-2 mb-2">
+          <span class="swatch" style="background:#f47b20;"></span>
+          <h4 class="text-white font-semibold text-[15px]">AutelPilot</h4>
+        </div>
+        <p class="zh text-[12.5px] leading-snug mb-3" style="color:var(--text-sub);">US Warehouse · Free Shipping——Autel 官方 D2C Shopify 商店。</p>
+        <div class="flex flex-wrap gap-1"><span class="chip">D2C</span><span class="chip">shopify</span></div>
+      </div>
+
+      <div class="card rounded-xl p-5">
+        <div class="flex items-center gap-2 mb-2">
+          <span class="swatch" style="background:#f47b20;"></span>
+          <h4 class="text-white font-semibold text-[15px]">Autel Robotics <span class="zh text-white/45 font-normal text-[12px]">道通智能</span></h4>
+        </div>
+        <p class="zh text-[12.5px] leading-snug mb-3" style="color:var(--text-sub);">COMPACT. VERSATILE. POWERFUL.——消费+企业+军工三线橙 accent。</p>
+        <div class="flex flex-wrap gap-1"><span class="chip">enterprise</span><span class="chip">military</span></div>
+      </div>
+
+      <div class="card rounded-xl p-5">
+        <div class="flex items-center gap-2 mb-2">
+          <span class="swatch" style="background:#EA5D1A;"></span>
+          <h4 class="text-white font-semibold text-[15px]">BetaFPV</h4>
+        </div>
+        <p class="zh text-[12.5px] leading-snug mb-3" style="color:var(--text-sub);">Big 1S Power, Clear HD View——Tinywhoop 整机 + HD FPV Kits。</p>
+        <div class="flex flex-wrap gap-1"><span class="chip">tinywhoop</span><span class="chip">shopify</span></div>
+      </div>
+
+      <div class="card rounded-xl p-5">
+        <div class="flex items-center gap-2 mb-2">
+          <span class="swatch" style="background:#2b6a2f;"></span>
+          <h4 class="text-white font-semibold text-[15px]">DJI Ag <span class="zh text-white/45 font-normal text-[12px]">大疆农业</span></h4>
+        </div>
+        <p class="zh text-[12.5px] leading-snug mb-3" style="color:var(--text-sub);">智稳双全实力派——田野绿 + 四字诗性的农业无人机。</p>
+        <div class="flex flex-wrap gap-1"><span class="chip">agriculture</span><span class="chip">field-green</span></div>
+      </div>
+
+      <div class="card rounded-xl p-5">
+        <div class="flex items-center gap-2 mb-2">
+          <span class="swatch" style="background:#000000;"></span>
+          <h4 class="text-white font-semibold text-[15px]">DJI USA</h4>
+        </div>
+        <p class="zh text-[12.5px] leading-snug mb-3" style="color:var(--text-sub);">ALL-IN-ONE 1-INCH MINI——Shopify 授权代理的电商 D2C 语言。</p>
+        <div class="flex flex-wrap gap-1"><span class="chip">reseller</span><span class="chip">shopify</span></div>
+      </div>
+
+      <div class="card rounded-xl p-5">
+        <div class="flex items-center gap-2 mb-2">
+          <span class="swatch" style="background:#00A0E9;"></span>
+          <h4 class="text-white font-semibold text-[15px]">EMAX <span class="zh text-white/45 font-normal text-[12px]">银燕</span></h4>
+        </div>
+        <p class="zh text-[12.5px] leading-snug mb-3" style="color:var(--text-sub);">Tinyhawk Lite RTF——Shopify 上直接瀑布流产品的电机世家。</p>
+        <div class="flex flex-wrap gap-1"><span class="chip">tinywhoop</span><span class="chip">motors</span></div>
+      </div>
+
+      <div class="card rounded-xl p-5">
+        <div class="flex items-center gap-2 mb-2">
+          <span class="swatch" style="background:#1E7CE0;"></span>
+          <h4 class="text-white font-semibold text-[15px]">EZVIZ <span class="zh text-white/45 font-normal text-[12px]">萤石</span></h4>
+        </div>
+        <p class="zh text-[12.5px] leading-snug mb-3" style="color:var(--text-sub);">萤石构建"2+5+N"生态——家庭安防相机与智能家居入口。</p>
+        <div class="flex flex-wrap gap-1"><span class="chip">home-security</span><span class="chip">ecosystem</span></div>
+      </div>
+
+      <div class="card rounded-xl p-5">
+        <div class="flex items-center gap-2 mb-2">
+          <span class="swatch" style="background:#FF3B30;"></span>
+          <h4 class="text-white font-semibold text-[15px]">GEPRC <span class="zh text-white/45 font-normal text-[12px]">格普</span></h4>
+        </div>
+        <p class="zh text-[12.5px] leading-snug mb-3" style="color:var(--text-sub);">Cinebot35 O4 Pro——WooCommerce 品牌+商城合一的红 accent。</p>
+        <div class="flex flex-wrap gap-1"><span class="chip">FPV</span><span class="chip">woocommerce</span></div>
+      </div>
+
+      <div class="card rounded-xl p-5">
+        <div class="flex items-center gap-2 mb-2">
+          <span class="swatch" style="background:#E60012;"></span>
+          <h4 class="text-white font-semibold text-[15px]">HappyModel <span class="zh text-white/45 font-normal text-[12px]">云端</span></h4>
+        </div>
+        <p class="zh text-[12.5px] leading-snug mb-3" style="color:var(--text-sub);">Mobula 系列——WordPress 企业站上的 Tinywhoop 与 ELRS 零件。</p>
+        <div class="flex flex-wrap gap-1"><span class="chip">tinywhoop</span><span class="chip">ELRS</span></div>
+      </div>
+
+      <div class="card rounded-xl p-5">
+        <div class="flex items-center gap-2 mb-2">
+          <span class="swatch" style="background:#111827;border-color:rgba(255,255,255,0.25);"></span>
+          <h4 class="text-white font-semibold text-[15px]">HGLRC <span class="zh text-white/45 font-normal text-[12px]">华谷龙</span></h4>
+        </div>
+        <p class="zh text-[12.5px] leading-snug mb-3" style="color:var(--text-sub);">Ignite Your Life!——FPV 飞控 + ESC + VTX + 整机全线覆盖。</p>
+        <div class="flex flex-wrap gap-1"><span class="chip">FC-ESC-VTX</span><span class="chip">shopify</span></div>
+      </div>
+
+      <div class="card rounded-xl p-5">
+        <div class="flex items-center gap-2 mb-2">
+          <span class="swatch" style="background:#00B0FF;"></span>
+          <h4 class="text-white font-semibold text-[15px]">iFlight Store</h4>
+        </div>
+        <p class="zh text-[12.5px] leading-snug mb-3" style="color:var(--text-sub);">iFlight FPV Drones——品牌站的商店 pair，电商目录风格。</p>
+        <div class="flex flex-wrap gap-1"><span class="chip">e-commerce</span><span class="chip">catalog</span></div>
+      </div>
+
+      <div class="card rounded-xl p-5">
+        <div class="flex items-center gap-2 mb-2">
+          <span class="swatch" style="background:#ffd800;"></span>
+          <h4 class="text-white font-semibold text-[15px]">Insta360 <span class="zh text-white/45 font-normal text-[12px]">影石</span></h4>
+        </div>
+        <p class="zh text-[12.5px] leading-snug mb-3" style="color:var(--text-sub);">旗舰音画，时刻焦点——黄色 accent 的全球 360 相机领导者。</p>
+        <div class="flex flex-wrap gap-1"><span class="chip">360-cam</span><span class="chip">yellow</span></div>
+      </div>
+
+      <div class="card rounded-xl p-5">
+        <div class="flex items-center gap-2 mb-2">
+          <span class="swatch" style="background:#00A8A8;"></span>
+          <h4 class="text-white font-semibold text-[15px]">QooCam <span class="zh text-white/45 font-normal text-[12px]">看到科技</span></h4>
+        </div>
+        <p class="zh text-[12.5px] leading-snug mb-3" style="color:var(--text-sub);">画质更好的全景运动相机——5.7K 30FPS，青调消费全景。</p>
+        <div class="flex flex-wrap gap-1"><span class="chip">panoramic</span><span class="chip">consumer</span></div>
+      </div>
+
+      <div class="card rounded-xl p-5">
+        <div class="flex items-center gap-2 mb-2">
+          <span class="swatch" style="background:#F7941D;"></span>
+          <h4 class="text-white font-semibold text-[15px]">RadioLink <span class="zh text-white/45 font-normal text-[12px]">乐迪</span></h4>
+        </div>
+        <p class="zh text-[12.5px] leading-snug mb-3" style="color:var(--text-sub);">航模零门槛入门——遥控器 + 飞控 + 充电系统的老派中文企业站。</p>
+        <div class="flex flex-wrap gap-1"><span class="chip">RC</span><span class="chip">enterprise-cn</span></div>
+      </div>
+
+      <div class="card rounded-xl p-5">
+        <div class="flex items-center gap-2 mb-2">
+          <span class="swatch" style="background:#E30613;"></span>
+          <h4 class="text-white font-semibold text-[15px]">SJCAM <span class="zh text-white/45 font-normal text-[12px]">速影</span></h4>
+        </div>
+        <p class="zh text-[12.5px] leading-snug mb-3" style="color:var(--text-sub);">S10 — 4K POV Action Camera——运动相机 + 车载记录仪双线。</p>
+        <div class="flex flex-wrap gap-1"><span class="chip">action-cam</span><span class="chip">dashcam</span></div>
+      </div>
+
+      <div class="card rounded-xl p-5">
+        <div class="flex items-center gap-2 mb-2">
+          <span class="swatch" style="background:#FFC800;"></span>
+          <h4 class="text-white font-semibold text-[15px]">SpeedyBee</h4>
+        </div>
+        <p class="zh text-[12.5px] leading-snug mb-3" style="color:var(--text-sub);">Mario MiniX Modular O4——BigCommerce 上的黄色 FPV 飞控生态。</p>
+        <div class="flex flex-wrap gap-1"><span class="chip">FPV-FC</span><span class="chip">bigcommerce</span></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ⑥ ABOUT / FOOTER -->
+<section id="about" class="border-t" style="border-color:var(--border);">
+  <div class="max-w-6xl mx-auto px-5 sm:px-6 py-16">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+      <div class="lg:col-span-2">
+        <div class="section-label mb-4">// about</div>
+        <h2 class="zh text-white text-[22px] sm:text-[26px] font-semibold tracking-tight mb-4">从 74 家原仓库 fork 而来的本地垂类研究</h2>
+        <p class="zh text-[14.5px] leading-[1.75] max-w-2xl" style="color:var(--text-sub);">
+          <span class="mono text-white/85">awesome-design-md</span> 原仓库收录了 74 家全球标杆品牌的设计系统（Stripe / Linear / Notion / DJI 等）。
+          本项目在 fork 之后，聚焦"无人机 / 相机 / FPV" 一个垂直品类，追加 26 家品牌的首页原始观察，并对其中 9 家最具设计语言差异性的品牌产出完整 <span class="mono text-white/85">DESIGN.md</span> 深度解析，作为本地 vertical study 的补充。
+        </p>
+        <p class="zh text-[14.5px] leading-[1.75] max-w-2xl mt-3" style="color:var(--text-sub);">
+          目标：让"给我一份 FPV 品牌官网"这类 UI 生成需求，能在 3 分钟内锁定 1–3 个真实参考。
+        </p>
+      </div>
+      <div class="card-elev rounded-xl p-5">
+        <div class="section-label mb-3">// meta</div>
+        <div class="space-y-2.5 text-[13px]">
+          <div class="flex justify-between"><span style="color:var(--text-mute);">Repository</span><a class="link-accent mono text-[12px]" href="https://github.com/njrcdz2025-arch/awesome-design-md" target="_blank" rel="noopener">njrcdz2025-arch/awesome-design-md ↗</a></div>
+          <div class="flex justify-between"><span style="color:var(--text-mute);">License</span><span class="mono">MIT</span></div>
+          <div class="flex justify-between"><span style="color:var(--text-mute);">Deploy</span><span class="mono">GitHub Pages · /docs</span></div>
+          <div class="flex justify-between"><span style="color:var(--text-mute);">Data source</span><span class="mono text-right">raw/*.json (26)<br/>design-md/&lt;brand&gt;/ (9)</span></div>
+          <div class="flex justify-between"><span style="color:var(--text-mute);">Vertical</span><span class="mono">drone · camera · fpv</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-14 pt-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 border-t" style="border-color:var(--border);">
+      <div class="mono text-[11px]" style="color:var(--text-mute);">
+        © 2026 · awesome-design-md vertical study · fork of <a href="https://github.com/VoltAgent/awesome-design-md" target="_blank" rel="noopener" class="link-accent">VoltAgent/awesome-design-md</a>
+      </div>
+      <div class="mono text-[11px]" style="color:var(--text-mute);">
+        Built with Tailwind CDN + Inter / JetBrains Mono / Noto Sans SC
+      </div>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>

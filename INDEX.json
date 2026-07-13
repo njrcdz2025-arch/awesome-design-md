@@ -442,5 +442,77 @@
     "desc": "An inspired interpretation of Zapier's design language — a workflow-automation platform whose surface combines warm-cream neutrals (`#fffefb` canvas, `#f8f4f0` soft cream) with deep coffee ink (`#201515`) and a single saturated orange CTA accent (`#ff4f00`); typography pairs the proprietary Degular Display family at hero scale with Inter for sub-displays and body, giving the brand a confident-warm rather than cool-tech voice.",
     "primary": "#ff4f00",
     "fmt": "yaml"
+  },
+  {
+    "brand": "skydio",
+    "desc": "An AI-drone brand engineered as public-safety and defense infrastructure. Built on a white editorial canvas with near-black ink type and a single mission-critical red (#e63946) used only as an operational-status accent — on the pulsing live status dot, the two-digit section counter numerals (01–05), CTA hover swaps, and rare inline emphasis. Display headlines are heavy sans-serif at 72–96px in weight 600 with a signature terminal period ('A family of flying robots.'). The hero contains no hardware beauty shot; instead a live real-time clock, a rolling total-flights counter ('4,779,138 Customer flights and counting'), and a short manifesto lead. Sections are prefixed with monospace two-digit numeric counters (01 DFR / 02 Site Security / 03 Inspection / 04 Mapping / 05 National Security) borrowed from technical documentation. Buttons are square-cornered (rounded 0px) — industrial rather than consumer. Reads more like a defense contractor's annual report than a consumer drone site.",
+    "primary": "#e63946",
+    "fmt": "yaml",
+    "source": "local-vertical-study",
+    "study": "experiments/drone-camera-brands-study/raw/skydio.json"
+  },
+  {
+    "brand": "antigravity",
+    "desc": "Insta360's mono-product sub-brand (影翎) for the A1 8K panoramic drone. A pure cinematic dark-mode single-product page — the entire brand exists at one URL to sell one product. Canvas is deep near-black (#000000 / #0a0a0a / #141416 elev tiers); text is white; there are NO chromatic brand accents (chroma comes from aerial photography, not the palette). Typography does the emotional lifting: hero renders '8K 全景无人机' at 88–120px display, followed by the bilingual manifesto 'THE FUTURE IS UP — 未来不在远方，而在苍穹之上' as one typographic unit. Spec numbers ('249g', '39min', '8K', '90° DFOV') render at 72–128px in weight 200 — the number IS the visual argument. Poetic-tech copy voice inspired by Apple product pages ('感受飞行，探索新境', '飞完即出片！'). Pill-shaped white CTAs on dark. Sub-brand endorsement 'by Insta360' appears exactly once, restricted to the brand-story block — never in nav, hero, or CTA. Sub-brand strategy: separate domain (antigravity.tech) + separate identity, with explicit parent-brand mention held to a single restrained line.",
+    "primary": "#ffffff",
+    "fmt": "yaml",
+    "source": "local-vertical-study",
+    "study": "experiments/drone-camera-brands-study/raw/antigravity.json"
+  },
+  {
+    "brand": "dji_global",
+    "desc": "DJI's global portfolio flagship (dji.com) — a category-defining consumer aerial-imaging platform presented as a portfolio brand rather than a single product. The canvas is deep black (#000000 / #0a0a0a) with an editorial photography-first hero (aerial footage, no product beauty shots on entry). Wordmark 'DJI' renders as a hand-tuned SVG at 96–128px in a proprietary bold geometric sans (approximate stack: Neue Haas Grotesk Display / Helvetica Neue / SF Pro Display), letter-spacing tightened to -0.02em. Chinese poetic slogans ('未来，就在眼前' / '让创造超越想象') appear at 44–56px with letter-spacing 8px between characters — a distinctive DJI typographic move borrowed from Chinese editorial typography. Portfolio surfaces three sub-brand portals (DJI Drones / Osmo Handheld / Ronin Cinema) as full-viewport tile navigation. Accent chroma is restrained sky-blue (#0079C1) reserved for CTAs and active states; product line badges (Mavic / Air / Mini / Avata) use white-on-dark chip typography. Copy voice is documentary-cinematic: creator interviews, mission stories, aerial-photography portfolios — DJI presents itself as the platform enabling creators, not as a hardware SKU catalog.",
+    "primary": "#000000",
+    "fmt": "yaml",
+    "source": "local-vertical-study",
+    "study": "experiments/drone-camera-brands-study/raw/dji_global.json"
+  },
+  {
+    "brand": "gopro",
+    "desc": "GoPro's e-commerce hero page — a high-contrast extreme-sports storefront that treats action-camera purchase as event choice, not spec comparison. Canvas is pure black (#000000) with signature GoPro yellow (#F5D000) reserved for CTAs, section eyebrows, and the wordmark. The hero features a three-camera product stack (Hero13 Black / Hero12 Black / Max) shot in cinematic hard light, headlined by an all-caps SHOUT-STYLE 128px Extra-Bold sans-serif ('BE A HERO' / 'CAPTURE EVERYTHING') set on a single line. The second scroll surface is the SHOP-BY-ACTIVITY 10-tile grid (Surf / Snow / Moto / MTB / Skate / Ski / Water / Travel / Studio / Racing) — a categorical, verb-first commerce IA that no other camera brand replicates. Below the fold lives MISSION SERIES — a membership documentary program that positions GoPro as adventure-media publisher, not hardware vendor. Typography is heavy neo-grotesque (Roobert / SF Pro Display / Aktiv Grotesk approximations) with hairline yellow underlines and mono SKU/spec labels. Motion is restrained (hero video loops, no parallax) — the visual weight sits in the type + product photography, not motion.",
+    "primary": "#000000",
+    "fmt": "yaml",
+    "source": "local-vertical-study",
+    "study": "experiments/drone-camera-brands-study/raw/gopro.json"
+  },
+  {
+    "brand": "drift",
+    "desc": "Drift Innovation (driftinnovation.com) — a UK-origin motorcycle / cycling action-camera brand transitioning to an AI-companion narrative. The canvas is pure black (#000000) with a single ultra-restrained gold accent (#B8912C) used only on eyebrow labels, editorial pull-quotes, and one CTA hover-state per page. Typography leans editorial-serif-adjacent: display headlines at 44–56px in medium weight (approximate stack: 'Editorial New' / GT Sectra / Tiempos Text) with generous 1.15 line-height, giving a print-magazine feel that no other action-camera brand attempts. The homepage architecture is a distinctive 5-slot vertical banner stack (Motorcycle Innovation / Cyclist Innovation / Ghost XL Pro / Studio / AI Companion), each banner full-viewport and stacked vertically — reads like a scroll-driven magazine table of contents rather than a product grid. The AI-companion transition narrative ('The camera that knows what you did' / 'Your ride, remembered') repositions Drift from spec-competitor with GoPro to memory-and-story workflow tool. Copy voice is quiet-confident British editorial — restrained adjectives, no exclamation marks, no all-caps shouting.",
+    "primary": "#000000",
+    "fmt": "yaml",
+    "source": "local-vertical-study",
+    "study": "experiments/drone-camera-brands-study/raw/drift.json"
+  },
+  {
+    "brand": "panox",
+    "desc": "PanoX Imaging (panoxvr.com) — a Chinese professional 360°/panoramic-camera workstation vendor (industrial VR mapping / mobile-mapping / cultural-heritage / disaster-response). Design is deep-blue (#1E5AA8) on light gray-white canvas with a distinctive dual-register typographic system: product / spec pages use industrial sans (approximate stack: Inter / IBM Plex Sans / Noto Sans SC 500), while the brand-story and milestone timeline sections switch to serif (Noto Serif SC / PT Serif Italic) for editorial gravitas — the sans/serif split explicitly marks 'technical register' vs 'narrative register'. Homepage layout is four-product parallel grid (PanoX V2 / PanoX X6 / PanoX Ultra / PanoX Underwater) presented as spec-heavy cards, followed by a 4-milestone brand-story timeline (2020 industry breakthrough / 2022 10,000-meter deep-sea dive / Chang'e Lunar VR mission / Huoshenshan Hospital emergency response) — each milestone occupies a full-width editorial band with photojournalism-grade imagery. This is B2B-professional imaging positioned as national-scale infrastructure vendor, not consumer 360° camera.",
+    "primary": "#1E5AA8",
+    "fmt": "yaml",
+    "source": "local-vertical-study",
+    "study": "experiments/drone-camera-brands-study/raw/panox.json"
+  },
+  {
+    "brand": "radiomaster",
+    "desc": "RadioMaster (radiomasterrc.com) — a mature Shopify storefront for FPV radio controllers and ExpressLRS receivers, occupying the 'confident e-commerce professional' tier of the FPV vertical. Canvas is white (#FFFFFF) with a single warning-signal red (#E60023) used strictly as accent — on primary CTAs, sale badges, section-header 4×64px underline rules, and the logo mark. The visual signature is ALL-CAPS section headers ('NEW ARRIVALS' / 'SPECIALS' / 'WHY CHOOSE US') at 40/700 with tracking 0.10em, followed by a 4px red rule of exactly 64px width — this pattern repeats verbatim across every section, forming the brand's most recognizable typographic move. Products are visually tiered (flagship TX16S MK3 MAX in double-column card / Pro / Mid / Compact / Entry T8L in single-column) so the buying ladder is visible at a glance. ELRS / M2 protocol tags render as monospace 2px-radius chips beside product names — RC-industry vernacular. A 6-panel service-icon reassurance bar (Expedited Shipping / Secure Payment / 7-Days Return / Lifetime Support / 1-Year Warranty / Reward Points) below the fold signals commercial maturity. The Gap Challenge community banner is the sole non-commercial band — RadioMaster's answer to brand storytelling.",
+    "primary": "#E60023",
+    "fmt": "yaml",
+    "source": "local-vertical-study",
+    "study": "experiments/drone-camera-brands-study/raw/radiomaster.json"
+  },
+  {
+    "brand": "iflight",
+    "desc": "iFlight (iflight.com + shop.iflight.com) — a tech-industrial FPV maker with a strategic dual-domain split: the brand site tells stories, the shop site handles transactions, and every product hero exposes both entrypoints via a Learn More / Buy Now ↗ paired CTA. Canvas is near-black GitHub-dark territory (#0D1117) with a single laboratory-cyan (#00B0FF) accent used at ≤5% screen coverage on CTAs, section eyebrows, active navigation states, and spec-label overlines. Depth is expressed through cyan glow (box-shadow with rgba(0,176,255) halo) rather than shadow, giving the hover interactions an oscilloscope-terminal feel. Typography pairs Titillium Web (ESA-funded aerospace sans) for headlines with JetBrains Mono for spec numbers, SKUs, and voltage/frequency labels — a deliberate engineering-vernacular signal. The homepage IA branches into a Three-Domain Portal (Cinematic FPV / FPV Racing / Education), each domain becoming a mini-landing page with its own product edit and accent-color tag (cyan default / violet Cinewhoop / green Longrange / amber 2Raw / orange Racing). The tagline 'Where dreams can fly' renders in italic serif light-weight — the one poetic-warm exception in an otherwise-cold industrial system.",
+    "primary": "#00B0FF",
+    "fmt": "yaml",
+    "source": "local-vertical-study",
+    "study": "experiments/drone-camera-brands-study/raw/iflight.json"
+  },
+  {
+    "brand": "flywoo",
+    "desc": "Flywoo (flywoo.net) — a Shopline-hosted tinywhoop / micro-FPV brand whose visual language sits between iFlight's cold industrial and RadioMaster's mature commerce: warm sunset-orange (#F5A623) accent on off-white (#FDFBF7 body) with 12px-radius medium-soft cards that read as 'lifestyle-tech consumer', not FPV-hobbyist commodity. The product spine is the Firefly family (Firefly 16 / 18 / 20Pro / 25Mini) — a deliberate iPhone-Mini/Pro/Max style naming architecture that no other tinywhoop maker maintains, letting buyers read the size ladder at a glance. Every product card displays rating stars + review count as first-class social proof (a break from iFlight's spec-only cards). Prices show explicit currency suffix ('¥1,699.23 CNY' / '$249.99 USD') acknowledging Flywoo's cross-border Chinese-outbound e-commerce reality. The signature copy voice is poetic-tech — always one technical fact plus one lyrical clause: 'One Digital VTX. Two flight experiences.' or 'Beyond O4 Lite's Vision Limits.' — rendered in Playfair Display italic 32px in the poetic slot, contrasted with Inter sans body. A dedicated 'Naked GoPro GP13' black-chip sub-line acknowledges the FPV-community practice of stripping GoPro Hero cases for micro-mounting. Trust icons are 4 (not RadioMaster's 6), Shopline platform chrome (cart drawer, wishlist heart, payment logos) is allowed but not treated as brand IP.",
+    "primary": "#F5A623",
+    "fmt": "yaml",
+    "source": "local-vertical-study",
+    "study": "experiments/drone-camera-brands-study/raw/flywoo.json"
   }
 ]
