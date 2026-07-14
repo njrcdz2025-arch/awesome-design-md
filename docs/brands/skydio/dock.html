@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Dock for X10 — a remote base station that houses, charges, and dispatches an X10 on demand. Scheduled autonomous patrols or on-call alarm response, 24/7." />
+<title>Dock for X10 · Skydio</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/style.css" />
+</head>
+
+<body>
+
+<!-- ================= NAV ================= -->
+<nav class="nav-shell">
+  <div class="container-x nav-inner">
+    <div class="nav-left">
+      <a href="index.html" class="brand-mark">SKYDIO<span class="pd">.</span></a>
+      <div class="nav-links">
+        <a href="products.html" class="active">Products</a>
+        <a href="index.html#software">Software</a>
+        <a href="index.html#customers">Customers</a>
+        <a href="contact.html#support">Support</a>
+      </div>
+    </div>
+    <div class="nav-right">
+      <div class="nav-clock body-tabular">
+        <span class="live-dot"></span>
+        <span id="nav-clock">00:00:00 UTC</span>
+      </div>
+      <a href="contact.html" class="btn-buy">Buy <span aria-hidden="true">→</span></a>
+    </div>
+  </div>
+</nav>
+
+<!-- ================= HERO (DARK) ================= -->
+<header style="background:var(--canvas-slate); color:var(--on-ink); padding-top:160px; padding-bottom:96px;">
+  <div class="container-x">
+    <div class="flex items-center gap-4 mb-8">
+      <span class="counter-num num-red">SKYDIO / DOCK</span>
+      <span class="hairline-on-dark" style="flex:1; max-width:96px;"></span>
+      <span class="eyebrow" style="color:var(--hairline-strong);">AUTONOMY INFRASTRUCTURE · 344 ONLINE</span>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-end">
+      <div class="lg:col-span-7">
+        <h1 class="display-mega" style="max-width:900px;">
+          Dock for X10<span class="pd">.</span>
+        </h1>
+        <p class="body-lg mt-10" style="color:var(--hairline-strong); max-width:560px;">
+          A remote base station that houses, charges, and dispatches an X10
+          on demand. Scheduled autonomous patrols or alarm-triggered response —
+          24/7, no pilot on site.
+        </p>
+        <div class="mt-10 flex flex-wrap gap-4">
+          <a href="contact.html" class="btn-buy">Request site survey <span aria-hidden="true">→</span></a>
+          <a href="contact.html#support" class="btn-on-dark">Talk to a solutions engineer</a>
+        </div>
+      </div>
+
+      <div class="lg:col-span-5">
+        <div class="photo photo-grad-dock" style="aspect-ratio: 4/3;">
+          <span class="photo-hero-badge"><span class="live-dot"></span> DOCK-01 · ARMED · UTC <span id="hero-clock">00:00:00</span></span>
+        </div>
+        <div class="mt-4 grid grid-cols-3 gap-4">
+          <div>
+            <div class="eyebrow" style="color:var(--hairline-strong);">COVERAGE</div>
+            <div class="body-tabular mt-1" style="font-size:22px; letter-spacing:-0.4px;">400 ac</div>
+          </div>
+          <div>
+            <div class="eyebrow" style="color:var(--hairline-strong);">OP RANGE</div>
+            <div class="body-tabular mt-1" style="font-size:22px; letter-spacing:-0.4px;">-20°→+50°</div>
+          </div>
+          <div>
+            <div class="eyebrow" style="color:var(--hairline-strong);">INGRESS</div>
+            <div class="body-tabular mt-1" style="font-size:22px; letter-spacing:-0.4px;">IP55</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Breadcrumb -->
+    <div class="mt-16 hairline-on-dark"></div>
+    <div class="mt-6 flex items-center gap-3 body-tabular" style="color:var(--hairline-strong);">
+      <a href="index.html" style="color:var(--hairline-strong); text-decoration:none;">SKYDIO</a>
+      <span class="num-red">/</span>
+      <a href="products.html" style="color:var(--hairline-strong); text-decoration:none;">PRODUCTS</a>
+      <span class="num-red">/</span>
+      <span style="color:var(--on-ink);">DOCK FOR X10</span>
+    </div>
+  </div>
+</header>
+
+<!-- ================= 01 OVERVIEW ================= -->
+<section id="overview" style="padding-top:128px; padding-bottom:96px;">
+  <div class="container-x">
+    <div class="section-open">
+      <div class="eyebrow-line">
+        <span class="counter-num section-counter">01</span>
+        <span class="eyebrow" style="color:var(--ink-mute);">WHAT IT IS</span>
+      </div>
+      <h2 class="display-xl" style="max-width:1000px;">
+        A drone that never leaves the site<span class="pd">.</span>
+      </h2>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
+      <div class="lg:col-span-7">
+        <p class="body-lg" style="color:var(--ink-secondary); margin-bottom:24px;">
+          The Dock lives outside — on a rooftop, at a substation, above a
+          construction gate — with an X10 already inside. When a mission
+          triggers, the door opens, the drone lifts, the mission runs, and
+          the aircraft returns and re-charges. Human input: zero.
+        </p>
+        <p class="body-md" style="color:var(--ink-secondary); margin-bottom:24px;">
+          Triggers come from three surfaces: <b>scheduled</b> (patrol every 6 hours),
+          <b>event-driven</b> (a Genetec / Milestone camera alarm, a Skydio VMS
+          rule), or <b>manual</b> (a duty officer clicks "launch" from mission control).
+          The drone is airborne within 40 seconds.
+        </p>
+        <p class="body-md" style="color:var(--ink-secondary);">
+          One dock covers roughly 400 acres — a substation, a data-center campus,
+          a rail yard, or a small municipality. Chain multiple docks together
+          for continuous coverage of larger footprints.
+        </p>
+      </div>
+
+      <div class="lg:col-span-5">
+        <div style="border:1px solid var(--hairline); padding:32px;">
+          <div class="eyebrow mb-6" style="color:var(--ink-mute);">AT A GLANCE</div>
+          <div class="stat-row">
+            <span class="body-md stat-key">Category</span>
+            <span class="body-tabular stat-val">Autonomy dock</span>
+          </div>
+          <div class="stat-row">
+            <span class="body-md stat-key">Coverage</span>
+            <span class="body-tabular stat-val">~400 acres</span>
+          </div>
+          <div class="stat-row">
+            <span class="body-md stat-key">Time to airborne</span>
+            <span class="body-tabular stat-val">40 s</span>
+          </div>
+          <div class="stat-row">
+            <span class="body-md stat-key">Connectivity</span>
+            <span class="body-tabular stat-val">LTE · Ethernet</span>
+          </div>
+          <div class="stat-row">
+            <span class="body-md stat-key">Housed aircraft</span>
+            <span class="body-tabular stat-val">1× Skydio X10</span>
+          </div>
+          <div class="stat-row">
+            <span class="body-md stat-key">Compliance</span>
+            <span class="body-tabular stat-val num-red">NDAA · Blue UAS 2.0</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 02 SPECS ================= -->
+<section id="specs" style="background:var(--canvas-soft); padding-top:128px; padding-bottom:128px;">
+  <div class="container-x">
+    <div class="section-open">
+      <div class="eyebrow-line">
+        <span class="counter-num section-counter">02</span>
+        <span class="eyebrow" style="color:var(--ink-mute);">TECHNICAL SPECIFICATIONS</span>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-end">
+        <div class="md:col-span-8">
+          <h2 class="display-xl">Engineered for the roof<span class="pd">.</span></h2>
+        </div>
+        <div class="md:col-span-4 text-right">
+          <div class="body-tabular" style="color:var(--ink-mute);">Datasheet · v2.7 · 2026-Q1</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+
+      <div>
+        <h3 class="heading-lg mb-6"><span class="counter-num num-red">A.</span> Enclosure<span class="pd">.</span></h3>
+        <div class="spec-table">
+          <div><span class="k">Footprint</span><span class="v"><span class="mono">1.4 × 1.4 m</span> · <span class="mono">1.1 m</span> tall</span></div>
+          <div><span class="k">Weight</span><span class="v"><span class="mono">115 kg</span> · single-crane install</span></div>
+          <div><span class="k">Ingress</span><span class="v"><span class="mono">IP55</span> · roof-rated</span></div>
+          <div><span class="k">Operating temp</span><span class="v"><span class="mono">-20°C</span> → <span class="mono">+50°C</span></span></div>
+          <div><span class="k">Wind rating</span><span class="v"><span class="mono">115 mph</span> secured · door <span class="mono">27 kt</span></span></div>
+          <div><span class="k">Assembly</span><span class="v">San Mateo, CA · <span class="num-red">Made in USA</span></span></div>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="heading-lg mb-6"><span class="counter-num num-red">B.</span> Operations<span class="pd">.</span></h3>
+        <div class="spec-table">
+          <div><span class="k">Housed aircraft</span><span class="v">1× Skydio X10</span></div>
+          <div><span class="k">Turnaround</span><span class="v"><span class="mono">40 s</span> door → airborne</span></div>
+          <div><span class="k">Recharge</span><span class="v"><span class="mono">35 min</span> to 100%</span></div>
+          <div><span class="k">Coverage</span><span class="v"><span class="mono">~400 acres</span> per dock</span></div>
+          <div><span class="k">Trigger surfaces</span><span class="v">Schedule · alarm · manual</span></div>
+          <div><span class="k">VMS integrations</span><span class="v">Genetec · Milestone · Skydio</span></div>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="heading-lg mb-6"><span class="counter-num num-red">C.</span> Connectivity<span class="pd">.</span></h3>
+        <div class="spec-table">
+          <div><span class="k">Uplink</span><span class="v">LTE-M · CAT-4 · CAT-12</span></div>
+          <div><span class="k">Backhaul</span><span class="v">Gigabit Ethernet</span></div>
+          <div><span class="k">Cellular fallback</span><span class="v">Dual-SIM · redundant carrier</span></div>
+          <div><span class="k">Radio to X10</span><span class="v">Encrypted mesh · 1.8 GHz</span></div>
+          <div><span class="k">Latency</span><span class="v"><span class="mono">&lt; 900 ms</span> end-to-end video</span></div>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="heading-lg mb-6"><span class="counter-num num-red">D.</span> Security & Compliance<span class="pd">.</span></h3>
+        <div class="spec-table">
+          <div><span class="k">Data at rest</span><span class="v">AES-256</span></div>
+          <div><span class="k">Data in flight</span><span class="v">TLS 1.3</span></div>
+          <div><span class="k">Key management</span><span class="v">Customer-owned</span></div>
+          <div><span class="k">Certifications</span><span class="v num-red">NDAA · Blue UAS 2.0 · SOC 2 Type II</span></div>
+          <div><span class="k">Country of origin</span><span class="v">United States</span></div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="mt-16 flex flex-wrap gap-4 items-center">
+      <a href="contact.html" class="btn-primary">Request full datasheet <span aria-hidden="true">→</span></a>
+      <span class="body-tabular" style="color:var(--ink-mute);">Site survey included with pilot deployments</span>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 03 USE CASES ================= -->
+<section id="use-cases" style="padding-top:128px; padding-bottom:128px;">
+  <div class="container-x">
+    <div class="section-open">
+      <div class="eyebrow-line">
+        <span class="counter-num section-counter">03</span>
+        <span class="eyebrow" style="color:var(--ink-mute);">MISSION PROFILES</span>
+      </div>
+      <h2 class="display-xl" style="max-width:1000px;">
+        What lives on the other end of a Dock<span class="pd">.</span>
+      </h2>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <article class="card-solution">
+        <div class="flex items-center justify-between">
+          <span class="counter-num section-counter">D.01</span>
+          <span class="eyebrow" style="color:var(--ink-mute);">PUBLIC SAFETY</span>
+        </div>
+        <h3 class="heading-lg">Rooftop DFR<span class="pd">.</span></h3>
+        <p class="body-md" style="color:var(--ink-secondary);">
+          A dock on the roof of every precinct. Every 911 call becomes a
+          launch trigger. Officers arrive with a live overhead view already
+          on their dashboard.
+        </p>
+        <div class="stat-row" style="padding:12px 0;">
+          <span class="body-tabular stat-key">Response Δ</span>
+          <span class="body-tabular stat-val">-78 s / call</span>
+        </div>
+      </article>
+
+      <article class="card-solution">
+        <div class="flex items-center justify-between">
+          <span class="counter-num section-counter">D.02</span>
+          <span class="eyebrow" style="color:var(--ink-mute);">SITE SECURITY</span>
+        </div>
+        <h3 class="heading-lg">Perimeter response<span class="pd">.</span></h3>
+        <p class="body-md" style="color:var(--ink-secondary);">
+          Alarm at the north fence line? The dock launches, X10 flies to
+          the alarm, streams live to the guard station, and lands. No pilot,
+          no delay.
+        </p>
+        <div class="stat-row" style="padding:12px 0;">
+          <span class="body-tabular stat-key">Alarm → airborne</span>
+          <span class="body-tabular stat-val">40 s</span>
+        </div>
+      </article>
+
+      <article class="card-solution">
+        <div class="flex items-center justify-between">
+          <span class="counter-num section-counter">D.03</span>
+          <span class="eyebrow" style="color:var(--ink-mute);">UTILITIES</span>
+        </div>
+        <h3 class="heading-lg">Substation patrol<span class="pd">.</span></h3>
+        <p class="body-md" style="color:var(--ink-secondary);">
+          Every 6 hours, the dock launches an inspection pass over the yard.
+          Any anomaly — thermal, geometry, presence — flags to the reliability
+          team automatically.
+        </p>
+        <div class="stat-row" style="padding:12px 0;">
+          <span class="body-tabular stat-key">Cadence</span>
+          <span class="body-tabular stat-val">4×/day · scheduled</span>
+        </div>
+      </article>
+
+      <article class="card-solution">
+        <div class="flex items-center justify-between">
+          <span class="counter-num section-counter">D.04</span>
+          <span class="eyebrow" style="color:var(--ink-mute);">CONSTRUCTION</span>
+        </div>
+        <h3 class="heading-lg">Site progression scan<span class="pd">.</span></h3>
+        <p class="body-md" style="color:var(--ink-secondary);">
+          Weekly 3D scan of the entire site from the same dock, same flight
+          path, same GSD. Progress diffed against last week's model,
+          automatically.
+        </p>
+        <div class="stat-row" style="padding:12px 0;">
+          <span class="body-tabular stat-key">Repeatability</span>
+          <span class="body-tabular stat-val">±1.2 cm GSD</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= MANIFESTO BAND ================= -->
+<section class="manifesto-band">
+  <div class="container-x text-center">
+    <div class="eyebrow num-red mb-6">ALWAYS ON</div>
+    <h2 class="display-xxl" style="max-width:1000px; margin:0 auto;">
+      A drone at every site<span class="pd">.</span> Always ready<span class="pd">.</span>
+    </h2>
+    <p class="body-lg mt-8" style="max-width:640px; margin:0 auto; color:var(--hairline-strong);">
+      One dock. One aircraft. One integration path — into your existing
+      alarms, your existing radios, your existing operations.
+    </p>
+  </div>
+</section>
+
+<!-- ================= 04 RELATED PRODUCTS ================= -->
+<section id="related" style="padding-top:128px; padding-bottom:128px;">
+  <div class="container-x">
+    <div class="section-open">
+      <div class="eyebrow-line">
+        <span class="counter-num section-counter">04</span>
+        <span class="eyebrow" style="color:var(--ink-mute);">RELATED PRODUCTS</span>
+      </div>
+      <h2 class="display-xl" style="max-width:1000px;">
+        Complete the loop<span class="pd">.</span>
+      </h2>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <article class="card-product-hero">
+        <div class="photo photo-grad-x10" style="aspect-ratio: 16/9;">
+          <span class="photo-hero-badge"><span class="live-dot"></span> X10 · AIRBORNE</span>
+        </div>
+        <div>
+          <div class="flex items-baseline justify-between mb-3">
+            <span class="counter-num num-red">X10</span>
+            <span class="eyebrow" style="color:var(--hairline-strong);">FLAGSHIP AIRCRAFT</span>
+          </div>
+          <h3 class="heading-lg">Skydio X10<span class="pd">.</span></h3>
+          <p class="body-md mt-3 prod-body">
+            The aircraft that lives inside the Dock. Modular payload,
+            NVIDIA Jetson compute, 40-minute endurance.
+          </p>
+          <div class="mt-6 pt-6" style="border-top:1px solid rgba(255,255,255,0.15);">
+            <a href="x10.html" class="btn-on-dark">Explore X10 <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card-product-hero">
+        <div class="photo" style="aspect-ratio: 16/9; background: linear-gradient(135deg,#1c1c1c 0%,#111214 100%);">
+          <span class="photo-hero-badge">SW · v3.14</span>
+        </div>
+        <div>
+          <div class="flex items-baseline justify-between mb-3">
+            <span class="counter-num num-red">SW</span>
+            <span class="eyebrow" style="color:var(--hairline-strong);">PLATFORM</span>
+          </div>
+          <h3 class="heading-lg">Skydio Software<span class="pd">.</span></h3>
+          <p class="body-md mt-3 prod-body">
+            Mission control, fleet management, and VMS integrations —
+            the surface every Dock connects into.
+          </p>
+          <div class="mt-6 pt-6" style="border-top:1px solid rgba(255,255,255,0.15);">
+            <a href="index.html#software" class="btn-on-dark">Software tour <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <div class="mt-16 flex flex-wrap gap-4 items-center">
+      <a href="products.html" class="btn-primary">See full product line <span aria-hidden="true">→</span></a>
+      <a href="contact.html" class="link-arrow body-md">Contact sales <span class="arrow" aria-hidden="true">→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer-shell">
+  <div class="container-x">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-10 mb-16">
+      <div class="col-span-2 brand-block">
+        <div class="brand-mark">SKYDIO<span class="pd">.</span></div>
+        <p class="body-md mt-4" style="max-width:280px;">
+          American-made autonomous drones for public-safety, infrastructure,
+          and defense missions.
+        </p>
+        <div class="mt-6 flex items-center gap-3 body-tabular" style="color:var(--hairline-strong);">
+          <span class="live-dot"></span>
+          <span id="footer-clock">00:00:00 UTC · 2026.01.01</span>
+        </div>
+      </div>
+      <div>
+        <div class="eyebrow mb-4 col-eyebrow">PRODUCTS</div>
+        <ul class="space-y-3 body-md" style="list-style:none; padding:0; margin:0;">
+          <li><a href="x10.html">Skydio X10</a></li>
+          <li><a href="products.html#x2">Skydio X2</a></li>
+          <li><a href="products.html#skydio2plus">Skydio 2+</a></li>
+          <li><a href="dock.html">Dock for X10</a></li>
+          <li><a href="index.html#software">Software Platform</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="eyebrow mb-4 col-eyebrow">COMPANY</div>
+        <ul class="space-y-3 body-md" style="list-style:none; padding:0; margin:0;">
+          <li><a href="index.html#customers">Customers</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html#support">Support</a></li>
+          <li><a href="contact.html#offices">Regional offices</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="hairline-on-dark"></div>
+    <div class="mt-8 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+      <p class="micro" style="color:var(--ink-mute-2);">
+        © 2026 Skydio Inc. Autonomous flight, engineered.
+      </p>
+      <div class="flex items-center gap-6 micro" style="color:var(--ink-mute-2);">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Security</a>
+        <a href="#">DPA</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/live.js"></script>
+</body>
+</html>

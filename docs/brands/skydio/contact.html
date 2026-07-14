@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Contact Skydio — sales inquiry, regional offices, and support tiers. Talk to a solutions engineer about your program." />
+<title>Contact · Skydio</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/style.css" />
+</head>
+
+<body>
+
+<!-- ================= NAV ================= -->
+<nav class="nav-shell">
+  <div class="container-x nav-inner">
+    <div class="nav-left">
+      <a href="index.html" class="brand-mark">SKYDIO<span class="pd">.</span></a>
+      <div class="nav-links">
+        <a href="products.html">Products</a>
+        <a href="index.html#software">Software</a>
+        <a href="index.html#customers">Customers</a>
+        <a href="contact.html#support" class="active">Support</a>
+      </div>
+    </div>
+    <div class="nav-right">
+      <div class="nav-clock body-tabular">
+        <span class="live-dot"></span>
+        <span id="nav-clock">00:00:00 UTC</span>
+      </div>
+      <a href="contact.html" class="btn-buy">Buy <span aria-hidden="true">→</span></a>
+    </div>
+  </div>
+</nav>
+
+<!-- ================= HERO ================= -->
+<header style="padding-top:160px; padding-bottom:96px;">
+  <div class="container-x">
+    <div class="flex items-center gap-4 mb-8">
+      <span class="counter-num num-red">SKYDIO / CONTACT</span>
+      <span class="hairline-x flex-1" style="max-width:96px;"></span>
+      <span class="eyebrow" style="color:var(--ink-mute);">SALES · SUPPORT · OFFICES</span>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-end">
+      <div class="lg:col-span-8">
+        <h1 class="display-mega" style="max-width:900px;">
+          Talk to sales<span class="pd">.</span>
+        </h1>
+        <p class="body-lg mt-10" style="color:var(--ink-secondary); max-width:560px;">
+          Tell us about the mission and we'll show you how a Skydio program
+          lands in the field. Public-safety, infrastructure, defense, or
+          enterprise — we're built for it.
+        </p>
+      </div>
+
+      <div class="lg:col-span-4">
+        <div style="border:1px solid var(--hairline); padding:24px;">
+          <div class="eyebrow mb-4" style="color:var(--ink-mute);">SALES · REAL-TIME</div>
+          <div class="body-tabular flex items-center gap-2"><span class="live-dot"></span> Solutions engineers online</div>
+          <div class="mt-4 body-md" style="color:var(--ink-mute);">Median response · <span class="body-tabular num-red">under 4 hours</span> business day.</div>
+          <div class="mt-4 body-tabular" style="color:var(--ink-mute);">UTC <span id="hero-clock">00:00:00</span> · <span id="hero-date">2026.01.01</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ================= 01 SALES INQUIRY ================= -->
+<section id="inquiry" style="background:var(--canvas-soft); padding-top:96px; padding-bottom:128px;">
+  <div class="container-x">
+    <div class="section-open">
+      <div class="eyebrow-line">
+        <span class="counter-num section-counter">01</span>
+        <span class="eyebrow" style="color:var(--ink-mute);">SALES INQUIRY</span>
+      </div>
+      <h2 class="display-xl" style="max-width:1000px;">
+        Start with the mission<span class="pd">.</span>
+      </h2>
+      <p class="body-lg" style="color:var(--ink-secondary); max-width:640px;">
+        We route your inquiry to the solutions engineer who owns your vertical.
+        No form-fill purgatory.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
+
+      <!-- Form -->
+      <div class="lg:col-span-7">
+        <form onsubmit="event.preventDefault(); document.getElementById('form-status').textContent='Submitted. A solutions engineer will reach out within one business day.';" style="background:var(--canvas); border:1px solid var(--hairline); padding:40px;">
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="field">
+              <label for="f-first">First name</label>
+              <input id="f-first" name="first" type="text" placeholder="Jane" required />
+            </div>
+            <div class="field">
+              <label for="f-last">Last name</label>
+              <input id="f-last" name="last" type="text" placeholder="Doe" required />
+            </div>
+            <div class="field">
+              <label for="f-email">Work email</label>
+              <input id="f-email" name="email" type="email" placeholder="jane.doe@agency.gov" required />
+            </div>
+            <div class="field">
+              <label for="f-phone">Phone</label>
+              <input id="f-phone" name="phone" type="tel" placeholder="+1 555 555 5555" />
+            </div>
+            <div class="field">
+              <label for="f-org">Organization</label>
+              <input id="f-org" name="org" type="text" placeholder="Chula Vista PD" required />
+            </div>
+            <div class="field">
+              <label for="f-vertical">Vertical</label>
+              <select id="f-vertical" name="vertical">
+                <option>Public safety · DFR</option>
+                <option>Utilities · transmission</option>
+                <option>Utilities · gas / pipeline</option>
+                <option>Rail / transport</option>
+                <option>Defense / federal</option>
+                <option>Site security / enterprise</option>
+                <option>Construction / mapping</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="field md:col-span-2">
+              <label for="f-interest">Products of interest</label>
+              <select id="f-interest" name="interest">
+                <option>Skydio X10</option>
+                <option>Dock for X10</option>
+                <option>X10 + Dock (bundled)</option>
+                <option>Skydio X2 (legacy)</option>
+                <option>Software platform only</option>
+                <option>Not sure — recommend for me</option>
+              </select>
+            </div>
+            <div class="field md:col-span-2">
+              <label for="f-msg">Mission brief</label>
+              <textarea id="f-msg" name="msg" placeholder="Coverage area, existing systems, timeline, procurement path…"></textarea>
+              <span class="hint">Include NDAA / Blue UAS 2.0 requirements if applicable.</span>
+            </div>
+          </div>
+
+          <div class="mt-8 flex flex-wrap gap-4 items-center">
+            <button type="submit" class="btn-primary">Submit inquiry <span aria-hidden="true">→</span></button>
+            <span id="form-status" class="body-tabular" style="color:var(--ink-mute);"></span>
+          </div>
+          <p class="micro mt-6" style="color:var(--ink-mute-2);">
+            By submitting, you agree to Skydio's privacy policy. We do not sell
+            or share your contact information.
+          </p>
+        </form>
+      </div>
+
+      <!-- Fast lane sidebar -->
+      <div class="lg:col-span-5">
+        <div style="background:var(--canvas); border:1px solid var(--hairline); padding:32px;">
+          <div class="eyebrow mb-4" style="color:var(--ink-mute);">FAST LANE</div>
+          <h3 class="heading-lg mb-4">Already know what you need<span class="pd">?</span></h3>
+          <div class="space-y-3 mt-6">
+            <div class="stat-row">
+              <span class="body-md stat-key">Federal / defense</span>
+              <span class="body-tabular stat-val">gov-sales@skydio.example</span>
+            </div>
+            <div class="stat-row">
+              <span class="body-md stat-key">Public safety</span>
+              <span class="body-tabular stat-val">dfr@skydio.example</span>
+            </div>
+            <div class="stat-row">
+              <span class="body-md stat-key">Utilities / infra</span>
+              <span class="body-tabular stat-val">infra@skydio.example</span>
+            </div>
+            <div class="stat-row">
+              <span class="body-md stat-key">Enterprise</span>
+              <span class="body-tabular stat-val">enterprise@skydio.example</span>
+            </div>
+            <div class="stat-row">
+              <span class="body-md stat-key">Press</span>
+              <span class="body-tabular stat-val">press@skydio.example</span>
+            </div>
+          </div>
+          <div class="mt-8">
+            <a href="products.html" class="link-arrow body-md">Compare products first <span class="arrow" aria-hidden="true">→</span></a>
+          </div>
+        </div>
+
+        <div class="mt-6" style="background:var(--canvas); border:1px solid var(--hairline); padding:32px;">
+          <div class="eyebrow mb-4" style="color:var(--ink-mute);">NOTE</div>
+          <p class="body-md" style="color:var(--ink-secondary);">
+            Sales for defense and federal programs require verified organizational
+            email. Personal address submissions will be routed to public safety
+            by default.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 02 REGIONAL OFFICES ================= -->
+<section id="offices" style="padding-top:128px; padding-bottom:128px;">
+  <div class="container-x">
+    <div class="section-open">
+      <div class="eyebrow-line">
+        <span class="counter-num section-counter">02</span>
+        <span class="eyebrow" style="color:var(--ink-mute);">REGIONAL OFFICES</span>
+      </div>
+      <h2 class="display-xl" style="max-width:1000px;">
+        Where we operate<span class="pd">.</span>
+      </h2>
+      <p class="body-lg" style="color:var(--ink-secondary); max-width:640px;">
+        Sales, service, and solutions engineering — closer to your program.
+        International engagements route through our HQ.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <article class="card-solution">
+        <div class="flex items-center justify-between">
+          <span class="counter-num section-counter">HQ</span>
+          <span class="eyebrow" style="color:var(--ink-mute);">HEADQUARTERS</span>
+        </div>
+        <h3 class="heading-lg">San Mateo, CA<span class="pd">.</span></h3>
+        <p class="body-md" style="color:var(--ink-secondary);">
+          Engineering, manufacturing, and executive team. Home of the X10 and
+          Dock production line.
+        </p>
+        <div class="mt-4 body-tabular" style="color:var(--ink-mute);">37.5630° N, 122.3255° W</div>
+        <div class="body-tabular" style="color:var(--ink-mute);">Local time UTC-7 · staffed 07:00–19:00 PT</div>
+      </article>
+
+      <article class="card-solution">
+        <div class="flex items-center justify-between">
+          <span class="counter-num section-counter">O.01</span>
+          <span class="eyebrow" style="color:var(--ink-mute);">EAST COAST</span>
+        </div>
+        <h3 class="heading-lg">Washington, DC<span class="pd">.</span></h3>
+        <p class="body-md" style="color:var(--ink-secondary);">
+          Federal and defense engagements. Blue UAS program office liaison
+          and government sales.
+        </p>
+        <div class="mt-4 body-tabular" style="color:var(--ink-mute);">38.9072° N, 77.0369° W</div>
+        <div class="body-tabular" style="color:var(--ink-mute);">Local time UTC-4 · staffed 08:00–18:00 ET</div>
+      </article>
+
+      <article class="card-solution">
+        <div class="flex items-center justify-between">
+          <span class="counter-num section-counter">O.02</span>
+          <span class="eyebrow" style="color:var(--ink-mute);">EMEA</span>
+        </div>
+        <h3 class="heading-lg">Bonn, Germany<span class="pd">.</span></h3>
+        <p class="body-md" style="color:var(--ink-secondary);">
+          European support, NATO liaison, and CE-market compliance for
+          public-safety deployments.
+        </p>
+        <div class="mt-4 body-tabular" style="color:var(--ink-mute);">50.7374° N, 7.0982° E</div>
+        <div class="body-tabular" style="color:var(--ink-mute);">Local time UTC+1 · staffed 09:00–18:00 CET</div>
+      </article>
+
+      <article class="card-solution">
+        <div class="flex items-center justify-between">
+          <span class="counter-num section-counter">O.03</span>
+          <span class="eyebrow" style="color:var(--ink-mute);">APAC</span>
+        </div>
+        <h3 class="heading-lg">Tokyo, Japan<span class="pd">.</span></h3>
+        <p class="body-md" style="color:var(--ink-secondary);">
+          Japan and allied APAC deployments. Coordination with regional
+          NDAA-compliant integrators.
+        </p>
+        <div class="mt-4 body-tabular" style="color:var(--ink-mute);">35.6762° N, 139.6503° E</div>
+        <div class="body-tabular" style="color:var(--ink-mute);">Local time UTC+9 · staffed 09:00–18:00 JST</div>
+      </article>
+
+      <article class="card-solution">
+        <div class="flex items-center justify-between">
+          <span class="counter-num section-counter">O.04</span>
+          <span class="eyebrow" style="color:var(--ink-mute);">MIDWEST</span>
+        </div>
+        <h3 class="heading-lg">Denver, CO<span class="pd">.</span></h3>
+        <p class="body-md" style="color:var(--ink-secondary);">
+          Utility and rail sector engagements. Field service and training
+          hub for continental customers.
+        </p>
+        <div class="mt-4 body-tabular" style="color:var(--ink-mute);">39.7392° N, 104.9903° W</div>
+        <div class="body-tabular" style="color:var(--ink-mute);">Local time UTC-6 · staffed 07:00–18:00 MT</div>
+      </article>
+
+      <article class="card-solution">
+        <div class="flex items-center justify-between">
+          <span class="counter-num section-counter">O.05</span>
+          <span class="eyebrow" style="color:var(--ink-mute);">AUS / NZ</span>
+        </div>
+        <h3 class="heading-lg">Canberra, Australia<span class="pd">.</span></h3>
+        <p class="body-md" style="color:var(--ink-secondary);">
+          Australian Defence Force and law-enforcement engagements. AU / NZ
+          public-safety programs.
+        </p>
+        <div class="mt-4 body-tabular" style="color:var(--ink-mute);">35.2809° S, 149.1300° E</div>
+        <div class="body-tabular" style="color:var(--ink-mute);">Local time UTC+10 · staffed 08:00–17:00 AEST</div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= 03 SUPPORT TIERS ================= -->
+<section id="support" style="background:var(--canvas-slate); color:var(--on-ink); padding-top:128px; padding-bottom:128px;">
+  <div class="container-x">
+    <div class="section-open">
+      <div class="eyebrow-line">
+        <span class="counter-num num-red">03</span>
+        <span class="hairline-on-dark" style="width:64px;"></span>
+        <span class="eyebrow" style="color:var(--hairline-strong);">SUPPORT TIERS</span>
+      </div>
+      <h2 class="display-xl" style="max-width:1000px;">
+        Support that keeps aircraft in the air<span class="pd">.</span>
+      </h2>
+      <p class="body-lg" style="color:var(--hairline-strong); max-width:640px;">
+        Every Skydio customer starts on Standard. Programs with 24/7 operational
+        requirements move to Mission Assurance or Federal.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+      <article style="background:var(--canvas); color:var(--ink); padding:40px; border-radius:4px;">
+        <div class="flex items-baseline justify-between mb-6">
+          <span class="counter-num num-red">T.01</span>
+          <span class="eyebrow" style="color:var(--ink-mute);">STANDARD</span>
+        </div>
+        <h3 class="heading-lg">Standard<span class="pd">.</span></h3>
+        <p class="body-md mt-4" style="color:var(--ink-secondary);">
+          Included with every X10 and Dock. Business-hours response, software
+          updates, and self-service knowledge base.
+        </p>
+        <div class="mt-6" style="border-top:1px solid var(--hairline); padding-top:16px;">
+          <div class="stat-row" style="padding:12px 0;"><span class="body-tabular stat-key">Response SLA</span><span class="body-tabular stat-val">1 business day</span></div>
+          <div class="stat-row" style="padding:12px 0;"><span class="body-tabular stat-key">Coverage</span><span class="body-tabular stat-val">M-F · 09:00–18:00 local</span></div>
+          <div class="stat-row" style="padding:12px 0;"><span class="body-tabular stat-key">Software updates</span><span class="body-tabular stat-val">Included</span></div>
+          <div class="stat-row" style="padding:12px 0;"><span class="body-tabular stat-key">Included with</span><span class="body-tabular stat-val">All hardware</span></div>
+        </div>
+      </article>
+
+      <article style="background:var(--canvas); color:var(--ink); padding:40px; border-radius:4px; border:2px solid var(--primary);">
+        <div class="flex items-baseline justify-between mb-6">
+          <span class="counter-num num-red">T.02</span>
+          <span class="eyebrow num-red">MISSION ASSURANCE</span>
+        </div>
+        <h3 class="heading-lg">Mission Assurance<span class="pd">.</span></h3>
+        <p class="body-md mt-4" style="color:var(--ink-secondary);">
+          For DFR and 24/7 site-security programs. 1-hour on-call response,
+          advance replacement, and annual on-site training.
+        </p>
+        <div class="mt-6" style="border-top:1px solid var(--hairline); padding-top:16px;">
+          <div class="stat-row" style="padding:12px 0;"><span class="body-tabular stat-key">Response SLA</span><span class="body-tabular stat-val num-red">1 hour · 24/7</span></div>
+          <div class="stat-row" style="padding:12px 0;"><span class="body-tabular stat-key">Coverage</span><span class="body-tabular stat-val">24 × 7 × 365</span></div>
+          <div class="stat-row" style="padding:12px 0;"><span class="body-tabular stat-key">Advance replacement</span><span class="body-tabular stat-val">48 h to site</span></div>
+          <div class="stat-row" style="padding:12px 0;"><span class="body-tabular stat-key">On-site training</span><span class="body-tabular stat-val">Annual</span></div>
+        </div>
+      </article>
+
+      <article style="background:var(--canvas); color:var(--ink); padding:40px; border-radius:4px;">
+        <div class="flex items-baseline justify-between mb-6">
+          <span class="counter-num num-red">T.03</span>
+          <span class="eyebrow" style="color:var(--ink-mute);">FEDERAL</span>
+        </div>
+        <h3 class="heading-lg">Federal<span class="pd">.</span></h3>
+        <p class="body-md mt-4" style="color:var(--ink-secondary);">
+          For defense, DHS, and federal programs. Cleared personnel,
+          air-gapped support paths, classified customer engagement.
+        </p>
+        <div class="mt-6" style="border-top:1px solid var(--hairline); padding-top:16px;">
+          <div class="stat-row" style="padding:12px 0;"><span class="body-tabular stat-key">Response SLA</span><span class="body-tabular stat-val num-red">Program-specific</span></div>
+          <div class="stat-row" style="padding:12px 0;"><span class="body-tabular stat-key">Personnel</span><span class="body-tabular stat-val">US persons · cleared</span></div>
+          <div class="stat-row" style="padding:12px 0;"><span class="body-tabular stat-key">Delivery</span><span class="body-tabular stat-val">Air-gapped / SIPR options</span></div>
+          <div class="stat-row" style="padding:12px 0;"><span class="body-tabular stat-key">Compliance</span><span class="body-tabular stat-val">NDAA · Blue UAS · CMMC</span></div>
+        </div>
+      </article>
+
+    </div>
+
+    <div class="mt-16 flex flex-wrap items-center gap-8 body-tabular" style="color:var(--hairline-strong);">
+      <span class="flex items-center gap-2"><span class="live-dot"></span> Live support · <span id="footer-clock">00:00:00 UTC · 2026.01.01</span></span>
+      <span>Existing customer? Sign in to the support portal for case management.</span>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FINAL CTA MANIFESTO ================= -->
+<section class="py-32" style="padding-top:128px; padding-bottom:128px; text-align:center;">
+  <div class="container-x">
+    <div class="eyebrow num-red mb-6">READY</div>
+    <h2 class="display-xxl" style="max-width:1000px; margin:0 auto;">
+      Let's put the fleet to work<span class="pd">.</span>
+    </h2>
+    <div class="mt-12 flex flex-wrap justify-center gap-4">
+      <a href="#inquiry" class="btn-primary">Submit an inquiry <span aria-hidden="true">↑</span></a>
+      <a href="products.html" class="btn-secondary">Compare products</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer-shell">
+  <div class="container-x">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-10 mb-16">
+      <div class="col-span-2 brand-block">
+        <div class="brand-mark">SKYDIO<span class="pd">.</span></div>
+        <p class="body-md mt-4" style="max-width:280px;">
+          American-made autonomous drones for public-safety, infrastructure,
+          and defense missions.
+        </p>
+        <div class="mt-6 flex items-center gap-3 body-tabular" style="color:var(--hairline-strong);">
+          <span class="live-dot"></span>
+          <span>Live · reachable via inquiry above</span>
+        </div>
+      </div>
+      <div>
+        <div class="eyebrow mb-4 col-eyebrow">PRODUCTS</div>
+        <ul class="space-y-3 body-md" style="list-style:none; padding:0; margin:0;">
+          <li><a href="x10.html">Skydio X10</a></li>
+          <li><a href="products.html#x2">Skydio X2</a></li>
+          <li><a href="products.html#skydio2plus">Skydio 2+</a></li>
+          <li><a href="dock.html">Dock for X10</a></li>
+          <li><a href="index.html#software">Software Platform</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="eyebrow mb-4 col-eyebrow">COMPANY</div>
+        <ul class="space-y-3 body-md" style="list-style:none; padding:0; margin:0;">
+          <li><a href="index.html#customers">Customers</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html#support">Support</a></li>
+          <li><a href="contact.html#offices">Regional offices</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="hairline-on-dark"></div>
+    <div class="mt-8 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+      <p class="micro" style="color:var(--ink-mute-2);">
+        © 2026 Skydio Inc. Autonomous flight, engineered.
+      </p>
+      <div class="flex items-center gap-6 micro" style="color:var(--ink-mute-2);">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Security</a>
+        <a href="#">DPA</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/live.js"></script>
+</body>
+</html>

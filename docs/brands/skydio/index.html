@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Skydio — A family of flying robots. American-made autonomous drones engineered as public-safety, infrastructure, and defense infrastructure." />
+<meta name="keywords" content="Skydio, autonomous drones, DFR, public safety, defense, infrastructure, X10, Dock, R10, national security" />
+<title>Skydio · A family of flying robots.</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/style.css" />
+</head>
+
+<body>
+
+<!-- ================= NAV ================= -->
+<nav class="nav-shell">
+  <div class="container-x nav-inner">
+    <div class="nav-left">
+      <a href="index.html" class="brand-mark">SKYDIO<span class="pd">.</span></a>
+      <div class="nav-links">
+        <a href="products.html">Products</a>
+        <a href="index.html#software" class="active">Software</a>
+        <a href="index.html#customers" class="active">Customers</a>
+        <a href="contact.html#support">Support</a>
+      </div>
+    </div>
+    <div class="nav-right">
+      <div class="nav-clock body-tabular">
+        <span class="live-dot"></span>
+        <span id="nav-clock">00:00:00 UTC</span>
+      </div>
+      <a href="contact.html" class="btn-buy">Buy <span aria-hidden="true">→</span></a>
+    </div>
+  </div>
+</nav>
+
+<!-- ================= HERO ================= -->
+<header style="padding-top:160px; padding-bottom:96px;">
+  <div class="container-x">
+
+    <!-- Eyebrow row -->
+    <div class="flex items-center gap-4 mb-10">
+      <span class="live-dot"></span>
+      <span class="eyebrow num-red">LIVE · Operational</span>
+      <span class="hairline-x flex-1" style="max-width:96px;"></span>
+      <span class="counter-num" style="color:var(--ink-mute);">SKYDIO / GLOBAL FLEET · 2026</span>
+    </div>
+
+    <!-- Display headline with period -->
+    <h1 class="display-mega" style="max-width:1100px;">
+      A family of flying robots<span class="pd">.</span>
+    </h1>
+
+    <!-- Subhead + telemetry -->
+    <div class="mt-12 grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16">
+      <div class="lg:col-span-6">
+        <p class="body-lg" style="color:var(--ink-secondary); max-width:520px;">
+          Serving the most pressing needs of the industries our civilization runs on —
+          public safety, critical infrastructure, national security.
+        </p>
+        <div class="mt-8 flex flex-wrap items-center gap-4">
+          <a href="products.html" class="btn-primary">Explore the fleet <span aria-hidden="true">→</span></a>
+          <a href="contact.html" class="btn-secondary">Talk to sales</a>
+        </div>
+      </div>
+
+      <!-- Live telemetry panel -->
+      <div class="lg:col-span-6">
+        <div style="border-top:1px solid var(--hairline-strong); border-bottom:1px solid var(--hairline-strong); padding:32px 0;">
+          <div class="grid grid-cols-2 gap-8">
+            <div>
+              <div class="eyebrow mb-3" style="color:var(--ink-mute);">UTC · Real-time</div>
+              <div class="body-tabular" style="font-size:24px; letter-spacing:-0.5px;" id="hero-clock">00:00:00</div>
+              <div class="body-tabular mt-1" style="color:var(--ink-mute);" id="hero-date">2026.01.01</div>
+            </div>
+            <div>
+              <div class="eyebrow mb-3" style="color:var(--ink-mute);">PDT · San Mateo HQ</div>
+              <div class="body-tabular" style="font-size:24px; letter-spacing:-0.5px;" id="hero-clock-pdt">00:00:00</div>
+              <div class="body-tabular mt-1" style="color:var(--ink-mute);">37.5630° N, 122.3255° W</div>
+            </div>
+          </div>
+
+          <div class="mt-8" style="border-top:1px solid var(--hairline); padding-top:24px;">
+            <div class="eyebrow mb-3" style="color:var(--ink-mute);">Cumulative customer flights</div>
+            <div class="body-tabular num-red" style="font-size:34px; letter-spacing:-0.8px; font-weight:600;" id="hero-counter">4,779,138</div>
+            <div class="body-tabular mt-1" style="color:var(--ink-mute);">and counting · updates every 2s</div>
+          </div>
+        </div>
+
+        <div class="mt-4 flex items-center justify-between counter-num" style="color:var(--ink-mute);">
+          <span>TELEMETRY · SKY-OPS-01</span>
+          <span class="flex items-center gap-2"><span class="live-dot"></span> STREAM STABLE</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ================= 01 MANIFESTO BAND ================= -->
+<section id="manifesto" class="manifesto-band">
+  <div class="container-x">
+    <div class="flex items-center gap-4 justify-center mb-8">
+      <span class="counter-num num-red">01</span>
+      <span class="hairline-on-dark" style="width:64px;"></span>
+      <span class="eyebrow" style="color:var(--hairline-strong);">MANIFESTO</span>
+    </div>
+    <h2 class="display-xxl text-center" style="max-width:1100px; margin: 0 auto;">
+      Mission-ready<span class="pd">.</span> Day or night<span class="pd">.</span>
+    </h2>
+    <p class="body-lg text-center mt-10" style="color:var(--hairline-strong); max-width:680px; margin-left:auto; margin-right:auto;">
+      Every second, somewhere in the world, a Skydio robot is airborne on behalf of
+      first responders, transmission operators, and defense teams. This isn't marketing.
+      It's a live operational system.
+    </p>
+    <div class="mt-14 flex flex-wrap items-center justify-center gap-8 body-tabular" style="color:var(--hairline-strong);">
+      <span class="flex items-center gap-2"><span class="live-dot"></span> NDAA · Compliant</span>
+      <span>Blue UAS · Listed</span>
+      <span>SOC 2 · Type II</span>
+      <span>Made in the USA</span>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 02 PRODUCT LINEUP ================= -->
+<section id="products" class="py-32" style="padding-top:128px; padding-bottom:128px;">
+  <div class="container-x">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
+
+      <!-- Left: rail + intro -->
+      <aside class="lg:col-span-4">
+        <div class="lg:sticky lg:top-32">
+          <div class="section-counter-row">
+            <span class="counter-num section-counter">02</span>
+            <span class="eyebrow">PRODUCT LINEUP</span>
+          </div>
+          <h2 class="display-lg mb-6">
+            One autonomy stack<span class="pd">.</span><br />Many airframes<span class="pd">.</span>
+          </h2>
+          <p class="body-md" style="color:var(--ink-mute); max-width:360px;">
+            The Skydio family shares one thing: on-board AI that flies itself.
+            Everything else — payload, endurance, footprint — is calibrated to the mission.
+          </p>
+
+          <div class="mt-10 rail">
+            <a href="#p-x10"      class="rail-item active" data-rail-target="p-x10"><span class="counter-num rail-num">01</span><span class="heading-sm">Skydio X10 · Flagship</span></a>
+            <a href="#p-x2"       class="rail-item" data-rail-target="p-x2"><span class="counter-num rail-num">02</span><span class="heading-sm">Skydio X2 · Enterprise</span></a>
+            <a href="#p-2plus"    class="rail-item" data-rail-target="p-2plus"><span class="counter-num rail-num">03</span><span class="heading-sm">Skydio 2+ · Compact</span></a>
+            <a href="#p-dock"     class="rail-item" data-rail-target="p-dock"><span class="counter-num rail-num">04</span><span class="heading-sm">Dock for X10 · Autonomy</span></a>
+            <a href="#p-software" class="rail-item" data-rail-target="p-software"><span class="counter-num rail-num">05</span><span class="heading-sm">Skydio Software · Platform</span></a>
+          </div>
+
+          <div class="mt-8">
+            <a href="products.html" class="link-arrow body-md">See full products page <span class="arrow" aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Right: cards -->
+      <div class="lg:col-span-8 flex flex-col gap-6">
+
+        <article id="p-x10" class="card-solution">
+          <div class="flex items-center justify-between">
+            <span class="counter-num section-counter">01</span>
+            <span class="eyebrow" style="color:var(--ink-mute);">FLAGSHIP · X10</span>
+          </div>
+          <div class="photo photo-grad-x10" style="aspect-ratio: 16/9;">
+            <span class="photo-hero-badge"><span class="live-dot"></span> AIRBORNE</span>
+          </div>
+          <div>
+            <h3 class="display-lg">Skydio X10<span class="pd">.</span></h3>
+            <p class="body-lg mt-4" style="color:var(--ink-secondary); max-width:640px;">
+              The most advanced AI drone we've ever built. Onboard NVIDIA Jetson,
+              a modular multi-sensor payload, and mission autonomy engineered
+              for the hardest environments on earth.
+            </p>
+            <div class="mt-8 flex flex-wrap items-center gap-8">
+              <a href="x10.html" class="link-arrow body-md">Explore X10 <span class="arrow" aria-hidden="true">→</span></a>
+              <div class="body-tabular" style="color:var(--ink-mute);">Payload · 4-sensor stack</div>
+            </div>
+          </div>
+        </article>
+
+        <article id="p-x2" class="card-solution">
+          <div class="flex items-center justify-between">
+            <span class="counter-num section-counter">02</span>
+            <span class="eyebrow" style="color:var(--ink-mute);">ENTERPRISE · X2</span>
+          </div>
+          <div class="photo photo-grad-r10" style="aspect-ratio: 16/9;">
+            <span class="photo-hero-badge">X2 · FOLDED</span>
+          </div>
+          <div>
+            <h3 class="display-lg">Skydio X2<span class="pd">.</span></h3>
+            <p class="body-lg mt-4" style="color:var(--ink-secondary); max-width:640px;">
+              A folding, backpack-portable airframe for enterprise inspection and
+              tactical reconnaissance. Dual thermal + color sensors, night-flight ready.
+              The workhorse that pre-dates X10.
+            </p>
+            <div class="mt-8 flex flex-wrap items-center gap-8">
+              <a href="products.html#x2" class="link-arrow body-md">See specs <span class="arrow" aria-hidden="true">→</span></a>
+              <div class="body-tabular" style="color:var(--ink-mute);">Weight · 1.3 kg · folded</div>
+            </div>
+          </div>
+        </article>
+
+        <article id="p-2plus" class="card-solution">
+          <div class="flex items-center justify-between">
+            <span class="counter-num section-counter">03</span>
+            <span class="eyebrow" style="color:var(--ink-mute);">COMPACT · 2+</span>
+          </div>
+          <div class="photo photo-grad-soft" style="aspect-ratio: 16/9;">
+            <span class="photo-hero-badge" style="background:rgba(0,0,0,0.6); border-color:rgba(0,0,0,0.2);">2+ · READY</span>
+          </div>
+          <div>
+            <h3 class="display-lg">Skydio 2+<span class="pd">.</span></h3>
+            <p class="body-lg mt-4" style="color:var(--ink-secondary); max-width:640px;">
+              The prosumer-grade origin platform that put autonomy on the map.
+              4K/60 primary, six 4K nav cameras, and the first commercially
+              available obstacle-avoidance AI.
+            </p>
+            <div class="mt-8 flex flex-wrap items-center gap-8">
+              <a href="products.html#skydio2plus" class="link-arrow body-md">Legacy specs <span class="arrow" aria-hidden="true">→</span></a>
+              <div class="body-tabular" style="color:var(--ink-mute);">Flight time · 27 min</div>
+            </div>
+          </div>
+        </article>
+
+        <article id="p-dock" class="card-solution">
+          <div class="flex items-center justify-between">
+            <span class="counter-num section-counter">04</span>
+            <span class="eyebrow" style="color:var(--ink-mute);">AUTONOMY · DOCK</span>
+          </div>
+          <div class="photo photo-grad-dock" style="aspect-ratio: 16/9;">
+            <span class="photo-hero-badge"><span class="live-dot"></span> DOCK-01 · ARMED</span>
+          </div>
+          <div>
+            <h3 class="display-lg">Dock for X10<span class="pd">.</span></h3>
+            <p class="body-lg mt-4" style="color:var(--ink-secondary); max-width:640px;">
+              A remote base station that houses, charges, and dispatches an X10
+              on demand. Scheduled autonomous patrols or on-call response to
+              alarms — 24/7, no pilot on site.
+            </p>
+            <div class="mt-8 flex flex-wrap items-center gap-8">
+              <a href="dock.html" class="link-arrow body-md">Explore the Dock <span class="arrow" aria-hidden="true">→</span></a>
+              <div class="body-tabular" style="color:var(--ink-mute);">Coverage · ~400 acres / dock</div>
+            </div>
+          </div>
+        </article>
+
+        <article id="p-software" class="card-solution">
+          <div class="flex items-center justify-between">
+            <span class="counter-num section-counter">05</span>
+            <span class="eyebrow" style="color:var(--ink-mute);">PLATFORM · SOFTWARE</span>
+          </div>
+          <div class="photo" style="aspect-ratio: 16/9; background: linear-gradient(135deg,#f6f6f6 0%,#eaeaea 100%);">
+            <span class="photo-hero-badge" style="background:rgba(0,0,0,0.6); border-color:rgba(0,0,0,0.2);">SW · v3.14</span>
+          </div>
+          <div>
+            <h3 class="display-lg">Skydio Software Platform<span class="pd">.</span></h3>
+            <p class="body-lg mt-4" style="color:var(--ink-secondary); max-width:640px;">
+              Fleet management, video streaming, 3D scan, and the mission-control
+              console that ties every airframe together. One pane of glass for
+              every drone in your program.
+            </p>
+            <div class="mt-8 flex flex-wrap items-center gap-8">
+              <a href="index.html#software" class="link-arrow body-md">Platform tour <span class="arrow" aria-hidden="true">→</span></a>
+              <div class="body-tabular" style="color:var(--ink-mute);">Sub-second live video · SOC 2</div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 03 CUSTOMERS ================= -->
+<section id="customers" style="background:var(--canvas-soft); padding-top:128px; padding-bottom:128px;">
+  <div class="container-x">
+    <div class="section-open">
+      <div class="eyebrow-line">
+        <span class="counter-num section-counter">03</span>
+        <span class="eyebrow" style="color:var(--ink-mute);">WHO FLIES SKYDIO</span>
+      </div>
+      <h2 class="display-xl" style="max-width:960px;">
+        Four communities<span class="pd">.</span> One mission profile<span class="pd">.</span>
+      </h2>
+      <p class="body-lg" style="color:var(--ink-secondary); max-width:640px;">
+        Skydio serves teams whose workday depends on flying safely, autonomously,
+        and reliably — often in the worst conditions on their worst days.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+      <article class="card-solution" style="background:var(--canvas);">
+        <div class="flex items-center justify-between">
+          <span class="counter-num section-counter">C.01</span>
+          <span class="eyebrow" style="color:var(--ink-mute);">PUBLIC SAFETY</span>
+        </div>
+        <h3 class="heading-lg">Public safety agencies<span class="pd">.</span></h3>
+        <p class="body-md" style="color:var(--ink-secondary);">
+          DFR (Drone as First Responder) programs at police, fire, and EMS.
+          Arrives on scene before officers do — with thermal, live video,
+          and precise coordinates.
+        </p>
+        <div class="mt-4 stat-row" style="padding:12px 0;">
+          <span class="body-tabular stat-key">Response Δ</span>
+          <span class="body-tabular stat-val">78s avg. faster</span>
+        </div>
+        <div class="stat-row" style="padding:12px 0;">
+          <span class="body-tabular stat-key">Active programs</span>
+          <span class="body-tabular stat-val">240+</span>
+        </div>
+      </article>
+
+      <article class="card-solution" style="background:var(--canvas);">
+        <div class="flex items-center justify-between">
+          <span class="counter-num section-counter">C.02</span>
+          <span class="eyebrow" style="color:var(--ink-mute);">CRITICAL INFRASTRUCTURE</span>
+        </div>
+        <h3 class="heading-lg">Utilities & transport<span class="pd">.</span></h3>
+        <p class="body-md" style="color:var(--ink-secondary);">
+          Transmission grid operators, class-1 railroads, refineries, and
+          telecom carriers. Every inspection captures geo-referenced 3D geometry
+          — no re-flights, no gaps in the model.
+        </p>
+        <div class="mt-4 stat-row" style="padding:12px 0;">
+          <span class="body-tabular stat-key">Assets scanned</span>
+          <span class="body-tabular stat-val">1.2M+</span>
+        </div>
+        <div class="stat-row" style="padding:12px 0;">
+          <span class="body-tabular stat-key">Fewer climbs / year</span>
+          <span class="body-tabular stat-val">-64%</span>
+        </div>
+      </article>
+
+      <article class="card-solution" style="background:var(--canvas);">
+        <div class="flex items-center justify-between">
+          <span class="counter-num section-counter">C.03</span>
+          <span class="eyebrow" style="color:var(--ink-mute);">NATIONAL SECURITY</span>
+        </div>
+        <h3 class="heading-lg">Defense & federal<span class="pd">.</span></h3>
+        <p class="body-md" style="color:var(--ink-secondary);">
+          NDAA-compliant, Blue UAS-listed platforms in operational service with
+          the US Army, US Air Force, DHS, and allied partners. Engineered in
+          California, assembled in the United States.
+        </p>
+        <div class="mt-4 stat-row" style="padding:12px 0;">
+          <span class="body-tabular stat-key">Compliance</span>
+          <span class="body-tabular stat-val">Blue UAS 2.0</span>
+        </div>
+        <div class="stat-row" style="padding:12px 0;">
+          <span class="body-tabular stat-key">Country of origin</span>
+          <span class="body-tabular stat-val">USA</span>
+        </div>
+      </article>
+
+      <article class="card-solution" style="background:var(--canvas);">
+        <div class="flex items-center justify-between">
+          <span class="counter-num section-counter">C.04</span>
+          <span class="eyebrow" style="color:var(--ink-mute);">ENTERPRISE</span>
+        </div>
+        <h3 class="heading-lg">Site security & industrial<span class="pd">.</span></h3>
+        <p class="body-md" style="color:var(--ink-secondary);">
+          Construction sites, data centers, ports, and mine operators.
+          A Dock at every gate — scheduled patrols, alarm response, and
+          continuous perimeter awareness.
+        </p>
+        <div class="mt-4 stat-row" style="padding:12px 0;">
+          <span class="body-tabular stat-key">Docks deployed</span>
+          <span class="body-tabular stat-val">344 online</span>
+        </div>
+        <div class="stat-row" style="padding:12px 0;">
+          <span class="body-tabular stat-key">Fleet uptime</span>
+          <span class="body-tabular stat-val">99.4%</span>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- Logo wall -->
+    <div class="mt-20">
+      <div class="eyebrow mb-6" style="color:var(--ink-mute);">Selected customers · public record</div>
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3">
+        <div class="logo-tile">CHULA VISTA PD</div>
+        <div class="logo-tile">US ARMY</div>
+        <div class="logo-tile">SEMPRA</div>
+        <div class="logo-tile">BOSTON PD</div>
+        <div class="logo-tile">DEPT. OF ENERGY</div>
+        <div class="logo-tile">USACE</div>
+        <div class="logo-tile">NORFOLK SOUTHERN</div>
+        <div class="logo-tile">PG&E</div>
+        <div class="logo-tile">LAPD</div>
+        <div class="logo-tile">DOJ</div>
+        <div class="logo-tile">TVA</div>
+        <div class="logo-tile confidential">+ 12 classified</div>
+      </div>
+      <p class="micro mt-4" style="color:var(--ink-mute-2);">
+        Some customer engagements are subject to non-disclosure due to operational sensitivity.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 04 SOFTWARE ================= -->
+<section id="software" style="padding-top:128px; padding-bottom:128px;">
+  <div class="container-x">
+    <div class="section-open">
+      <div class="eyebrow-line">
+        <span class="counter-num section-counter">04</span>
+        <span class="eyebrow" style="color:var(--ink-mute);">SOFTWARE PLATFORM</span>
+      </div>
+      <h2 class="display-xl" style="max-width:960px;">
+        Autonomy is the platform<span class="pd">.</span>
+      </h2>
+      <p class="body-lg" style="color:var(--ink-secondary); max-width:640px;">
+        Every Skydio robot ships with the same core intelligence — obstacle
+        avoidance, mission scripting, secure video streaming, and enterprise
+        fleet management. Hardware ages; the platform compounds.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+      <div class="card-solution">
+        <div class="counter-num num-red">P.01</div>
+        <h3 class="heading-lg">Skydio Autonomy<span class="pd">.</span></h3>
+        <p class="body-md" style="color:var(--ink-secondary);">
+          Six 4K navigation cameras and a purpose-built AI compute stack keep
+          the drone airborne where GPS and human pilots fail — indoors, under
+          bridges, inside utility scaffolds.
+        </p>
+        <div class="mt-auto pt-6" style="border-top:1px solid var(--hairline);">
+          <div class="stat-row" style="padding:12px 0;">
+            <span class="body-tabular stat-key">Nav cameras</span>
+            <span class="body-tabular stat-val">6× 4K</span>
+          </div>
+          <div class="stat-row" style="padding:12px 0;">
+            <span class="body-tabular stat-key">Obstacle range</span>
+            <span class="body-tabular stat-val">39 m</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-solution">
+        <div class="counter-num num-red">P.02</div>
+        <h3 class="heading-lg">Fleet Management<span class="pd">.</span></h3>
+        <p class="body-md" style="color:var(--ink-secondary);">
+          Role-based access, aircraft health, flight logs, and pilot
+          certifications — a single pane of glass for every drone in your
+          program, from one aircraft to ten thousand.
+        </p>
+        <div class="mt-auto pt-6" style="border-top:1px solid var(--hairline);">
+          <div class="stat-row" style="padding:12px 0;">
+            <span class="body-tabular stat-key">Fleet size</span>
+            <span class="body-tabular stat-val">Unlimited</span>
+          </div>
+          <div class="stat-row" style="padding:12px 0;">
+            <span class="body-tabular stat-key">SOC 2</span>
+            <span class="body-tabular stat-val num-red">Type II</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-solution">
+        <div class="counter-num num-red">P.03</div>
+        <h3 class="heading-lg">Enterprise Video<span class="pd">.</span></h3>
+        <p class="body-md" style="color:var(--ink-secondary);">
+          Sub-second live streaming to CAD, VMS, and public-safety response
+          platforms. HTTPS everywhere, AES-256 at rest, keys you control —
+          not us.
+        </p>
+        <div class="mt-auto pt-6" style="border-top:1px solid var(--hairline);">
+          <div class="stat-row" style="padding:12px 0;">
+            <span class="body-tabular stat-key">Latency</span>
+            <span class="body-tabular stat-val">&lt; 900 ms</span>
+          </div>
+          <div class="stat-row" style="padding:12px 0;">
+            <span class="body-tabular stat-key">Encryption</span>
+            <span class="body-tabular stat-val">AES-256</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 05 CONTACT / CTA ================= -->
+<section id="cta" style="padding-top:128px; padding-bottom:128px; background:var(--canvas);">
+  <div class="container-x">
+    <div class="section-open">
+      <div class="eyebrow-line">
+        <span class="counter-num section-counter">05</span>
+        <span class="eyebrow" style="color:var(--ink-mute);">GET IN TOUCH</span>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
+      <div class="lg:col-span-7">
+        <h2 class="display-xl mb-8">
+          Bring Skydio to your program<span class="pd">.</span>
+        </h2>
+        <p class="body-lg" style="color:var(--ink-secondary); max-width:520px;">
+          Tell us about the mission and we'll show you how a Skydio program lands
+          in the field — public-safety, infrastructure, defense, or enterprise.
+          Same platform, calibrated to your operation.
+        </p>
+        <div class="mt-10 flex flex-wrap gap-4">
+          <a href="contact.html" class="btn-primary">Contact sales <span aria-hidden="true">→</span></a>
+          <a href="products.html" class="btn-secondary">Compare products</a>
+        </div>
+      </div>
+
+      <div class="lg:col-span-5">
+        <div style="border:1px solid var(--hairline); padding:32px;">
+          <div class="eyebrow mb-6" style="color:var(--ink-mute);">FLEET · REAL-TIME</div>
+          <div class="stat-row">
+            <span class="body-md stat-key">Aircraft airborne</span>
+            <span class="spec-num" id="stat-airborne">217</span>
+          </div>
+          <div class="stat-row">
+            <span class="body-md stat-key">Missions today</span>
+            <span class="spec-num" id="stat-missions">8,142</span>
+          </div>
+          <div class="stat-row">
+            <span class="body-md stat-key">Docks online</span>
+            <span class="spec-num" id="stat-docks">344</span>
+          </div>
+          <div class="stat-row">
+            <span class="body-md stat-key">Flight hours · YTD</span>
+            <span class="spec-num" id="stat-hours">412,306</span>
+          </div>
+          <div class="mt-6 flex items-center justify-between">
+            <span class="counter-num" style="color:var(--ink-mute);">SKY-OPS · TELEMETRY</span>
+            <span class="counter-num flex items-center gap-2 num-red">
+              <span class="live-dot"></span> STREAMING
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer-shell">
+  <div class="container-x">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-10 mb-16">
+      <div class="col-span-2 brand-block">
+        <div class="brand-mark">SKYDIO<span class="pd">.</span></div>
+        <p class="body-md mt-4" style="max-width:280px;">
+          American-made autonomous drones for public-safety, infrastructure,
+          and defense missions.
+        </p>
+        <div class="mt-6 flex items-center gap-3 body-tabular" style="color:var(--hairline-strong);">
+          <span class="live-dot"></span>
+          <span id="footer-clock">00:00:00 UTC · 2026.01.01</span>
+        </div>
+      </div>
+      <div>
+        <div class="eyebrow mb-4 col-eyebrow">PRODUCTS</div>
+        <ul class="space-y-3 body-md" style="list-style:none; padding:0; margin:0;">
+          <li><a href="x10.html">Skydio X10</a></li>
+          <li><a href="products.html#x2">Skydio X2</a></li>
+          <li><a href="products.html#skydio2plus">Skydio 2+</a></li>
+          <li><a href="dock.html">Dock for X10</a></li>
+          <li><a href="index.html#software">Software Platform</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="eyebrow mb-4 col-eyebrow">COMPANY</div>
+        <ul class="space-y-3 body-md" style="list-style:none; padding:0; margin:0;">
+          <li><a href="index.html#customers">Customers</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html#support">Support</a></li>
+          <li><a href="contact.html#offices">Regional offices</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="hairline-on-dark"></div>
+    <div class="mt-8 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+      <p class="micro" style="color:var(--ink-mute-2);">
+        © 2026 Skydio Inc. Autonomous flight, engineered.
+      </p>
+      <div class="flex items-center gap-6 micro" style="color:var(--ink-mute-2);">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Security</a>
+        <a href="#">DPA</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/live.js"></script>
+</body>
+</html>
