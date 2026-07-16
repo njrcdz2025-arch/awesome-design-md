@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Antigravity 影翎 — THE FUTURE IS UP. A cinematic 8K aerial drone platform born from Insta360. One aircraft. Infinite skies." />
+<meta name="keywords" content="Antigravity, 影翎, A1, 8K drone, aerial photography, cinematic, Insta360, sub-brand, panoramic drone" />
+<title>Antigravity · THE FUTURE IS UP.</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Noto+Sans+SC:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/style.css" />
+</head>
+
+<body>
+
+<!-- ================= NAV ================= -->
+<nav class="nav-shell">
+  <div class="container-x nav-inner">
+    <div class="nav-left">
+      <a href="index.html" class="brand-mark">ANTIGRAVITY<span class="pd">.</span></a>
+      <div class="nav-links">
+        <a href="products.html">Products</a>
+        <a href="a1.html">A1 · 8K</a>
+        <a href="accessories.html">Accessories</a>
+        <a href="contact.html#support">Support</a>
+      </div>
+    </div>
+    <div class="nav-right">
+      <div class="nav-clock body-tabular">
+        <span class="live-dot"></span>
+        <span id="nav-clock">00:00:00 CET</span>
+      </div>
+      <a href="contact.html" class="btn-buy">Buy <span aria-hidden="true">→</span></a>
+    </div>
+  </div>
+</nav>
+
+<!-- ================= HERO ================= -->
+<header style="padding-top:160px; padding-bottom:112px; position:relative; overflow:hidden;">
+  <div class="sky-glow-base" aria-hidden="true"></div>
+  <div class="container-x" style="position:relative; z-index:1;">
+
+    <!-- Eyebrow row -->
+    <div class="flex items-center gap-4 mb-10">
+      <span class="live-dot"></span>
+      <span class="eyebrow num-sky">LIVE · Fleet airborne</span>
+      <span class="hairline-on-dark flex-1" style="max-width:96px;"></span>
+      <span class="counter-num" style="color:var(--ink-inverse-mute);">ANTIGRAVITY / GLOBAL SKIES · 2026</span>
+    </div>
+
+    <!-- Display headline -->
+    <h1 class="display-cinema" style="max-width:1200px;">
+      THE FUTURE IS UP<span class="pd">.</span>
+    </h1>
+    <p class="display-poetic zh mt-8" style="max-width:820px; color:var(--ink-inverse-secondary);">
+      未来不在远方，而在苍穹之上<span class="pd">.</span>
+    </p>
+
+    <!-- Subhead + telemetry -->
+    <div class="mt-14 grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16">
+      <div class="lg:col-span-6">
+        <p class="body-lg" style="color:var(--ink-inverse-secondary); max-width:520px;">
+          One aircraft. Eight-kilometre pixels. Forty-six minutes of aloft time.
+          Built by the Insta360 team who believed the sky deserved a proper camera —
+          not another quadcopter with a lens bolted on.
+        </p>
+        <p class="body-poetic zh mt-6" style="color:var(--ink-inverse-mute); max-width:520px;">
+          感受飞行，探索新境 —— 飞完，即出片。
+        </p>
+        <div class="mt-8 flex flex-wrap items-center gap-4">
+          <a href="a1.html" class="btn-primary">Meet A1 · 8K <span aria-hidden="true">→</span></a>
+          <a href="products.html" class="btn-secondary">Explore the family</a>
+        </div>
+      </div>
+
+      <!-- Live telemetry panel -->
+      <div class="lg:col-span-6">
+        <div style="border-top:1px solid var(--hairline-strong); border-bottom:1px solid var(--hairline-strong); padding:32px 0;">
+          <div class="grid grid-cols-2 gap-8">
+            <div>
+              <div class="eyebrow mb-3" style="color:var(--ink-inverse-mute);">CET · Cinematic HQ</div>
+              <div class="body-tabular" style="font-size:26px; letter-spacing:-0.5px;" id="hero-clock-cet">00:00:00</div>
+              <div class="body-tabular mt-1" style="color:var(--ink-inverse-mute);" id="hero-date">2026.01.01</div>
+            </div>
+            <div>
+              <div class="eyebrow mb-3" style="color:var(--ink-inverse-mute);">BJT · Shenzhen ⋅ Insta360</div>
+              <div class="body-tabular" style="font-size:26px; letter-spacing:-0.5px;" id="hero-clock-beijing">00:00:00</div>
+              <div class="body-tabular mt-1" style="color:var(--ink-inverse-mute);">22.5431° N, 114.0579° E</div>
+            </div>
+          </div>
+
+          <div class="mt-8" style="border-top:1px solid var(--hairline); padding-top:24px;">
+            <div class="eyebrow mb-3" style="color:var(--ink-inverse-mute);">Hours of aerial footage · captured worldwide</div>
+            <div class="body-tabular num-sky" style="font-size:38px; letter-spacing:-0.8px; font-weight:600;" id="hero-counter">128,432</div>
+            <div class="body-tabular mt-1" style="color:var(--ink-inverse-mute);">and rising · odometer updates every 3s</div>
+          </div>
+        </div>
+
+        <div class="mt-4 flex items-center justify-between counter-num" style="color:var(--ink-inverse-mute);">
+          <span>TELEMETRY · SKY-STREAM-A1</span>
+          <span class="flex items-center gap-2"><span class="live-dot"></span> LINK STABLE</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sub-stat row -->
+    <div class="mt-20 grid grid-cols-2 md:grid-cols-4 gap-6">
+      <div class="stat-row" style="border:none; padding:0; display:block;">
+        <div class="eyebrow mb-2" style="color:var(--ink-inverse-mute);">Aircraft airborne</div>
+        <div class="spec-num-md num-sky" id="stat-airborne">384</div>
+      </div>
+      <div class="stat-row" style="border:none; padding:0; display:block;">
+        <div class="eyebrow mb-2" style="color:var(--ink-inverse-mute);">Avg. altitude · m</div>
+        <div class="spec-num-md" id="stat-altitude">612</div>
+      </div>
+      <div class="stat-row" style="border:none; padding:0; display:block;">
+        <div class="eyebrow mb-2" style="color:var(--ink-inverse-mute);">Flights · today</div>
+        <div class="spec-num-md" id="stat-flights">20,418</div>
+      </div>
+      <div class="stat-row" style="border:none; padding:0; display:block;">
+        <div class="eyebrow mb-2" style="color:var(--ink-inverse-mute);">Clips uploaded · today</div>
+        <div class="spec-num-md" id="stat-clips">73,921</div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ================= 01 MANIFESTO BAND (bilingual) ================= -->
+<section id="manifesto" class="manifesto-band">
+  <div class="container-x" style="position:relative; z-index:1;">
+    <div class="flex items-center gap-4 justify-center mb-10">
+      <span class="counter-num num-sky">01</span>
+      <span class="hairline-on-dark" style="width:64px;"></span>
+      <span class="eyebrow" style="color:var(--ink-inverse-mute);">THE ANTIGRAVITY MANIFESTO</span>
+    </div>
+    <h2 class="display-xxl text-center" style="max-width:1100px; margin: 0 auto;">
+      THE FUTURE IS UP<span class="pd">.</span>
+    </h2>
+    <p class="display-poetic zh text-center mt-8" style="max-width:900px; margin-left:auto; margin-right:auto; color:var(--ink-inverse-secondary);">
+      未来不在远方，而在苍穹之上<span class="pd">.</span>
+    </p>
+    <p class="body-poetic text-center mt-12" style="color:var(--ink-inverse-secondary); max-width:720px; margin-left:auto; margin-right:auto;">
+      We didn't build a drone to check off a feature list.
+      We built one so that the moment you look up — that moment when the light
+      breaks over a ridgeline, when a coastline turns gold — is a moment you
+      can actually keep.
+    </p>
+    <div class="mt-14 flex flex-wrap items-center justify-center gap-8 body-tabular" style="color:var(--ink-inverse-mute);">
+      <span class="flex items-center gap-2"><span class="live-dot"></span> 8K · Cinematic</span>
+      <span>360° · Panoramic capture</span>
+      <span>249 g · Sub-registration weight</span>
+      <span>Insta360 · Trusted lineage</span>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 02 CINEMA SPEC 128px x 3 ================= -->
+<section id="spec-cinema" class="sec-giant" style="background:var(--canvas);">
+  <div class="container-x">
+    <div class="section-open">
+      <div class="eyebrow-line">
+        <span class="counter-num section-counter">02</span>
+        <span class="eyebrow" style="color:var(--ink-inverse-mute);">CINEMA GRADE · AT A GLANCE</span>
+      </div>
+      <h2 class="display-xl" style="max-width:960px;">
+        Three numbers<span class="pd">.</span> No spec sheet needed<span class="pd">.</span>
+      </h2>
+      <p class="body-lg" style="color:var(--ink-inverse-secondary); max-width:640px;">
+        The A1 was engineered against three lines drawn in the sand.
+        Everything else — obstacle-avoidance, low-light AI, one-tap edits —
+        exists to protect these three numbers.
+      </p>
+    </div>
+
+    <div class="cinema-spec-row">
+      <div class="cinema-spec-cell">
+        <div class="eyebrow mb-6" style="color:var(--ink-inverse-mute);">C.01 · RESOLUTION</div>
+        <div class="spec-num-mega">8K</div>
+        <div class="mt-6 body-md" style="color:var(--ink-inverse-secondary);">
+          Full-frame 8K panoramic capture across dual 1/1.8" sensors — the largest
+          image the sky has ever been asked to hold still for.
+        </div>
+      </div>
+      <div class="cinema-spec-cell">
+        <div class="eyebrow mb-6" style="color:var(--ink-inverse-mute);">C.02 · ENDURANCE</div>
+        <div class="spec-num-mega">46<span class="body-tabular" style="font-size:24px; margin-left:12px; letter-spacing:0.4px;">min</span></div>
+        <div class="mt-6 body-md" style="color:var(--ink-inverse-secondary);">
+          Forty-six minutes of continuous flight — the length of a feature film's
+          second act. Enough time to wait for the light.
+        </div>
+      </div>
+      <div class="cinema-spec-cell">
+        <div class="eyebrow mb-6" style="color:var(--ink-inverse-mute);">C.03 · TRANSMISSION</div>
+        <div class="spec-num-mega">15<span class="body-tabular" style="font-size:24px; margin-left:12px; letter-spacing:0.4px;">km</span></div>
+        <div class="mt-6 body-md" style="color:var(--ink-inverse-secondary);">
+          Fifteen-kilometre O4+ image transmission. A ridgeline, a headland,
+          a whole island chain — still on your screen, still live.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 03 PRODUCT LINEUP ================= -->
+<section id="products" class="sec-giant" style="background:var(--canvas-soft);">
+  <div class="container-x">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
+
+      <aside class="lg:col-span-4">
+        <div class="lg:sticky lg:top-32">
+          <div class="section-counter-row">
+            <span class="counter-num section-counter">03</span>
+            <span class="eyebrow" style="color:var(--ink-inverse-mute);">THE FAMILY</span>
+          </div>
+          <h2 class="display-lg mb-6">
+            One aircraft<span class="pd">.</span><br />An ecosystem behind it<span class="pd">.</span>
+          </h2>
+          <p class="body-md" style="color:var(--ink-inverse-secondary); max-width:360px;">
+            Antigravity ships one drone on purpose. But around A1 sits an
+            immersive companion system — Vision goggles, a haptic remote,
+            spare batteries, low-noise props — everything to keep you airborne
+            for a full afternoon of light.
+          </p>
+
+          <div class="mt-10 rail">
+            <a href="#p-a1"           class="rail-item active" data-rail-target="p-a1"><span class="counter-num rail-num">01</span><span class="heading-sm">A1 · 8K Panoramic Drone</span></a>
+            <a href="#p-vision"       class="rail-item" data-rail-target="p-vision"><span class="counter-num rail-num">02</span><span class="heading-sm">Vision · Flight Goggles</span></a>
+            <a href="#p-remote"       class="rail-item" data-rail-target="p-remote"><span class="counter-num rail-num">03</span><span class="heading-sm">Grip Remote Controller</span></a>
+            <a href="#p-battery"      class="rail-item" data-rail-target="p-battery"><span class="counter-num rail-num">04</span><span class="heading-sm">Extended Battery Pack</span></a>
+            <a href="#p-accessories"  class="rail-item" data-rail-target="p-accessories"><span class="counter-num rail-num">05</span><span class="heading-sm">Props · Case · Everyday Kit</span></a>
+          </div>
+
+          <div class="mt-8">
+            <a href="products.html" class="link-arrow body-md">See the full family page <span class="arrow" aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </aside>
+
+      <div class="lg:col-span-8 flex flex-col gap-6">
+
+        <article id="p-a1" class="card-solution">
+          <div class="flex items-center justify-between">
+            <span class="counter-num section-counter">01</span>
+            <span class="eyebrow" style="color:var(--ink-inverse-mute);">FLAGSHIP · A1</span>
+          </div>
+          <div class="photo photo-grad-a1" style="aspect-ratio: 16/9;">
+            <span class="photo-hero-badge"><span class="live-dot"></span> A1 · AIRBORNE</span>
+          </div>
+          <div>
+            <h3 class="display-lg">A1 · 8K Panoramic<span class="pd">.</span></h3>
+            <p class="body-lg mt-4" style="color:var(--ink-inverse-secondary); max-width:640px;">
+              The only drone in its class that captures true 8K panoramic footage,
+              reframed after the flight. Point the sky, not the camera —
+              choose your shot afterwards, on your phone.
+            </p>
+            <div class="mt-8 flex flex-wrap items-center gap-8">
+              <a href="a1.html" class="link-arrow body-md">Explore A1 <span class="arrow" aria-hidden="true">→</span></a>
+              <div class="body-tabular" style="color:var(--ink-inverse-mute);">From <span class="num-sky">¥5,499</span> · 249 g</div>
+            </div>
+          </div>
+        </article>
+
+        <article id="p-vision" class="card-solution">
+          <div class="flex items-center justify-between">
+            <span class="counter-num section-counter">02</span>
+            <span class="eyebrow" style="color:var(--ink-inverse-mute);">IMMERSION · VISION</span>
+          </div>
+          <div class="photo photo-grad-goggles" style="aspect-ratio: 16/9;">
+            <span class="photo-hero-badge">VISION · 2560×2560 PER EYE</span>
+          </div>
+          <div>
+            <h3 class="display-lg">Vision Flight Goggles<span class="pd">.</span></h3>
+            <p class="body-lg mt-4" style="color:var(--ink-inverse-secondary); max-width:640px;">
+              A 340-gram head-mounted display with 90° DFOV micro-OLED panels
+              and TÜV low-blue-light certification. Look around — the drone
+              follows your head. Your body stays grounded, your eyes don't.
+            </p>
+            <div class="mt-8 flex flex-wrap items-center gap-8">
+              <a href="accessories.html#vision" class="link-arrow body-md">Explore Vision <span class="arrow" aria-hidden="true">→</span></a>
+              <div class="body-tabular" style="color:var(--ink-inverse-mute);">Weight · 340 g · TÜV certified</div>
+            </div>
+          </div>
+        </article>
+
+        <article id="p-remote" class="card-solution">
+          <div class="flex items-center justify-between">
+            <span class="counter-num section-counter">03</span>
+            <span class="eyebrow" style="color:var(--ink-inverse-mute);">CONTROL · GRIP</span>
+          </div>
+          <div class="photo photo-grad-remote" style="aspect-ratio: 16/9;">
+            <span class="photo-hero-badge">GRIP · 6-AXIS IMU</span>
+          </div>
+          <div>
+            <h3 class="display-lg">Grip Remote Controller<span class="pd">.</span></h3>
+            <p class="body-lg mt-4" style="color:var(--ink-inverse-secondary); max-width:640px;">
+              A one-handed motion controller. Point where you want to see —
+              the aircraft frames the shot for you. Purpose-built for the
+              first-time pilot, indispensable for the veteran.
+            </p>
+            <div class="mt-8 flex flex-wrap items-center gap-8">
+              <a href="accessories.html#remote" class="link-arrow body-md">See specs <span class="arrow" aria-hidden="true">→</span></a>
+              <div class="body-tabular" style="color:var(--ink-inverse-mute);">Latency · &lt; 40 ms</div>
+            </div>
+          </div>
+        </article>
+
+        <article id="p-battery" class="card-solution">
+          <div class="flex items-center justify-between">
+            <span class="counter-num section-counter">04</span>
+            <span class="eyebrow" style="color:var(--ink-inverse-mute);">ENDURANCE · BATTERY</span>
+          </div>
+          <div class="photo photo-grad-battery" style="aspect-ratio: 16/9;">
+            <span class="photo-hero-badge">BATTERY · 5000 mAh</span>
+          </div>
+          <div>
+            <h3 class="display-lg">Extended Battery Pack<span class="pd">.</span></h3>
+            <p class="body-lg mt-4" style="color:var(--ink-inverse-secondary); max-width:640px;">
+              Three-pack, fast-charge hub, and a carry sleeve that turns into
+              a full afternoon of light. Because the golden hour is thirty
+              minutes long, and the film should be forty-six.
+            </p>
+            <div class="mt-8 flex flex-wrap items-center gap-8">
+              <a href="accessories.html#battery" class="link-arrow body-md">Battery details <span class="arrow" aria-hidden="true">→</span></a>
+              <div class="body-tabular" style="color:var(--ink-inverse-mute);">3 packs · 138 min total aloft</div>
+            </div>
+          </div>
+        </article>
+
+        <article id="p-accessories" class="card-solution">
+          <div class="flex items-center justify-between">
+            <span class="counter-num section-counter">05</span>
+            <span class="eyebrow" style="color:var(--ink-inverse-mute);">EVERYDAY · KIT</span>
+          </div>
+          <div class="photo photo-grad-case" style="aspect-ratio: 16/9;">
+            <span class="photo-hero-badge">KIT · TRAVEL CASE</span>
+          </div>
+          <div>
+            <h3 class="display-lg">Props · Case · Everyday Kit<span class="pd">.</span></h3>
+            <p class="body-lg mt-4" style="color:var(--ink-inverse-secondary); max-width:640px;">
+              A hard-shell travel case, low-noise carbon propellers, and a
+              protective transport shell. The everyday load-out that fits under
+              your desk on a Tuesday and inside your carry-on on Friday.
+            </p>
+            <div class="mt-8 flex flex-wrap items-center gap-8">
+              <a href="accessories.html" class="link-arrow body-md">Browse accessories <span class="arrow" aria-hidden="true">→</span></a>
+              <div class="body-tabular" style="color:var(--ink-inverse-mute);">Case weight · 1.4 kg</div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 04 SAMPLE FOOTAGE GRID ================= -->
+<section id="footage" class="sec-giant" style="background:var(--canvas);">
+  <div class="container-x">
+    <div class="section-open">
+      <div class="eyebrow-line">
+        <span class="counter-num section-counter">04</span>
+        <span class="eyebrow" style="color:var(--ink-inverse-mute);">SHOT ON A1 · SELECTED FRAMES</span>
+      </div>
+      <h2 class="display-xl" style="max-width:960px;">
+        The sky<span class="pd">.</span> Reframed<span class="pd">.</span>
+      </h2>
+      <p class="body-lg" style="color:var(--ink-inverse-secondary); max-width:640px;">
+        A1 captures the entire hemisphere. You choose the frame afterwards —
+        vertical for social, cinematic for the edit, panoramic for the print.
+        Below: eight frames pulled from real A1 pilots in eight time zones.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+      <div class="sample-tile photo-grad-sunset" style="aspect-ratio: 3/4;">
+        <span class="chip-spec meta">Bali · 05:47 · 8K/60</span>
+      </div>
+      <div class="sample-tile photo-grad-snow" style="aspect-ratio: 3/4;">
+        <span class="chip-spec meta">Hokkaidō · 09:12 · 8K/30</span>
+      </div>
+      <div class="sample-tile photo-grad-coast" style="aspect-ratio: 3/4;">
+        <span class="chip-spec meta">Portugal · 18:04 · 8K/60</span>
+      </div>
+      <div class="sample-tile photo-grad-night" style="aspect-ratio: 3/4;">
+        <span class="chip-spec meta">Hong Kong · 22:38 · 4K/120</span>
+      </div>
+      <div class="sample-tile photo-grad-forest" style="aspect-ratio: 3/4;">
+        <span class="chip-spec meta">Kamikochi · 06:20 · 8K/30</span>
+      </div>
+      <div class="sample-tile photo-grad-desert" style="aspect-ratio: 3/4;">
+        <span class="chip-spec meta">Wadi Rum · 15:31 · 8K/60</span>
+      </div>
+      <div class="sample-tile photo-grad-city" style="aspect-ratio: 3/4;">
+        <span class="chip-spec meta">Chongqing · 20:14 · 4K/120</span>
+      </div>
+      <div class="sample-tile photo-grad-mountain" style="aspect-ratio: 3/4;">
+        <span class="chip-spec meta">Patagonia · 07:56 · 8K/30</span>
+      </div>
+    </div>
+
+    <div class="mt-14 flex flex-wrap items-center justify-between gap-6">
+      <p class="body-md" style="color:var(--ink-inverse-mute); max-width:560px;">
+        Every clip above was shot on a stock A1 body — no gimbal-mounted third-party
+        camera, no post-production reframing beyond what the Antigravity app allows.
+      </p>
+      <a href="a1.html#footage" class="link-arrow body-md">See more sample footage <span class="arrow" aria-hidden="true">→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 05 MEDIA QUOTE WALL ================= -->
+<section id="press" class="sec-huge" style="background:var(--canvas-soft);">
+  <div class="container-x">
+    <div class="section-open">
+      <div class="eyebrow-line">
+        <span class="counter-num section-counter">05</span>
+        <span class="eyebrow" style="color:var(--ink-inverse-mute);">MEDIA · SELECTED COVERAGE</span>
+      </div>
+      <h2 class="display-xl" style="max-width:960px;">
+        The press has been kind<span class="pd">.</span>
+      </h2>
+      <p class="body-lg" style="color:var(--ink-inverse-secondary); max-width:640px;">
+        A1 was reviewed the week it shipped. Below are the moments we
+        remember — from outlets that don't hand out compliments cheaply.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+      <article class="card-media-quote">
+        <div class="media-mark">TIME</div>
+        <p class="quote body-poetic">
+          "For the first time, a consumer drone treats the whole sky
+          as its viewfinder. You aim the shot after the flight. That is
+          a genuinely new grammar of photography."
+        </p>
+        <div class="body-tabular" style="color:var(--ink-inverse-mute);">— TIME · Best Inventions 2025</div>
+      </article>
+
+      <article class="card-media-quote">
+        <div class="media-mark">WIRED</div>
+        <p class="quote body-poetic">
+          "The A1 is what happens when the people who invented 360° cameras
+          decide the ground isn't enough anymore. Cinematic, quiet, and
+          disarmingly small."
+        </p>
+        <div class="body-tabular" style="color:var(--ink-inverse-mute);">— WIRED · Aerial Issue</div>
+      </article>
+
+      <article class="card-media-quote">
+        <div class="media-mark">36Kr</div>
+        <p class="quote body-poetic">
+          "影翎让'飞完即出片'从口号变成使用习惯——把每一次起飞的成本，压缩到只需要一个下午。"
+        </p>
+        <div class="body-tabular" style="color:var(--ink-inverse-mute);">— 36Kr · 深度评测</div>
+      </article>
+
+      <article class="card-media-quote">
+        <div class="media-mark">The Verge</div>
+        <p class="quote body-poetic">
+          "It's a 249-gram drone that doesn't feel like a compromise.
+          The catch, of course, is you have to be OK reframing everything —
+          which, as it turns out, is a rather liberating catch."
+        </p>
+        <div class="body-tabular" style="color:var(--ink-inverse-mute);">— The Verge</div>
+      </article>
+
+      <article class="card-media-quote">
+        <div class="media-mark">DPReview</div>
+        <p class="quote body-poetic">
+          "The dual-sensor panoramic stitching is the tidiest we've seen
+          from any aerial platform under one kilogram. Colour science
+          feels genuinely deliberate, not accidental."
+        </p>
+        <div class="body-tabular" style="color:var(--ink-inverse-mute);">— DPReview</div>
+      </article>
+
+      <article class="card-media-quote">
+        <div class="media-mark">极客公园</div>
+        <p class="quote body-poetic">
+          "从 Insta360 血脉里长出的独立子品牌，第一款产品就把'全景'两个字重新定义了一次——
+          在天上，而不是手里。"
+        </p>
+        <div class="body-tabular" style="color:var(--ink-inverse-mute);">— 极客公园 · GeekPark</div>
+      </article>
+    </div>
+
+    <!-- Logo wall -->
+    <div class="mt-16">
+      <div class="eyebrow mb-6" style="color:var(--ink-inverse-mute);">Also covered by · public record</div>
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3">
+        <div class="logo-tile">TIME</div>
+        <div class="logo-tile">WIRED</div>
+        <div class="logo-tile">THE VERGE</div>
+        <div class="logo-tile">36Kr</div>
+        <div class="logo-tile">DPREVIEW</div>
+        <div class="logo-tile">TECHCRUNCH</div>
+        <div class="logo-tile">极客公园</div>
+        <div class="logo-tile">差评 X.PIN</div>
+        <div class="logo-tile">ENGADGET</div>
+        <div class="logo-tile">CINE D</div>
+        <div class="logo-tile">FSTOPPERS</div>
+        <div class="logo-tile confidential">+ 40 outlets globally</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 06 CTA + INSTA360 BACKING ================= -->
+<section id="cta" class="sec-giant" style="background:var(--canvas);">
+  <div class="container-x">
+    <div class="section-open">
+      <div class="eyebrow-line">
+        <span class="counter-num section-counter">06</span>
+        <span class="eyebrow" style="color:var(--ink-inverse-mute);">START FLYING</span>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
+      <div class="lg:col-span-7">
+        <h2 class="display-xl mb-8">
+          Bring A1 into your everyday<span class="pd">.</span>
+        </h2>
+        <p class="body-lg" style="color:var(--ink-inverse-secondary); max-width:520px;">
+          One aircraft. Free returns for thirty days. Same-day pickup in Shenzhen,
+          same-week worldwide. Buy it, fly it — bring it back if the sky wasn't
+          what you thought it would be.
+        </p>
+        <p class="body-poetic zh mt-6" style="color:var(--ink-inverse-mute); max-width:520px;">
+          你想要的答案在天上——买回家，飞一次，答案就自己来了。
+        </p>
+        <div class="mt-10 flex flex-wrap gap-4">
+          <a href="contact.html" class="btn-primary">Buy A1 · ¥5,499 <span aria-hidden="true">→</span></a>
+          <a href="a1.html" class="btn-secondary">Read the full spec sheet</a>
+        </div>
+      </div>
+
+      <div class="lg:col-span-5">
+        <div style="border:1px solid var(--hairline); padding:32px; background:var(--canvas-elev);">
+          <div class="eyebrow mb-6" style="color:var(--ink-inverse-mute);">A SUB-BRAND OF INSTA360</div>
+          <h3 class="heading-lg mb-4">The lineage matters<span class="pd">.</span></h3>
+          <p class="body-md" style="color:var(--ink-inverse-secondary);">
+            Antigravity was co-incubated by Insta360 and a small group of aerial
+            cinematographers who had been asking, for a decade, why nobody had
+            put a proper panoramic camera on a proper aircraft.
+          </p>
+          <p class="body-md mt-4" style="color:var(--ink-inverse-secondary);">
+            The image pipeline, the stitching algorithms, and half of the
+            firmware team share a floor in Shenzhen with the Insta360 X series.
+            You inherit that DNA when you buy an A1.
+          </p>
+          <div class="mt-8 pt-6" style="border-top:1px solid var(--hairline);">
+            <div class="stat-row">
+              <span class="body-md stat-key">Founded</span>
+              <span class="body-tabular stat-val">2024 · Shenzhen</span>
+            </div>
+            <div class="stat-row">
+              <span class="body-md stat-key">Parent</span>
+              <span class="body-tabular stat-val">Insta360 · 影石</span>
+            </div>
+            <div class="stat-row">
+              <span class="body-md stat-key">First product</span>
+              <span class="body-tabular stat-val num-sky">A1 · 8K</span>
+            </div>
+            <div class="stat-row">
+              <span class="body-md stat-key">Independent domain</span>
+              <span class="body-tabular stat-val">antigravity.tech</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer-shell">
+  <div class="container-x">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-10 mb-16">
+      <div class="col-span-2 brand-block">
+        <div class="brand-mark">ANTIGRAVITY<span class="pd">.</span></div>
+        <p class="body-md mt-4" style="max-width:320px;">
+          A cinematic 8K aerial platform. One aircraft, one commitment —
+          keep the sky the way you saw it, the moment you looked up.
+        </p>
+        <div class="mt-6 flex items-center gap-3 body-tabular" style="color:var(--ink-inverse-secondary);">
+          <span class="live-dot"></span>
+          <span id="footer-clock">00:00:00 CET · 00:00:00 BJT · 2026.01.01</span>
+        </div>
+        <p class="insta-endorse mt-8">A sub-brand of Insta360 · 由影石 Insta360 与第三方共同孵化</p>
+      </div>
+      <div>
+        <div class="eyebrow mb-4 col-eyebrow">PRODUCTS</div>
+        <ul class="space-y-3 body-md" style="list-style:none; padding:0; margin:0;">
+          <li><a href="a1.html">A1 · 8K Panoramic Drone</a></li>
+          <li><a href="accessories.html#vision">Vision Flight Goggles</a></li>
+          <li><a href="accessories.html#remote">Grip Remote</a></li>
+          <li><a href="accessories.html#battery">Extended Battery</a></li>
+          <li><a href="accessories.html">Props · Case · Kit</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="eyebrow mb-4 col-eyebrow">COMPANY</div>
+        <ul class="space-y-3 body-md" style="list-style:none; padding:0; margin:0;">
+          <li><a href="products.html">The family</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html#support">Support</a></li>
+          <li><a href="contact.html#offices">Regional buying</a></li>
+          <li><a href="index.html#press">Press</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="hairline-on-dark"></div>
+    <div class="mt-8 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+      <p class="micro" style="color:var(--ink-inverse-fine);">
+        © 2026 Antigravity Aerial Systems. Cinema for the sky.
+      </p>
+      <div class="flex items-center gap-6 micro" style="color:var(--ink-inverse-fine);">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Warranty</a>
+        <a href="#">Compliance</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/live.js"></script>
+</body>
+</html>
