@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="DJI 大疆创新 · 消费级航拍 · 手持影像 · 行业应用 · 农业无人机。全球飞行影像系统。MAVIC · OSMO · RONIN · AVATA · MATRICE · AGRAS." />
+<meta name="keywords" content="DJI, 大疆, 无人机, 航拍, Mavic 4 Pro, Osmo Pocket 4, Ronin, Avata, Matrice, Agras, 全球飞行影像" />
+<title>DJI · 探索前所未见 · 全球飞行影像系统</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Noto+Sans+SC:wght@300;400;500;600;700&family=Noto+Serif+SC:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/style.css" />
+</head>
+
+<body>
+
+<!-- ================= NAV (shared, byte-identical across 5 pages) ================= -->
+<nav class="nav-shell">
+  <div class="container-x nav-inner">
+    <div class="nav-left">
+      <a href="index.html" class="brand-mark">DJI<span class="pd">.</span></a>
+      <div class="nav-links">
+        <a href="index.html">首页</a>
+        <a href="mavic.html">Mavic 消费级</a>
+        <a href="osmo.html">Osmo 手持影像</a>
+        <a href="enterprise.html">行业 · 农业</a>
+        <a href="contact.html">全球服务</a>
+      </div>
+    </div>
+    <div class="nav-right">
+      <div class="nav-clock desktop-only-clock">
+        <span class="live-dot"></span>
+        <span class="city">HK</span>
+        <span id="nav-clock-hk">00:00:00</span>
+        <span class="divider">·</span>
+        <span class="city">SZ</span>
+        <span id="nav-clock-sz">00:00:00</span>
+      </div>
+      <a href="contact.html#buy" class="nav-cta">立即购买 <span aria-hidden="true">→</span></a>
+    </div>
+  </div>
+</nav>
+
+<!-- ================= HERO CAROUSEL (index only signature element) ================= -->
+<header class="hero-carousel" data-carousel aria-label="DJI 产品轮播">
+
+  <!-- Slide 01 · MAVIC 4 PRO -->
+  <div class="carousel-slide is-active" role="group" aria-roledescription="slide" aria-label="1 of 6">
+    <div class="carousel-slide-bg slide-bg-mavic4"></div>
+    <div class="carousel-slide-overlay"></div>
+    <div class="carousel-slide-body">
+      <div class="eyebrow" style="justify-content:center; display:flex; gap:12px;">
+        <span>DJI FLAGSHIP · 2025 NEW</span>
+      </div>
+      <svg class="wordmark-svg wordmark-hero filled mt-4" viewBox="0 0 480 80" aria-label="MAVIC 4 PRO">
+        <text x="240" y="56" text-anchor="middle" font-size="52">MAVIC 4 PRO</text>
+      </svg>
+      <div class="poetic-cn zh-serif mt-6">天地为你所动</div>
+      <div class="carousel-slide-subline">三摄旗舰 · 一英寸主摄 · 全画幅 6K 电影感航拍</div>
+      <div class="carousel-slide-ctas">
+        <a href="mavic.html" class="btn-on-photo">立即购买 <span aria-hidden="true">→</span></a>
+        <a href="mavic.html#mavic4" class="text-link-arrow on-dark">了解更多 <span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Slide 02 · OSMO POCKET 4P -->
+  <div class="carousel-slide" role="group" aria-roledescription="slide" aria-label="2 of 6">
+    <div class="carousel-slide-bg slide-bg-osmopocket"></div>
+    <div class="carousel-slide-overlay"></div>
+    <div class="carousel-slide-body">
+      <div class="eyebrow" style="justify-content:center; display:flex; gap:12px;">
+        <span>OSMO · CINEMATIC HANDHELD</span>
+      </div>
+      <svg class="wordmark-svg wordmark-hero filled mt-4" viewBox="0 0 520 80" aria-label="OSMO POCKET 4P">
+        <text x="260" y="56" text-anchor="middle" font-size="52">OSMO POCKET 4P</text>
+      </svg>
+      <div class="poetic-cn zh-serif mt-6">掌上视界</div>
+      <div class="carousel-slide-subline">一英寸传感器 · 三轴机械云台 · 口袋里的电影摄影机</div>
+      <div class="carousel-slide-ctas">
+        <a href="osmo.html" class="btn-on-photo">立即购买 <span aria-hidden="true">→</span></a>
+        <a href="osmo.html#pocket4" class="text-link-arrow on-dark">了解更多 <span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Slide 03 · AIR 3S -->
+  <div class="carousel-slide" role="group" aria-roledescription="slide" aria-label="3 of 6">
+    <div class="carousel-slide-bg slide-bg-air3s"></div>
+    <div class="carousel-slide-overlay"></div>
+    <div class="carousel-slide-body">
+      <div class="eyebrow" style="justify-content:center; display:flex; gap:12px;">
+        <span>MAVIC · DUAL-CAMERA TRAVEL</span>
+      </div>
+      <svg class="wordmark-svg wordmark-hero filled mt-4" viewBox="0 0 360 80" aria-label="AIR 3S">
+        <text x="180" y="56" text-anchor="middle" font-size="52">AIR 3S</text>
+      </svg>
+      <div class="poetic-cn zh-serif mt-6">感受生活</div>
+      <div class="carousel-slide-subline">广角 + 长焦双摄 · 46 分钟续航 · 你的旅行随身摄影机</div>
+      <div class="carousel-slide-ctas">
+        <a href="mavic.html#air3s" class="btn-on-photo">立即购买 <span aria-hidden="true">→</span></a>
+        <a href="mavic.html" class="text-link-arrow on-dark">了解更多 <span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Slide 04 · AVATA 360 -->
+  <div class="carousel-slide" role="group" aria-roledescription="slide" aria-label="4 of 6">
+    <div class="carousel-slide-bg slide-bg-avata"></div>
+    <div class="carousel-slide-overlay"></div>
+    <div class="carousel-slide-body">
+      <div class="eyebrow" style="justify-content:center; display:flex; gap:12px;">
+        <span>AVATA · IMMERSIVE FIRST-PERSON</span>
+      </div>
+      <svg class="wordmark-svg wordmark-hero filled mt-4" viewBox="0 0 420 80" aria-label="AVATA 360">
+        <text x="210" y="56" text-anchor="middle" font-size="52">AVATA 360</text>
+      </svg>
+      <div class="poetic-cn zh-serif mt-6">翱翔无界</div>
+      <div class="carousel-slide-subline">全景穿越机 · 一镜到底 · 沉浸式第一人称飞行体验</div>
+      <div class="carousel-slide-ctas">
+        <a href="mavic.html#avata" class="btn-on-photo">立即购买 <span aria-hidden="true">→</span></a>
+        <a href="mavic.html" class="text-link-arrow on-dark">了解更多 <span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Slide 05 · OSMO ACTION 6 -->
+  <div class="carousel-slide" role="group" aria-roledescription="slide" aria-label="5 of 6">
+    <div class="carousel-slide-bg slide-bg-action6"></div>
+    <div class="carousel-slide-overlay"></div>
+    <div class="carousel-slide-body">
+      <div class="eyebrow" style="justify-content:center; display:flex; gap:12px;">
+        <span>OSMO · ADVENTURE-GRADE</span>
+      </div>
+      <svg class="wordmark-svg wordmark-hero filled mt-4" viewBox="0 0 480 80" aria-label="OSMO ACTION 6">
+        <text x="240" y="56" text-anchor="middle" font-size="52">OSMO ACTION 6</text>
+      </svg>
+      <div class="poetic-cn zh-serif mt-6">记录热爱</div>
+      <div class="carousel-slide-subline">双色温屏 · 20米防水 · 高原低温 · 你的下一段冒险片段</div>
+      <div class="carousel-slide-ctas">
+        <a href="osmo.html#action6" class="btn-on-photo">立即购买 <span aria-hidden="true">→</span></a>
+        <a href="osmo.html" class="text-link-arrow on-dark">了解更多 <span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Slide 06 · MATRICE 400 -->
+  <div class="carousel-slide" role="group" aria-roledescription="slide" aria-label="6 of 6">
+    <div class="carousel-slide-bg slide-bg-matrice"></div>
+    <div class="carousel-slide-overlay"></div>
+    <div class="carousel-slide-body">
+      <div class="eyebrow" style="justify-content:center; display:flex; gap:12px;">
+        <span>ENTERPRISE · INDUSTRIAL PLATFORM</span>
+      </div>
+      <svg class="wordmark-svg wordmark-hero filled mt-4" viewBox="0 0 480 80" aria-label="MATRICE 400">
+        <text x="240" y="56" text-anchor="middle" font-size="52">MATRICE 400</text>
+      </svg>
+      <div class="poetic-cn zh-serif mt-6">使命必达</div>
+      <div class="carousel-slide-subline">全场景工业级平台 · 59 分钟续航 · 应急 / 巡检 / 测绘</div>
+      <div class="carousel-slide-ctas">
+        <a href="enterprise.html" class="btn-on-photo">立即购买 <span aria-hidden="true">→</span></a>
+        <a href="enterprise.html#matrice" class="text-link-arrow on-dark">了解更多 <span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="carousel-controls">
+    <div class="carousel-dots" role="tablist" aria-label="轮播导航">
+      <button class="carousel-dot is-active" aria-label="Slide 1" tabindex="0"></button>
+      <button class="carousel-dot" aria-label="Slide 2" tabindex="0"></button>
+      <button class="carousel-dot" aria-label="Slide 3" tabindex="0"></button>
+      <button class="carousel-dot" aria-label="Slide 4" tabindex="0"></button>
+      <button class="carousel-dot" aria-label="Slide 5" tabindex="0"></button>
+      <button class="carousel-dot" aria-label="Slide 6" tabindex="0"></button>
+    </div>
+    <span class="carousel-counter">01 / 06</span>
+  </div>
+</header>
+
+<!-- ================= PRODUCT TAB STRIP · shopping-mall category rack ================= -->
+<div class="tab-strip-shell" data-tab-strip>
+  <div class="tab-strip">
+    <a href="#category-drones"   class="tab-strip-item is-active">人气单品</a>
+    <a href="#category-gimbal"   class="tab-strip-item">云台相机</a>
+    <a href="#category-panorama" class="tab-strip-item">全景相机</a>
+    <a href="#category-wide"     class="tab-strip-item">广角相机</a>
+    <a href="#category-mobile"   class="tab-strip-item">手机云台</a>
+    <a href="#category-mic"      class="tab-strip-item">无线麦克风</a>
+    <a href="#category-video"    class="tab-strip-item">视频会议</a>
+    <a href="#category-pro"      class="tab-strip-item">专业级产品</a>
+  </div>
+</div>
+
+<!-- ================= CATEGORY GRID · 6 flagship products ================= -->
+<section id="category-drones" class="sec-huge" style="background:var(--canvas);">
+  <div class="container-x">
+
+    <div class="sec-open">
+      <div class="lead">
+        <div class="eyebrow">
+          <span class="rule"></span>
+          <span>PORTFOLIO · 消费级人气单品</span>
+        </div>
+        <h2>一个门户，六条产品线<span class="pd">.</span></h2>
+        <p class="body-lg mt-4" style="max-width:640px;">
+          从口袋里的一英寸传感器，到载重 50 公斤的农业平台。DJI 从不试图用一款产品服务所有人 —
+          我们相信不同的场景需要不同的仪器，而我们只做那些真正被需要的那一款。
+        </p>
+      </div>
+      <div class="aux">
+        <a href="mavic.html" class="text-link-arrow">查看全部产品 <span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+
+    <div class="category-grid">
+      <a href="mavic.html#mavic4" class="card-category">
+        <div class="card-eyebrow">
+          <span class="chip-new">NEW</span>
+          <span class="eyebrow-tight">MAVIC · 消费级旗舰</span>
+        </div>
+        <div class="render"><div class="render-shape"></div></div>
+        <svg class="wordmark-svg wordmark-small filled" viewBox="0 0 320 44" aria-label="MAVIC 4 PRO">
+          <text x="160" y="30" text-anchor="middle" font-size="26">MAVIC 4 PRO</text>
+        </svg>
+        <div class="poetic-cn-sm zh-serif mt-3">天地为你所动</div>
+        <p class="body-sm mt-4">三摄旗舰航拍机 · 一英寸主摄 · 6K 电影感 · 45 分钟续航</p>
+        <div class="flex items-center justify-between mt-6">
+          <span class="chip-spec">¥ 15,499 起</span>
+          <span class="text-link-arrow">购买 <span aria-hidden="true">→</span></span>
+        </div>
+      </a>
+
+      <a href="mavic.html#air3s" class="card-category">
+        <div class="card-eyebrow">
+          <span class="eyebrow-tight">MAVIC · 双摄旅行</span>
+        </div>
+        <div class="render"><div class="render-shape"></div></div>
+        <svg class="wordmark-svg wordmark-small filled" viewBox="0 0 260 44" aria-label="AIR 3S">
+          <text x="130" y="30" text-anchor="middle" font-size="26">AIR 3S</text>
+        </svg>
+        <div class="poetic-cn-sm zh-serif mt-3">感受生活</div>
+        <p class="body-sm mt-4">广角 + 中长焦 · 46 分钟续航 · 500 米图传 · 720g 起飞</p>
+        <div class="flex items-center justify-between mt-6">
+          <span class="chip-spec">¥ 8,988 起</span>
+          <span class="text-link-arrow">购买 <span aria-hidden="true">→</span></span>
+        </div>
+      </a>
+
+      <a href="mavic.html#mini5" class="card-category">
+        <div class="card-eyebrow">
+          <span class="chip-new">NEW</span>
+          <span class="eyebrow-tight">MAVIC · 入门轻量</span>
+        </div>
+        <div class="render"><div class="render-shape"></div></div>
+        <svg class="wordmark-svg wordmark-small filled" viewBox="0 0 300 44" aria-label="MINI 5 PRO">
+          <text x="150" y="30" text-anchor="middle" font-size="26">MINI 5 PRO</text>
+        </svg>
+        <div class="poetic-cn-sm zh-serif mt-3">轻装上阵</div>
+        <p class="body-sm mt-4">249g 免注册 · 4K/60fps · 全向避障 · 学生首选</p>
+        <div class="flex items-center justify-between mt-6">
+          <span class="chip-spec">¥ 4,999 起</span>
+          <span class="text-link-arrow">购买 <span aria-hidden="true">→</span></span>
+        </div>
+      </a>
+
+      <a href="osmo.html#pocket4" id="category-gimbal" class="card-category">
+        <div class="card-eyebrow">
+          <span class="chip-new">NEW</span>
+          <span class="eyebrow-tight">OSMO · 云台相机</span>
+        </div>
+        <div class="render"><div class="render-shape"></div></div>
+        <svg class="wordmark-svg wordmark-small filled" viewBox="0 0 360 44" aria-label="OSMO POCKET 4P">
+          <text x="180" y="30" text-anchor="middle" font-size="24">OSMO POCKET 4P</text>
+        </svg>
+        <div class="poetic-cn-sm zh-serif mt-3">掌上视界</div>
+        <p class="body-sm mt-4">一英寸大底 · 三轴机械云台 · 4K/120fps · 口袋电影机</p>
+        <div class="flex items-center justify-between mt-6">
+          <span class="chip-spec">¥ 4,299 起</span>
+          <span class="text-link-arrow">购买 <span aria-hidden="true">→</span></span>
+        </div>
+      </a>
+
+      <a href="osmo.html#action6" id="category-wide" class="card-category">
+        <div class="card-eyebrow">
+          <span class="eyebrow-tight">OSMO · 广角运动</span>
+        </div>
+        <div class="render"><div class="render-shape"></div></div>
+        <svg class="wordmark-svg wordmark-small filled" viewBox="0 0 340 44" aria-label="OSMO ACTION 6">
+          <text x="170" y="30" text-anchor="middle" font-size="24">OSMO ACTION 6</text>
+        </svg>
+        <div class="poetic-cn-sm zh-serif mt-3">记录热爱</div>
+        <p class="body-sm mt-4">双色温屏 · 20米防水 · 4K/120fps · 极端环境不掉链子</p>
+        <div class="flex items-center justify-between mt-6">
+          <span class="chip-spec">¥ 2,799 起</span>
+          <span class="text-link-arrow">购买 <span aria-hidden="true">→</span></span>
+        </div>
+      </a>
+
+      <a href="osmo.html#mobile8" id="category-mobile" class="card-category">
+        <div class="card-eyebrow">
+          <span class="eyebrow-tight">OSMO · 手机云台</span>
+        </div>
+        <div class="render"><div class="render-shape"></div></div>
+        <svg class="wordmark-svg wordmark-small filled" viewBox="0 0 360 44" aria-label="OSMO MOBILE 8P">
+          <text x="180" y="30" text-anchor="middle" font-size="24">OSMO MOBILE 8P</text>
+        </svg>
+        <div class="poetic-cn-sm zh-serif mt-3">随手成片</div>
+        <p class="body-sm mt-4">三轴防抖 · 智能跟随 6.0 · 磁吸手机夹 · 折叠携带</p>
+        <div class="flex items-center justify-between mt-6">
+          <span class="chip-spec">¥ 999 起</span>
+          <span class="text-link-arrow">购买 <span aria-hidden="true">→</span></span>
+        </div>
+      </a>
+
+      <a href="osmo.html#micmini2s" id="category-mic" class="card-category">
+        <div class="card-eyebrow">
+          <span class="chip-new">NEW</span>
+          <span class="eyebrow-tight">DJI MIC · 无线麦克风</span>
+        </div>
+        <div class="render"><div class="render-shape"></div></div>
+        <svg class="wordmark-svg wordmark-small filled" viewBox="0 0 320 44" aria-label="MIC MINI 2S">
+          <text x="160" y="30" text-anchor="middle" font-size="26">MIC MINI 2S</text>
+        </svg>
+        <div class="poetic-cn-sm zh-serif mt-3">收声无痕</div>
+        <p class="body-sm mt-4">10g 超轻 · 400 米传输 · 32-bit 浮点 · 全天记录不换电</p>
+        <div class="flex items-center justify-between mt-6">
+          <span class="chip-spec">¥ 1,499 起</span>
+          <span class="text-link-arrow">购买 <span aria-hidden="true">→</span></span>
+        </div>
+      </a>
+
+      <a href="osmo.html#rs5" id="category-pro" class="card-category">
+        <div class="card-eyebrow">
+          <span class="eyebrow-tight">RONIN · 专业稳定器</span>
+        </div>
+        <div class="render"><div class="render-shape"></div></div>
+        <svg class="wordmark-svg wordmark-small filled" viewBox="0 0 260 44" aria-label="RS 5">
+          <text x="130" y="30" text-anchor="middle" font-size="26">RS 5</text>
+        </svg>
+        <div class="poetic-cn-sm zh-serif mt-3">稳如磐石</div>
+        <p class="body-sm mt-4">4.5 kg 载重 · 智能自动调平 · 10.1 英寸屏 · 电影工业级</p>
+        <div class="flex items-center justify-between mt-6">
+          <span class="chip-spec">¥ 4,499 起</span>
+          <span class="text-link-arrow">购买 <span aria-hidden="true">→</span></span>
+        </div>
+      </a>
+
+      <a href="enterprise.html" id="category-panorama" class="card-category">
+        <div class="card-eyebrow">
+          <span class="eyebrow-tight">ENTERPRISE · 行业平台</span>
+        </div>
+        <div class="render"><div class="render-shape"></div></div>
+        <svg class="wordmark-svg wordmark-small filled" viewBox="0 0 320 44" aria-label="MATRICE 400">
+          <text x="160" y="30" text-anchor="middle" font-size="24">MATRICE 400</text>
+        </svg>
+        <div class="poetic-cn-sm zh-serif mt-3">使命必达</div>
+        <p class="body-sm mt-4">59 分钟续航 · 六向避障 · 应急 / 测绘 / 巡检全场景</p>
+        <div class="flex items-center justify-between mt-6">
+          <span class="chip-spec">工业询价</span>
+          <span class="text-link-arrow">咨询 <span aria-hidden="true">→</span></span>
+        </div>
+      </a>
+    </div>
+
+    <!-- placeholder anchors for the tab strip that don't have dedicated cards -->
+    <div id="category-video" aria-hidden="true"></div>
+  </div>
+</section>
+
+<!-- ================= ROLLING COUNTER BAND ================= -->
+<section class="counter-band">
+  <div class="container-x counter-inner">
+    <div>
+      <div class="eyebrow" style="display:flex; gap:12px; align-items:center;">
+        <span class="live-dot"></span>
+        <span>LIVE · WORLDWIDE</span>
+      </div>
+      <div class="counter-num-big mt-4" id="device-counter">22,500,000</div>
+      <div class="counter-label">
+        Devices in the Sky Worldwide
+        <span class="zh">全球飞行中的 DJI 装备 · odometer +1 每 2 秒</span>
+      </div>
+    </div>
+    <div>
+      <div class="grid grid-cols-3 gap-8">
+        <div>
+          <div class="eyebrow">Clips · uploaded today</div>
+          <div class="mono mt-2" style="font-size:32px; font-weight:500; letter-spacing:-0.6px;" id="stat-uploads">184,921</div>
+        </div>
+        <div>
+          <div class="eyebrow">Flights · logged today</div>
+          <div class="mono mt-2" style="font-size:32px; font-weight:500; letter-spacing:-0.6px;" id="stat-flights">61,340</div>
+        </div>
+        <div>
+          <div class="eyebrow">Pilots · newly registered</div>
+          <div class="mono mt-2" style="font-size:32px; font-weight:500; letter-spacing:-0.6px;" id="stat-pilots">18,244</div>
+        </div>
+      </div>
+      <div class="mt-6 caption" style="max-width:520px;">
+        Skypixel · 用户投稿实时刷新。数字由 DJI Fly · DJI Mimo · DJI Pilot 三端聚合。
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= INNOVATION STORIES · EDITORIAL BAND ================= -->
+<section id="stories" class="editorial-band sec-huge">
+  <div class="container-x">
+
+    <div class="sec-open">
+      <div class="lead">
+        <div class="eyebrow">
+          <span class="rule"></span>
+          <span>创新故事 · INNOVATION STORIES</span>
+        </div>
+        <h2>产品之后，是产品背后的人<span class="pd">.</span></h2>
+        <p class="body-lg mt-4" style="max-width:640px;">
+          每一个我们发布的产品背后，都有一群坚持把光线、声音、和地平线做到极致的人。
+          这里是他们的笔记。
+        </p>
+      </div>
+      <div class="aux">
+        <a href="#" class="text-link-arrow">查看更多故事 <span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+
+    <div class="editorial-grid">
+
+      <article class="card-news">
+        <div class="thumb">
+          <div class="thumb-overlay"></div>
+          <div class="thumb-caption">产品故事 · MAVIC 4 PRO</div>
+        </div>
+        <div class="body">
+          <div class="eyebrow">团队访谈 · 08 分钟阅读</div>
+          <h3 class="mt-3">三摄之难：Mavic 4 Pro 的光学团队 27 个月做了些什么</h3>
+          <p class="dek">从主摄 1 英寸到中焦 70mm 到长焦 168mm — 一台起飞重量 1080 克的机器要装下三条光路。首席光学工程师复盘那段最难的日子。</p>
+          <div class="meta">2026.06.14 · DJI Studio</div>
+        </div>
+      </article>
+
+      <article class="card-news">
+        <div class="thumb">
+          <div class="thumb-overlay"></div>
+          <div class="thumb-caption">用户案例 · OSMO 影像师</div>
+        </div>
+        <div class="body">
+          <div class="eyebrow">影像师专访 · 12 分钟阅读</div>
+          <h3 class="mt-3">「我用 Pocket 4P 拍完了一整部电影」— 独立导演林知远</h3>
+          <p class="dek">从西藏无人区到南美安第斯 — 5 个月，一台 Pocket 4P，一台 Mic Mini 2S，一部叫《高原》的独立纪录长片。她说 DJI 只是让她做了一件普通人能做的事。</p>
+          <div class="meta">2026.05.28 · Skypixel Editorial</div>
+        </div>
+      </article>
+
+      <article class="card-news">
+        <div class="thumb">
+          <div class="thumb-overlay"></div>
+          <div class="thumb-caption">行业赋能 · AGRAS T100S</div>
+        </div>
+        <div class="body">
+          <div class="eyebrow">农业案例 · 15 分钟阅读</div>
+          <h3 class="mt-3">黑龙江 3,400 亩：Agras T100S 让一对夫妻管起了三个村的春耕</h3>
+          <p class="dek">50 公斤载重、40 公顷 / 小时的作业效率，让农业无人机第一次不是农业「补充」，而是农业「主力」。这是我们过去两年最想讲的故事。</p>
+          <div class="meta">2026.04.11 · DJI Agriculture</div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= SUB-BRAND PORTAL TRILOGY (index bottom) ================= -->
+<section id="portals" class="sec-huge" style="background:var(--canvas);">
+  <div class="container-x">
+
+    <div class="text-center mb-12">
+      <div class="eyebrow" style="justify-content:center; display:flex; gap:12px;">
+        <span>PORTFOLIO · SUB-BRAND GATEWAY</span>
+      </div>
+      <h2 class="display-lg mt-4" style="max-width:860px; margin:0 auto;">
+        DJI 从来不是一个品牌，是四个<span class="pd">.</span>
+      </h2>
+      <p class="body-lg mt-6" style="max-width:640px; margin:0 auto;">
+        消费者、专业影像师、行业工程师、和农业作业者 — 四类用户，四个独立站点，四种不同的声音。
+        请根据你正在做的事，选择接下来的入口。
+      </p>
+    </div>
+
+    <div class="portal-grid">
+
+      <a href="enterprise.html#pro" class="card-subbrand">
+        <svg class="portal-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+          <rect x="6" y="12" width="36" height="26" />
+          <circle cx="24" cy="25" r="7" />
+          <circle cx="24" cy="25" r="3" />
+          <rect x="18" y="6" width="12" height="6" />
+        </svg>
+        <div class="portal-title">DJI Pro</div>
+        <div class="portal-domain">pro.dji.com</div>
+        <div class="portal-tagline-en">Cinema-grade imaging tools for professional creators — Ronin, Inspire, Zenmuse cinema-camera systems.</div>
+        <div class="portal-tagline-cn zh">专业影像 · 面向电影工业和高端广告拍摄的稳定器与相机系统</div>
+        <span class="portal-cta">进入专业影像 <span aria-hidden="true">→</span></span>
+      </a>
+
+      <a href="enterprise.html#enterprise" class="card-subbrand">
+        <svg class="portal-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+          <rect x="8" y="10" width="12" height="30" />
+          <rect x="20" y="18" width="10" height="22" />
+          <rect x="30" y="6" width="10" height="34" />
+          <line x1="4" y1="40" x2="44" y2="40" />
+        </svg>
+        <div class="portal-title">DJI Enterprise</div>
+        <div class="portal-domain">enterprise.dji.com</div>
+        <div class="portal-tagline-en">Industry platforms for public safety, energy inspection, mapping and construction — Matrice, Zenmuse H30.</div>
+        <div class="portal-tagline-cn zh">行业应用 · 面向应急救援 / 能源巡检 / 测绘 / 建筑的工业级平台</div>
+        <span class="portal-cta">进入行业应用 <span aria-hidden="true">→</span></span>
+      </a>
+
+      <a href="enterprise.html#ag" class="card-subbrand">
+        <svg class="portal-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+          <path d="M24 42 V22" />
+          <path d="M24 22 C20 18 14 18 12 22 C14 26 20 26 24 22 Z" />
+          <path d="M24 22 C28 18 34 18 36 22 C34 26 28 26 24 22 Z" />
+          <path d="M24 28 C20 24 14 24 12 28 C14 32 20 32 24 28 Z" />
+          <path d="M24 28 C28 24 34 24 36 28 C34 32 28 32 24 28 Z" />
+          <line x1="8" y1="42" x2="40" y2="42" />
+        </svg>
+        <div class="portal-title">DJI Agriculture</div>
+        <div class="portal-domain">ag.dji.com</div>
+        <div class="portal-tagline-en">Agricultural drone systems for spraying, spreading and mapping — Agras T100S, T55, and FlyCart platforms.</div>
+        <div class="portal-tagline-cn zh">农业应用 · 面向精准施药 / 撒播 / 果园管理的植保平台</div>
+        <span class="portal-cta">进入农业应用 <span aria-hidden="true">→</span></span>
+      </a>
+
+    </div>
+
+    <div class="mt-12 text-center caption">
+      每一个子品牌拥有独立的定价、独立的经销、以及独立的售后网络。DJI 全球服务是它们共同的支柱。
+    </div>
+  </div>
+</section>
+
+<!-- ================= BILINGUAL MANIFESTO BAND (5-page shared body) ================= -->
+<section class="manifesto-band">
+  <div class="manifesto-inner">
+    <div class="manifesto-eyebrow-row">
+      <span class="rule"></span>
+      <span class="eyebrow" style="color:var(--on-ink-mute);">THE DJI MANIFESTO · 大疆信念</span>
+      <span class="rule"></span>
+    </div>
+    <h2 class="manifesto-en">THE FUTURE OF POSSIBLE<span class="pd" style="color:var(--on-ink-fine);">.</span></h2>
+    <div class="manifesto-cn">
+      <div class="manifesto-cn-line">
+        探索前所未见<span class="manifesto-cn-sep">·</span>记录点滴热爱<span class="manifesto-cn-sep">·</span>让世界看见你
+      </div>
+    </div>
+    <p class="manifesto-body">
+      我们相信影像不该只属于摄制组。我们相信天空不该只属于航空业。
+      我们相信一片田野的丰收和一位孩子的第一部电影，值得同样精密的工具。
+      DJI 存在的意义，就是把过去只有少数人能拿到的能力，交给每一个愿意抬头的人。
+    </p>
+    <div class="manifesto-stats">
+      <span class="item"><span class="live-dot"></span> 22.5M+ 全球装备</span>
+      <span class="item">100+ 国家和地区</span>
+      <span class="item">4 大子品牌</span>
+      <span class="item">EST. 2006 · SHENZHEN</span>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER (shared, byte-identical across 5 pages) ================= -->
+<footer class="footer-shell">
+  <div class="container-x">
+    <div class="footer-inner">
+      <div class="footer-brand-block">
+        <div class="brand-mark">DJI<span class="pd">.</span></div>
+        <p>
+          全球影像与飞行系统。从 Mavic 到 Matrice，从 Osmo 到 Agras。
+          我们相信影像属于每一个愿意抬头的人，也相信技术应该为土地和天空都服务。
+        </p>
+        <div class="clock-row">
+          <span class="live-dot"></span>
+          <span id="footer-clock">HK 00:00:00 · SZ 00:00:00 · 2026.01.01</span>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <div class="col-eyebrow">Products</div>
+        <ul>
+          <li><a href="mavic.html">Mavic · 消费级航拍</a></li>
+          <li><a href="osmo.html">Osmo · 手持影像</a></li>
+          <li><a href="enterprise.html">Matrice · 行业级</a></li>
+          <li><a href="enterprise.html#agras">Agras · 农业无人机</a></li>
+          <li><a href="mavic.html#avata">Avata · 沉浸式穿越</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <div class="col-eyebrow">Sub-brands</div>
+        <ul>
+          <li><a href="enterprise.html#pro">DJI Pro · 专业影像</a></li>
+          <li><a href="enterprise.html#enterprise">DJI Enterprise · 行业应用</a></li>
+          <li><a href="enterprise.html#ag">DJI Agriculture · 农业应用</a></li>
+          <li><a href="contact.html#education">DJI Education</a></li>
+          <li><a href="contact.html#care">DJI Care Refresh</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <div class="col-eyebrow">Company</div>
+        <ul>
+          <li><a href="contact.html">联系我们</a></li>
+          <li><a href="contact.html#dealers">授权经销商</a></li>
+          <li><a href="contact.html#support">全球售后</a></li>
+          <li><a href="contact.html#press">Press · Newsroom</a></li>
+          <li><a href="index.html#stories">创新故事</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p class="copyright">© 2026 SZ DJI Technology Co., Ltd. All rights reserved.</p>
+      <div class="lines">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Compliance</a>
+        <a href="#">Sitemap</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/live.js"></script>
+</body>
+</html>
