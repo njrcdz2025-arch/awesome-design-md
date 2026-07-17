@@ -65,6 +65,19 @@ a{color:inherit;}
 .arrow-hint{opacity:.55;transition:transform .2s ease, opacity .2s ease;}
 .card:hover .arrow-hint{opacity:1;transform:translateX(3px);}
 
+/* live sites — C-route brand sales sites */
+.live-badge{background:linear-gradient(135deg,#3DDC97 0%,#0EA5E9 100%);color:#0a0a0b;font-weight:700;font-size:10px;padding:2px 7px;border-radius:9999px;letter-spacing:0.04em;box-shadow:0 0 12px rgba(61,220,151,0.35);white-space:nowrap;}
+.live-card{background:var(--bg-card);border:1px solid var(--border);position:relative;overflow:hidden;transition:transform .22s ease, border-color .22s ease, box-shadow .22s ease;}
+.live-card::before{content:"";position:absolute;inset:0;background:linear-gradient(135deg,var(--tint,transparent) 0%,transparent 55%);opacity:.13;pointer-events:none;}
+.live-card::after{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--tint,var(--accent));}
+.live-card:hover{transform:translateY(-3px);border-color:var(--tint,var(--border-strong));box-shadow:0 16px 44px -14px color-mix(in srgb, var(--tint,var(--accent)) 40%, transparent);}
+.live-card > *{position:relative;}
+.enter-cta{display:inline-flex;align-items:center;gap:.5rem;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.18em;text-transform:uppercase;padding:9px 14px;border-radius:8px;background:var(--tint,var(--accent));color:#0a0a0b;font-weight:700;transition:transform .18s ease, filter .18s ease;}
+.live-card:hover .enter-cta{transform:translateX(4px);filter:brightness(1.08);}
+.pulse-dot{animation:pulse 1.8s ease-in-out infinite;box-shadow:0 0 8px currentColor;}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1);}50%{opacity:.55;transform:scale(1.35);}}
+.stat-live{background:linear-gradient(135deg,rgba(61,220,151,0.14) 0%,rgba(14,165,233,0.10) 100%);border:1px solid rgba(61,220,151,0.35);box-shadow:0 0 24px -8px rgba(61,220,151,0.35);}
+
 /* responsive */
 @media (max-width: 640px){
   .h1-hero{font-size:2.1rem !important;line-height:1.15 !important;}
@@ -83,6 +96,7 @@ a{color:inherit;}
     </a>
     <div class="flex items-center gap-1 sm:gap-2 text-[12px] sm:text-[13px]">
       <a href="#insight" class="px-2.5 py-1.5 rounded-md hover:bg-white/5 text-white/70 hover:text-white transition">Insight</a>
+      <a href="#live" class="px-2.5 py-1.5 rounded-md hover:bg-white/5 transition inline-flex items-center gap-1.5" style="color:#3DDC97;"><span class="inline-block w-1.5 h-1.5 rounded-full pulse-dot" style="background:#3DDC97;"></span>Live 4</a>
       <a href="#top9" class="px-2.5 py-1.5 rounded-md hover:bg-white/5 text-white/70 hover:text-white transition">Top 9</a>
       <a href="#all26" class="px-2.5 py-1.5 rounded-md hover:bg-white/5 text-white/70 hover:text-white transition">All 26</a>
       <a href="#about" class="px-2.5 py-1.5 rounded-md hover:bg-white/5 text-white/70 hover:text-white transition">About</a>
@@ -114,6 +128,11 @@ a{color:inherit;}
           <span class="mono text-2xl font-semibold" style="color:var(--accent);">9</span>
           <span class="text-[12px] text-white/60">家深度 <span class="mono">DESIGN.md</span></span>
         </div>
+        <div class="stat-live rounded-xl px-4 py-3 flex items-center gap-3">
+          <span class="inline-block w-2 h-2 rounded-full pulse-dot" style="background:#3DDC97;color:#3DDC97;"></span>
+          <span class="mono text-2xl font-semibold" style="color:#3DDC97;">4</span>
+          <span class="text-[12px]" style="color:#a7e8c6;">家<span class="mono">实建品牌销售站</span></span>
+        </div>
         <div class="card-elev rounded-xl px-4 py-3 flex items-center gap-3">
           <span class="mono text-2xl font-semibold text-white">74</span>
           <span class="text-[12px] text-white/60">家参考仓库</span>
@@ -122,11 +141,16 @@ a{color:inherit;}
 
       <!-- cta -->
       <div class="mt-9 flex flex-wrap items-center gap-3">
-        <a href="#top9" class="inline-flex items-center gap-2 px-5 py-3 rounded-xl text-[14px] font-medium text-black transition hover:brightness-110" style="background:var(--accent);box-shadow:0 6px 24px -8px var(--accent-glow);">
+        <a href="#live" class="inline-flex items-center gap-2 px-5 py-3 rounded-xl text-[14px] font-semibold text-black transition hover:brightness-110" style="background:linear-gradient(135deg,#3DDC97 0%,#0EA5E9 100%);box-shadow:0 6px 28px -8px rgba(61,220,151,0.5);">
+          <span class="inline-block w-1.5 h-1.5 rounded-full pulse-dot" style="background:#0a0a0b;color:#0a0a0b;"></span>
+          进入 4 家实建品牌站
+          <span aria-hidden="true">→</span>
+        </a>
+        <a href="#top9" class="inline-flex items-center gap-2 px-5 py-3 rounded-xl text-[14px] font-medium text-white/85 hover:text-white transition border" style="border-color:var(--border-strong);background:rgba(255,255,255,0.02);">
           浏览 Top 9 深度解析
           <span aria-hidden="true">→</span>
         </a>
-        <a href="#insight" class="inline-flex items-center gap-2 px-5 py-3 rounded-xl text-[14px] font-medium text-white/85 hover:text-white transition border" style="border-color:var(--border-strong);background:rgba(255,255,255,0.02);">
+        <a href="#insight" class="inline-flex items-center gap-2 px-5 py-3 rounded-xl text-[14px] font-medium text-white/60 hover:text-white transition">
           先看一句话结论
         </a>
       </div>
@@ -257,7 +281,149 @@ a{color:inherit;}
   </div>
 </section>
 
-<!-- ④ TOP 9 -->
+<!-- ④ LIVE SITES · C-route brand sales sites (4/4) -->
+<section id="live" class="border-t" style="border-color:var(--border);background:radial-gradient(ellipse 70% 50% at 50% 0%,rgba(61,220,151,0.09) 0%,transparent 60%);">
+  <div class="max-w-6xl mx-auto px-5 sm:px-6 py-20">
+    <div class="flex items-baseline justify-between mb-8 flex-wrap gap-3">
+      <div>
+        <div class="section-label mb-2 inline-flex items-center gap-2" style="color:#3DDC97;">
+          <span class="inline-block w-1.5 h-1.5 rounded-full pulse-dot" style="background:#3DDC97;color:#3DDC97;"></span>
+          // live · 4 家实建 5 页品牌销售站
+        </div>
+        <h2 class="zh text-white text-[26px] sm:text-[32px] font-semibold tracking-tight">
+          从 <span class="mono" style="color:var(--text-mute);">DESIGN.md</span> 到<span style="color:#3DDC97;">可点击的品牌站</span>
+        </h2>
+      </div>
+      <p class="zh text-[13px] max-w-md" style="color:var(--text-mute);">
+        4 家 Top 9 已被复刻为完整 5 页可访问站点（首页 + 4 内页），每家 2900–4600 行 Vanilla HTML，视觉红线 12/12 自检 PASS。点击进入实站。
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5">
+
+      <!-- Skydio Live -->
+      <a href="./brands/skydio/" class="live-card rounded-xl p-6 block" style="--tint:#e63946;">
+        <div class="flex items-start justify-between mb-4">
+          <div class="flex items-center gap-3">
+            <span class="swatch" style="background:#e63946;width:28px;height:28px;"></span>
+            <div>
+              <div class="mono text-[10px] tracking-widest mb-0.5" style="color:#f47a83;">B2B · AI DEFENSE</div>
+              <h3 class="text-white font-bold text-[22px] tracking-tight leading-none">Skydio</h3>
+            </div>
+          </div>
+          <span class="live-badge">● LIVE</span>
+        </div>
+        <p class="zh text-[13.5px] leading-relaxed mb-4" style="color:var(--text-sub);">
+          编辑级白底 + 单点军工红 <span class="mono">#e63946</span>。UTC+PDT 双时钟，实时飞行计数器 4.77M+。硬派战术、方角零圆角。
+        </p>
+        <div class="flex flex-wrap gap-1.5 mb-5">
+          <span class="chip">5 pages</span>
+          <span class="chip">2937 lines</span>
+          <span class="chip">editorial-white</span>
+          <span class="chip">status-red</span>
+        </div>
+        <div class="flex items-center justify-between">
+          <span class="enter-cta">Enter Live Site →</span>
+          <span class="mono text-[10px]" style="color:var(--text-mute);">/brands/skydio/</span>
+        </div>
+      </a>
+
+      <!-- Antigravity Live -->
+      <a href="./brands/antigravity/" class="live-card rounded-xl p-6 block" style="--tint:#7ab3ff;">
+        <div class="flex items-start justify-between mb-4">
+          <div class="flex items-center gap-3">
+            <span class="swatch" style="background:#000;border:1px solid #7ab3ff;width:28px;height:28px;"></span>
+            <div>
+              <div class="mono text-[10px] tracking-widest mb-0.5" style="color:#7ab3ff;">CONSUMER · 360 PANO</div>
+              <h3 class="text-white font-bold text-[22px] tracking-tight leading-none">Antigravity <span class="zh text-white/45 font-normal text-[14px]">影翎</span></h3>
+            </div>
+          </div>
+          <span class="live-badge">● LIVE</span>
+        </div>
+        <p class="zh text-[13.5px] leading-relaxed mb-4" style="color:var(--text-sub);">
+          纯黑影院式单品叙事 + 冷蓝 <span class="mono">#7ab3ff</span>。CET+Beijing 双时钟，Counter 128K+。Insta360 子品牌 Cinema 悬浮。
+        </p>
+        <div class="flex flex-wrap gap-1.5 mb-5">
+          <span class="chip">5 pages</span>
+          <span class="chip">3536 lines</span>
+          <span class="chip">pure-black</span>
+          <span class="chip">bilingual-poetic</span>
+        </div>
+        <div class="flex items-center justify-between">
+          <span class="enter-cta">Enter Live Site →</span>
+          <span class="mono text-[10px]" style="color:var(--text-mute);">/brands/antigravity/</span>
+        </div>
+      </a>
+
+      <!-- DJI Live -->
+      <a href="./brands/dji/" class="live-card rounded-xl p-6 block" style="--tint:#c4b5fd;">
+        <div class="flex items-start justify-between mb-4">
+          <div class="flex items-center gap-3">
+            <span class="swatch" style="background:#f5f5f5;width:28px;height:28px;"></span>
+            <div>
+              <div class="mono text-[10px] tracking-widest mb-0.5" style="color:#c4b5fd;">FULL-LINE · FLAGSHIP</div>
+              <h3 class="text-white font-bold text-[22px] tracking-tight leading-none">DJI <span class="zh text-white/45 font-normal text-[14px]">大疆创新</span></h3>
+            </div>
+          </div>
+          <span class="live-badge">● LIVE</span>
+        </div>
+        <p class="zh text-[13.5px] leading-relaxed mb-4" style="color:var(--text-sub);">
+          冷灰画布 + accent <span class="mono">#0068c9</span>。HK+SZ 双时钟，Rolling Counter 22.5M+。SVG Wordmark×38 · 4 字诗性标语×39 · Rotating Carousel 6 slide/6.5s。
+        </p>
+        <div class="flex flex-wrap gap-1.5 mb-5">
+          <span class="chip">5 pages</span>
+          <span class="chip">4467 lines</span>
+          <span class="chip">cool-gray-canvas</span>
+          <span class="chip">portfolio-gateway</span>
+        </div>
+        <div class="flex items-center justify-between">
+          <span class="enter-cta">Enter Live Site →</span>
+          <span class="mono text-[10px]" style="color:var(--text-mute);">/brands/dji/</span>
+        </div>
+      </a>
+
+      <!-- iFlight Live (终章) -->
+      <a href="./brands/iflight/" class="live-card rounded-xl p-6 block" style="--tint:#00B0FF;">
+        <div class="flex items-start justify-between mb-4">
+          <div class="flex items-center gap-3">
+            <span class="swatch" style="background:#00B0FF;width:28px;height:28px;box-shadow:0 0 12px rgba(0,176,255,0.4),inset 0 0 0 1px rgba(0,0,0,0.35);"></span>
+            <div>
+              <div class="mono text-[10px] tracking-widest mb-0.5" style="color:#00B0FF;">FPV · CIRCUIT-BOARD</div>
+              <h3 class="text-white font-bold text-[22px] tracking-tight leading-none">iFlight <span class="zh text-white/45 font-normal text-[14px]">亿飞</span></h3>
+            </div>
+          </div>
+          <span class="live-badge">● LIVE · NEW</span>
+        </div>
+        <p class="zh text-[13.5px] leading-relaxed mb-4" style="color:var(--text-sub);">
+          电击青 <span class="mono">#00B0FF</span> on 近黑 <span class="mono">#0D1117</span> CRT 示波器辉光。SZ+LA 双时钟，Counter 850K+。<span style="color:#00B0FF;">独家 Live Lap-Board 竞速时钟</span> Titillium 84px 每 47ms 更新。破例保留 silkscreen 圆角。
+        </p>
+        <div class="flex flex-wrap gap-1.5 mb-5">
+          <span class="chip">5 pages</span>
+          <span class="chip">4534 lines</span>
+          <span class="chip">cyan-on-dark</span>
+          <span class="chip">silkscreen-radii</span>
+          <span class="chip">where-dreams-can-fly</span>
+        </div>
+        <div class="flex items-center justify-between">
+          <span class="enter-cta">Enter Live Site →</span>
+          <span class="mono text-[10px]" style="color:var(--text-mute);">/brands/iflight/</span>
+        </div>
+      </a>
+
+    </div>
+
+    <!-- footnote -->
+    <div class="mt-8 flex flex-wrap items-center gap-x-6 gap-y-2 text-[12px]" style="color:var(--text-mute);">
+      <span class="inline-flex items-center gap-1.5"><span class="mono">■</span> 15,474 行 Vanilla HTML / Tailwind CDN</span>
+      <span class="inline-flex items-center gap-1.5"><span class="mono">■</span> 无构建工具 · GitHub Pages 直接部署</span>
+      <span class="inline-flex items-center gap-1.5"><span class="mono">■</span> 每站独立 <code class="mono" style="color:var(--text-sub);">assets/style.css + live.js</code></span>
+      <span class="inline-flex items-center gap-1.5"><span class="mono">■</span> 12/12 视觉红线自检 PASS</span>
+    </div>
+
+  </div>
+</section>
+
+<!-- ⑤ TOP 9 -->
 <section id="top9" class="border-t" style="border-color:var(--border);">
   <div class="max-w-6xl mx-auto px-5 sm:px-6 py-20">
     <div class="flex items-baseline justify-between mb-6 flex-wrap gap-3">
@@ -266,14 +432,14 @@ a{color:inherit;}
         <h2 class="zh text-white text-[26px] sm:text-[32px] font-semibold tracking-tight">9 家有完整 DESIGN.md 的品牌</h2>
       </div>
       <p class="zh text-[13px] max-w-md" style="color:var(--text-mute);">
-        每一份都是从首页真实观察出发的 metadata + 五节结构分析。点击卡片进入完整规范。
+        每一份都是从首页真实观察出发的 metadata + 五节结构分析。<span style="color:#3DDC97;">● LIVE</span> 徽章表示已产出完整品牌站，其余点开进 DESIGN.md 深度规范。
       </p>
     </div>
 
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
 
       <!-- Skydio -->
-      <a href="https://github.com/njrcdz2025-arch/awesome-design-md/blob/main/design-md/skydio/DESIGN.md" target="_blank" rel="noopener" class="card tint-card rounded-xl p-6 block" style="--tint:#e63946;">
+      <a href="./brands/skydio/" class="card tint-card rounded-xl p-6 block" style="--tint:#e63946;">
         <div class="flex items-start justify-between mb-4">
           <div>
             <div class="mono text-[11px] tracking-widest mb-1" style="color:#f47a83;">B2B · AI DEFENSE</div>
@@ -290,13 +456,13 @@ a{color:inherit;}
           <span class="chip">defense-report</span>
         </div>
         <div class="flex items-center justify-between text-[12px]">
-          <span class="mono" style="color:var(--accent);">Read DESIGN.md</span>
-          <span class="arrow-hint" style="color:var(--accent);">→</span>
+          <span class="mono inline-flex items-center gap-2" style="color:#3DDC97;"><span class="live-badge">● LIVE</span> Visit Live Site</span>
+          <span class="arrow-hint" style="color:#3DDC97;">→</span>
         </div>
       </a>
 
       <!-- Antigravity -->
-      <a href="https://github.com/njrcdz2025-arch/awesome-design-md/blob/main/design-md/antigravity/DESIGN.md" target="_blank" rel="noopener" class="card tint-card rounded-xl p-6 block" style="--tint:#7ab3ff;">
+      <a href="./brands/antigravity/" class="card tint-card rounded-xl p-6 block" style="--tint:#7ab3ff;">
         <div class="flex items-start justify-between mb-4">
           <div>
             <div class="mono text-[11px] tracking-widest mb-1" style="color:#7ab3ff;">CONSUMER · 360 PANO</div>
@@ -313,13 +479,13 @@ a{color:inherit;}
           <span class="chip">mono-product</span>
         </div>
         <div class="flex items-center justify-between text-[12px]">
-          <span class="mono" style="color:var(--accent);">Read DESIGN.md</span>
-          <span class="arrow-hint" style="color:var(--accent);">→</span>
+          <span class="mono inline-flex items-center gap-2" style="color:#3DDC97;"><span class="live-badge">● LIVE</span> Visit Live Site</span>
+          <span class="arrow-hint" style="color:#3DDC97;">→</span>
         </div>
       </a>
 
       <!-- DJI Global -->
-      <a href="https://github.com/njrcdz2025-arch/awesome-design-md/blob/main/design-md/dji_global/DESIGN.md" target="_blank" rel="noopener" class="card tint-card rounded-xl p-6 block" style="--tint:#c4b5fd;">
+      <a href="./brands/dji/" class="card tint-card rounded-xl p-6 block" style="--tint:#c4b5fd;">
         <div class="flex items-start justify-between mb-4">
           <div>
             <div class="mono text-[11px] tracking-widest mb-1" style="color:#c4b5fd;">FULL-LINE · FLAGSHIP</div>
@@ -336,8 +502,8 @@ a{color:inherit;}
           <span class="chip">poetic-4-char</span>
         </div>
         <div class="flex items-center justify-between text-[12px]">
-          <span class="mono" style="color:var(--accent);">Read DESIGN.md</span>
-          <span class="arrow-hint" style="color:var(--accent);">→</span>
+          <span class="mono inline-flex items-center gap-2" style="color:#3DDC97;"><span class="live-badge">● LIVE</span> Visit Live Site</span>
+          <span class="arrow-hint" style="color:#3DDC97;">→</span>
         </div>
       </a>
 
@@ -434,7 +600,7 @@ a{color:inherit;}
       </a>
 
       <!-- iFlight -->
-      <a href="https://github.com/njrcdz2025-arch/awesome-design-md/blob/main/design-md/iflight/DESIGN.md" target="_blank" rel="noopener" class="card tint-card rounded-xl p-6 block" style="--tint:#00B0FF;">
+      <a href="./brands/iflight/" class="card tint-card rounded-xl p-6 block" style="--tint:#00B0FF;">
         <div class="flex items-start justify-between mb-4">
           <div>
             <div class="mono text-[11px] tracking-widest mb-1" style="color:#00B0FF;">FPV · TECH-INDUSTRIAL</div>
@@ -451,8 +617,8 @@ a{color:inherit;}
           <span class="chip">3-domain-portal</span>
         </div>
         <div class="flex items-center justify-between text-[12px]">
-          <span class="mono" style="color:var(--accent);">Read DESIGN.md</span>
-          <span class="arrow-hint" style="color:var(--accent);">→</span>
+          <span class="mono inline-flex items-center gap-2" style="color:#3DDC97;"><span class="live-badge">● LIVE · NEW</span> Visit Live Site</span>
+          <span class="arrow-hint" style="color:#3DDC97;">→</span>
         </div>
       </a>
 
@@ -500,8 +666,8 @@ a{color:inherit;}
 
       <!-- ⭐ TOP 9 cards linked to DESIGN.md -->
 
-      <a href="https://github.com/njrcdz2025-arch/awesome-design-md/blob/main/design-md/skydio/DESIGN.md" target="_blank" rel="noopener" class="card rounded-xl p-5 block relative">
-        <span class="absolute top-3 right-3 star-badge">★ TOP 9</span>
+      <a href="./brands/skydio/" class="card rounded-xl p-5 block relative">
+        <span class="absolute top-3 right-3 live-badge">● LIVE</span>
         <div class="flex items-center gap-2 mb-2">
           <span class="swatch" style="background:#e63946;"></span>
           <h4 class="text-white font-semibold text-[15px]">Skydio</h4>
@@ -510,8 +676,8 @@ a{color:inherit;}
         <div class="flex flex-wrap gap-1"><span class="chip">AI-defense</span><span class="chip">editorial</span></div>
       </a>
 
-      <a href="https://github.com/njrcdz2025-arch/awesome-design-md/blob/main/design-md/antigravity/DESIGN.md" target="_blank" rel="noopener" class="card rounded-xl p-5 block relative">
-        <span class="absolute top-3 right-3 star-badge">★ TOP 9</span>
+      <a href="./brands/antigravity/" class="card rounded-xl p-5 block relative">
+        <span class="absolute top-3 right-3 live-badge">● LIVE</span>
         <div class="flex items-center gap-2 mb-2">
           <span class="swatch" style="background:#000000;"></span>
           <h4 class="text-white font-semibold text-[15px]">Antigravity <span class="zh text-white/45 font-normal text-[12px]">影翎</span></h4>
@@ -520,8 +686,8 @@ a{color:inherit;}
         <div class="flex flex-wrap gap-1"><span class="chip">360-drone</span><span class="chip">cinematic</span></div>
       </a>
 
-      <a href="https://github.com/njrcdz2025-arch/awesome-design-md/blob/main/design-md/dji_global/DESIGN.md" target="_blank" rel="noopener" class="card rounded-xl p-5 block relative">
-        <span class="absolute top-3 right-3 star-badge">★ TOP 9</span>
+      <a href="./brands/dji/" class="card rounded-xl p-5 block relative">
+        <span class="absolute top-3 right-3 live-badge">● LIVE</span>
         <div class="flex items-center gap-2 mb-2">
           <span class="swatch" style="background:#f5f5f5;"></span>
           <h4 class="text-white font-semibold text-[15px]">DJI <span class="zh text-white/45 font-normal text-[12px]">大疆创新</span></h4>
@@ -570,8 +736,8 @@ a{color:inherit;}
         <div class="flex flex-wrap gap-1"><span class="chip">radio-ctrl</span><span class="chip">shopify</span></div>
       </a>
 
-      <a href="https://github.com/njrcdz2025-arch/awesome-design-md/blob/main/design-md/iflight/DESIGN.md" target="_blank" rel="noopener" class="card rounded-xl p-5 block relative">
-        <span class="absolute top-3 right-3 star-badge">★ TOP 9</span>
+      <a href="./brands/iflight/" class="card rounded-xl p-5 block relative">
+        <span class="absolute top-3 right-3 live-badge">● LIVE</span>
         <div class="flex items-center gap-2 mb-2">
           <span class="swatch" style="background:#00B0FF;"></span>
           <h4 class="text-white font-semibold text-[15px]">iFlight <span class="zh text-white/45 font-normal text-[12px]">亿飞</span></h4>
