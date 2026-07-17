@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="iFlight — Where dreams can fly. Cinematic FPV / FPV Racing / Education. Nazgul Evoque F5 · Mach R5 · Taurus X8 Pro Max V2 · CineFlow · Defender · SKYVIZ." />
+<meta name="keywords" content="iFlight, FPV, drone, Nazgul, Evoque, Mach R5, Taurus X8, Cinewhoop, Longrange, Racing, 2Raw, cinematic FPV" />
+<title>iFlight · Where Dreams Can Fly · FPV Drones · Cinewhoop · Racing · Longrange</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700&family=JetBrains+Mono:wght@400;500;600&family=Noto+Sans+SC:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/style.css" />
+</head>
+
+<body>
+
+<!-- ================= NAV (shared, byte-identical across 5 pages) ================= -->
+<nav class="nav-shell">
+  <div class="container-wide nav-inner">
+    <div class="nav-left">
+      <a href="index.html" class="brand-mark">iFLIGHT<span class="dot"></span></a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="cinema.html">Cinematic</a>
+        <a href="racing.html">Racing</a>
+        <a href="longrange.html">Longrange</a>
+        <a href="contact.html">Where&nbsp;to&nbsp;Buy</a>
+      </div>
+    </div>
+    <div class="nav-right">
+      <div class="nav-clock">
+        <span class="live-dot"></span>
+        <span class="city">SZ</span>
+        <span id="nav-clock-sz">00:00:00</span>
+        <span class="divider">·</span>
+        <span class="city">LA</span>
+        <span id="nav-clock-la">00:00:00</span>
+      </div>
+      <a href="https://shop.iflight.com" class="nav-cta">Buy Now <span aria-hidden="true">↗</span></a>
+    </div>
+  </div>
+</nav>
+
+<!-- ================= HERO CAROUSEL (6 slides × 6.5s) ================= -->
+<header class="hero-carousel" data-carousel aria-label="iFlight product carousel">
+
+  <!-- Slide 01 · Nazgul Evoque F5 -->
+  <div class="carousel-slide is-active" role="group" aria-roledescription="slide" aria-label="1 of 6">
+    <div class="hero-bg bg-nazgul-evoque"></div>
+    <div class="hero-glow"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-body">
+      <div class="container-wide">
+        <div class="hero-content">
+          <div class="eyebrow eyebrow-hero">CINEWHOOP · 2026 FLAGSHIP</div>
+          <h1 class="hero-headline">Nazgul Evoque F5</h1>
+          <div class="mono mt-3" style="color: var(--if-cyan); font-size: 13px; letter-spacing: 0.10em;">IF-NE-F5-DJI-O4</div>
+          <p class="hero-tagline mt-6">Optimized for cinematic dives, mountain freestyle, and long-range cruise. Now with DJI O4 Air Unit and F7 55A AIO.</p>
+          <div class="dual-cta">
+            <a href="cinema.html#nazgul-evoque-f5" class="btn-secondary">Learn More</a>
+            <a href="https://shop.iflight.com" class="btn-primary">Buy Now <span class="outlink">↗</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Slide 02 · Mach R5 -->
+  <div class="carousel-slide" role="group" aria-roledescription="slide" aria-label="2 of 6">
+    <div class="hero-bg bg-mach-r5"></div>
+    <div class="hero-glow"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-body">
+      <div class="container-wide">
+        <div class="hero-content">
+          <div class="eyebrow eyebrow-hero">RACING · MULTIGP READY</div>
+          <h1 class="hero-headline">Mach R5</h1>
+          <div class="mono mt-3" style="color: var(--if-cyan); font-size: 13px; letter-spacing: 0.10em;">IF-MR5-SUCEX-ELRS</div>
+          <p class="hero-tagline mt-6">Fly fast. Fly first. Sub-260g racing hardware built to the MultiGP International Open ruleset.</p>
+          <div class="dual-cta">
+            <a href="racing.html#mach-r5" class="btn-secondary">Learn More</a>
+            <a href="https://shop.iflight.com" class="btn-primary">Buy Now <span class="outlink">↗</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Slide 03 · Taurus X8 Pro Max V2 -->
+  <div class="carousel-slide" role="group" aria-roledescription="slide" aria-label="3 of 6">
+    <div class="hero-bg bg-taurus-x8"></div>
+    <div class="hero-glow"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-body">
+      <div class="container-wide">
+        <div class="hero-content">
+          <div class="eyebrow eyebrow-hero">LONGRANGE · INDUSTRIAL LIFT</div>
+          <h1 class="hero-headline">Taurus X8 Pro Max V2</h1>
+          <div class="mono mt-3" style="color: var(--if-cyan); font-size: 13px; letter-spacing: 0.10em;">IF-TX8-PMV2-HD4K</div>
+          <p class="hero-tagline mt-6">Eight-rotor X-frame heavy lifter. 6 kg payload, 42-minute endurance, IP54-rated tail electronics.</p>
+          <div class="dual-cta">
+            <a href="longrange.html#taurus-x8" class="btn-secondary">Learn More</a>
+            <a href="https://shop.iflight.com" class="btn-primary">Buy Now <span class="outlink">↗</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Slide 04 · CineFlow -->
+  <div class="carousel-slide" role="group" aria-roledescription="slide" aria-label="4 of 6">
+    <div class="hero-bg bg-cineflow"></div>
+    <div class="hero-glow"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-body">
+      <div class="container-wide">
+        <div class="hero-content">
+          <div class="eyebrow eyebrow-hero">CINEMATIC · INDOOR CAGE</div>
+          <h1 class="hero-headline">CineFlow</h1>
+          <div class="mono mt-3" style="color: var(--if-cyan); font-size: 13px; letter-spacing: 0.10em;">IF-CF-155-O4-BT</div>
+          <p class="hero-tagline mt-6">Ducted cinewhoop for real-estate walkthroughs, indoor commercials, and warehouse fly-throughs. Insta360 &amp; RED Komodo compatible.</p>
+          <div class="dual-cta">
+            <a href="cinema.html#cineflow" class="btn-secondary">Learn More</a>
+            <a href="https://shop.iflight.com" class="btn-primary">Buy Now <span class="outlink">↗</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Slide 05 · Defender -->
+  <div class="carousel-slide" role="group" aria-roledescription="slide" aria-label="5 of 6">
+    <div class="hero-bg bg-defender"></div>
+    <div class="hero-glow"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-body">
+      <div class="container-wide">
+        <div class="hero-content">
+          <div class="eyebrow eyebrow-hero">LONGRANGE · SEARCH &amp; RECON</div>
+          <h1 class="hero-headline">Defender 7&quot;</h1>
+          <div class="mono mt-3" style="color: var(--if-cyan); font-size: 13px; letter-spacing: 0.10em;">IF-DF-7-ELRS-HD</div>
+          <p class="hero-tagline mt-6">Seven-inch longrange hunter. 90-minute mission window, dual redundant GPS, encrypted ELRS 2.4 GHz.</p>
+          <div class="dual-cta">
+            <a href="longrange.html#defender" class="btn-secondary">Learn More</a>
+            <a href="https://shop.iflight.com" class="btn-primary">Buy Now <span class="outlink">↗</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Slide 06 · SKYVIZ -->
+  <div class="carousel-slide" role="group" aria-roledescription="slide" aria-label="6 of 6">
+    <div class="hero-bg bg-skyviz"></div>
+    <div class="hero-glow"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-body">
+      <div class="container-wide">
+        <div class="hero-content">
+          <div class="eyebrow eyebrow-hero">2RAW · BUILDER PLATFORM</div>
+          <h1 class="hero-headline">SKYVIZ Frame Kit</h1>
+          <div class="mono mt-3" style="color: var(--if-cyan); font-size: 13px; letter-spacing: 0.10em;">IF-SV-5-CARBON-2RAW</div>
+          <p class="hero-tagline mt-6">Bare-frame T700 carbon platform. Design your own build. Motors, VTX and AIO sold separately for the hardcore builder.</p>
+          <div class="dual-cta">
+            <a href="cinema.html#builder" class="btn-secondary">Learn More</a>
+            <a href="https://shop.iflight.com" class="btn-primary">Buy Now <span class="outlink">↗</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <div class="carousel-controls">
+    <div class="carousel-dots" role="tablist" aria-label="Carousel navigation">
+      <button class="carousel-dot is-active" aria-label="Slide 1" tabindex="0"></button>
+      <button class="carousel-dot" aria-label="Slide 2" tabindex="0"></button>
+      <button class="carousel-dot" aria-label="Slide 3" tabindex="0"></button>
+      <button class="carousel-dot" aria-label="Slide 4" tabindex="0"></button>
+      <button class="carousel-dot" aria-label="Slide 5" tabindex="0"></button>
+      <button class="carousel-dot" aria-label="Slide 6" tabindex="0"></button>
+    </div>
+    <span class="carousel-counter"><span class="now">01</span> / <span class="tot">06</span></span>
+  </div>
+</header>
+
+<!-- ================= LIVE PILOTS COUNTER ================= -->
+<section class="sec-md">
+  <div class="container-x">
+    <div class="pilot-counter">
+      <div>
+        <div class="num"><span id="pilot-counter">850,000</span><span class="text-cyan">+</span></div>
+        <div class="label">Pilots Flying iFlight Worldwide</div>
+      </div>
+      <div class="side">
+        From Shenzhen benches to Los Angeles dry-lake races to Alpine village drone-league fields — every serial ships out of one factory, meets one bench-test protocol, flies under one horizon.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CREATOR SHOTS ROW (horizontal scroll) ================= -->
+<section class="sec-md">
+  <div class="container-x">
+    <div class="sec-open">
+      <div class="lead">
+        <div class="eyebrow">CREATOR SHOTS · UGC LIFESTYLE</div>
+        <h2 class="section-title">What our pilots capture, uncut.</h2>
+      </div>
+      <div class="aux">
+        <a href="cinema.html" class="arrow-link">See the Cinematic domain <span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+
+    <div class="creator-strip" aria-label="Creator shots">
+      <div class="creator-shot bg-creator-01">
+        <div class="caption">
+          <span class="h">@yuki.fpv</span> · Nazgul Evoque F5<br>
+          Hokkaido snow chase · 4S / 6&quot; prop
+        </div>
+      </div>
+      <div class="creator-shot bg-creator-02">
+        <div class="caption">
+          <span class="h">@race_wolf</span> · Mach R5<br>
+          Vegas MultiGP Champs · Q3 pole
+        </div>
+      </div>
+      <div class="creator-shot bg-creator-03">
+        <div class="caption">
+          <span class="h">@aerofarm.au</span> · Taurus X8<br>
+          NDVI orchard survey · 42 min
+        </div>
+      </div>
+      <div class="creator-shot bg-creator-04">
+        <div class="caption">
+          <span class="h">@filmic_nolan</span> · CineFlow<br>
+          Warehouse commercial · O4 Air Unit
+        </div>
+      </div>
+      <div class="creator-shot bg-creator-01">
+        <div class="caption">
+          <span class="h">@dust_and_dive</span> · Defender 7&quot;<br>
+          Mojave dry-lake cruise · ELRS 500 mW
+        </div>
+      </div>
+      <div class="creator-shot bg-creator-02">
+        <div class="caption">
+          <span class="h">@builder_lin</span> · SKYVIZ 2Raw<br>
+          Bench mock · XING 1404 3800KV
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= THREE-DOMAIN PORTAL ================= -->
+<section class="sec-lg">
+  <div class="container-x">
+    <div class="sec-open">
+      <div class="lead">
+        <div class="eyebrow">THREE-DOMAIN PORTAL · APPLICATION FIRST</div>
+        <h2 class="section-title">Choose the sky you fly under.</h2>
+        <p class="section-lead mt-4">iFlight organizes its full catalog around three application domains, not by SKU shelves. Start where your work lives — the parts follow.</p>
+      </div>
+    </div>
+
+    <div class="domain-grid">
+      <!-- Cinematic -->
+      <a href="cinema.html" class="domain-card cinema bg-domain-cine">
+        <div>
+          <div class="d-eyebrow">CINEMATIC FPV</div>
+          <div class="d-headline">Fly filmic.</div>
+          <p class="d-copy">Cinewhoop cages, one-take reveals, indoor real-estate walkthroughs. Designed to hold gimbals and stories at the same time.</p>
+          <span class="arrow-link">Explore <span aria-hidden="true">→</span></span>
+        </div>
+      </a>
+      <!-- Racing -->
+      <a href="racing.html" class="domain-card racing bg-domain-racing">
+        <div>
+          <div class="d-eyebrow">FPV RACING</div>
+          <div class="d-headline">Fly fast.<br>Fly first.</div>
+          <p class="d-copy">Sub-250g race weapons and 5-inch open-class competitors, tuned to the MultiGP International rulebook.</p>
+          <span class="arrow-link">Explore <span aria-hidden="true">→</span></span>
+        </div>
+      </a>
+      <!-- Education -->
+      <a href="contact.html#community" class="domain-card edu bg-domain-edu">
+        <div>
+          <div class="d-eyebrow">EDUCATION</div>
+          <div class="d-headline">Learn to fly.</div>
+          <p class="d-copy">Simulator vouchers, school-tier BNF bundles, curriculum kits and safety modules for FPV clubs and STEM classrooms.</p>
+          <span class="arrow-link">Explore <span aria-hidden="true">→</span></span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CATEGORY TAG BAR ================= -->
+<section class="sec-md">
+  <div class="container-x text-center">
+    <div class="eyebrow" style="justify-content:center; display:inline-flex;">FIVE APPLICATION TRACKS · TAP TO EXPLORE</div>
+    <h2 class="section-title-md mt-4">Filter the fleet by mission.</h2>
+    <div class="tag-bar mt-8" data-tag-bar>
+      <span class="tag tag-2raw">2Raw</span>
+      <span class="tag tag-cinewhoop">Cinewhoop</span>
+      <span class="tag tag-longrange">Longrange</span>
+      <span class="tag tag-racing">Racing</span>
+      <span class="tag tag-new">New Arrival</span>
+    </div>
+    <p class="caption mt-8">Category colors are a controlled palette per DESIGN.md §7.7 — Cinewhoop violet · Longrange emerald · Racing orange · 2Raw amber · New Arrival cyan.</p>
+  </div>
+</section>
+
+<!-- ================= FEATURED PRODUCT GRID ================= -->
+<section class="sec-lg bg-ink-2">
+  <div class="container-x">
+    <div class="sec-open">
+      <div class="lead">
+        <div class="eyebrow">FEATURED · SHIPPING THIS QUARTER</div>
+        <h2 class="section-title">Six frames, one factory floor.</h2>
+      </div>
+      <div class="aux">
+        <a href="cinema.html" class="arrow-link">Full catalog <span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+
+    <div class="product-grid">
+      <!-- Nazgul Evoque F5 -->
+      <article class="product-card">
+        <div class="render plate-nazgul">
+          <svg class="drone-svg" viewBox="0 0 200 200" fill="none">
+            <circle class="rotor" cx="40"  cy="40"  r="24" stroke-width="1.5"/>
+            <circle class="rotor" cx="160" cy="40"  r="24" stroke-width="1.5"/>
+            <circle class="rotor" cx="40"  cy="160" r="24" stroke-width="1.5"/>
+            <circle class="rotor" cx="160" cy="160" r="24" stroke-width="1.5"/>
+            <path class="stroke" d="M50 50 L 90 90 L 110 90 L 150 50 M50 150 L 90 110 L 110 110 L 150 150 M90 90 L 90 110 L 110 110 L 110 90 Z" stroke-width="1.5" fill="none"/>
+          </svg>
+        </div>
+        <div class="body">
+          <div class="tag-row">
+            <span class="tag tag-cinewhoop">Cinewhoop</span>
+            <span class="tag tag-new">New Arrival</span>
+          </div>
+          <div>
+            <div class="p-title">Nazgul Evoque F5</div>
+            <div class="p-sku mt-2">IF-NE-F5-DJI-O4</div>
+          </div>
+          <p class="p-copy">Optimized for cinematic dives, mountain freestyle, and long-range cruise.</p>
+          <div class="p-price">$349.99</div>
+          <div class="p-ctas">
+            <a href="cinema.html#nazgul-evoque-f5" class="btn-secondary">Learn More</a>
+            <a href="https://shop.iflight.com" class="btn-primary">Buy Now <span class="outlink">↗</span></a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Mach R5 -->
+      <article class="product-card">
+        <div class="render plate-mach">
+          <svg class="drone-svg" viewBox="0 0 200 200" fill="none">
+            <circle class="rotor" cx="40"  cy="40"  r="22" stroke-width="1.5"/>
+            <circle class="rotor" cx="160" cy="40"  r="22" stroke-width="1.5"/>
+            <circle class="rotor" cx="40"  cy="160" r="22" stroke-width="1.5"/>
+            <circle class="rotor" cx="160" cy="160" r="22" stroke-width="1.5"/>
+            <path class="stroke" d="M55 55 L 145 145 M145 55 L 55 145" stroke-width="2" fill="none"/>
+            <rect class="stroke" x="86" y="86" width="28" height="28" stroke-width="1.5" fill="none"/>
+          </svg>
+        </div>
+        <div class="body">
+          <div class="tag-row">
+            <span class="tag tag-racing">Racing</span>
+            <span class="tag tag-new">New Arrival</span>
+          </div>
+          <div>
+            <div class="p-title">Mach R5</div>
+            <div class="p-sku mt-2">IF-MR5-SUCEX-ELRS</div>
+          </div>
+          <p class="p-copy">MultiGP International-legal 5-inch open-class racer. Sub-260g airframe.</p>
+          <div class="p-price">$429.00</div>
+          <div class="p-ctas">
+            <a href="racing.html#mach-r5" class="btn-secondary">Learn More</a>
+            <a href="https://shop.iflight.com" class="btn-primary">Buy Now <span class="outlink">↗</span></a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Taurus X8 Pro Max V2 -->
+      <article class="product-card">
+        <div class="render plate-taurus">
+          <svg class="drone-svg" viewBox="0 0 200 200" fill="none">
+            <circle class="rotor" cx="30"  cy="30"  r="16" stroke-width="1.5"/>
+            <circle class="rotor" cx="30"  cy="170" r="16" stroke-width="1.5"/>
+            <circle class="rotor" cx="170" cy="30"  r="16" stroke-width="1.5"/>
+            <circle class="rotor" cx="170" cy="170" r="16" stroke-width="1.5"/>
+            <circle class="rotor" cx="80"  cy="30"  r="16" stroke-width="1.5"/>
+            <circle class="rotor" cx="80"  cy="170" r="16" stroke-width="1.5"/>
+            <circle class="rotor" cx="120" cy="30"  r="16" stroke-width="1.5"/>
+            <circle class="rotor" cx="120" cy="170" r="16" stroke-width="1.5"/>
+            <rect class="stroke" x="70" y="80" width="60" height="40" stroke-width="1.5" fill="none"/>
+          </svg>
+        </div>
+        <div class="body">
+          <div class="tag-row">
+            <span class="tag tag-longrange">Longrange</span>
+          </div>
+          <div>
+            <div class="p-title">Taurus X8 Pro Max V2</div>
+            <div class="p-sku mt-2">IF-TX8-PMV2-HD4K</div>
+          </div>
+          <p class="p-copy">Eight-rotor heavy lifter. 6 kg payload · 42-min endurance · IP54 tail.</p>
+          <div class="p-price">$2,199.00</div>
+          <div class="p-ctas">
+            <a href="longrange.html#taurus-x8" class="btn-secondary">Learn More</a>
+            <a href="https://shop.iflight.com" class="btn-primary">Buy Now <span class="outlink">↗</span></a>
+          </div>
+        </div>
+      </article>
+
+      <!-- CineFlow -->
+      <article class="product-card">
+        <div class="render plate-cineflow">
+          <svg class="drone-svg" viewBox="0 0 200 200" fill="none">
+            <circle class="rotor" cx="55"  cy="55"  r="30" stroke-width="1.5"/>
+            <circle class="rotor" cx="145" cy="55"  r="30" stroke-width="1.5"/>
+            <circle class="rotor" cx="55"  cy="145" r="30" stroke-width="1.5"/>
+            <circle class="rotor" cx="145" cy="145" r="30" stroke-width="1.5"/>
+            <rect class="stroke" x="82" y="82" width="36" height="36" stroke-width="1.5" fill="none"/>
+          </svg>
+        </div>
+        <div class="body">
+          <div class="tag-row">
+            <span class="tag tag-cinewhoop">Cinewhoop</span>
+          </div>
+          <div>
+            <div class="p-title">CineFlow 155</div>
+            <div class="p-sku mt-2">IF-CF-155-O4-BT</div>
+          </div>
+          <p class="p-copy">Ducted cinewhoop for real-estate, indoor cinema and warehouse fly-throughs.</p>
+          <div class="p-price">$419.00</div>
+          <div class="p-ctas">
+            <a href="cinema.html#cineflow" class="btn-secondary">Learn More</a>
+            <a href="https://shop.iflight.com" class="btn-primary">Buy Now <span class="outlink">↗</span></a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Defender 7" -->
+      <article class="product-card">
+        <div class="render plate-defender">
+          <svg class="drone-svg" viewBox="0 0 200 200" fill="none">
+            <circle class="rotor" cx="40"  cy="40"  r="28" stroke-width="1.5"/>
+            <circle class="rotor" cx="160" cy="40"  r="28" stroke-width="1.5"/>
+            <circle class="rotor" cx="40"  cy="160" r="28" stroke-width="1.5"/>
+            <circle class="rotor" cx="160" cy="160" r="28" stroke-width="1.5"/>
+            <path class="stroke" d="M60 60 L 140 140 M140 60 L 60 140" stroke-width="2" fill="none"/>
+          </svg>
+        </div>
+        <div class="body">
+          <div class="tag-row">
+            <span class="tag tag-longrange">Longrange</span>
+            <span class="tag tag-new">New Arrival</span>
+          </div>
+          <div>
+            <div class="p-title">Defender 7&quot;</div>
+            <div class="p-sku mt-2">IF-DF-7-ELRS-HD</div>
+          </div>
+          <p class="p-copy">Seven-inch longrange hunter. 90-min window, dual GPS, encrypted 2.4 GHz ELRS.</p>
+          <div class="p-price">$589.00</div>
+          <div class="p-ctas">
+            <a href="longrange.html#defender" class="btn-secondary">Learn More</a>
+            <a href="https://shop.iflight.com" class="btn-primary">Buy Now <span class="outlink">↗</span></a>
+          </div>
+        </div>
+      </article>
+
+      <!-- SKYVIZ Frame Kit -->
+      <article class="product-card">
+        <div class="render plate-skyviz">
+          <svg class="drone-svg" viewBox="0 0 200 200" fill="none">
+            <path class="stroke" d="M30 30 L 90 90 L 90 110 L 30 170 M170 30 L 110 90 L 110 110 L 170 170 M90 90 L 110 90 L 110 110 L 90 110 Z" stroke-width="1.5" fill="none"/>
+            <circle class="stroke" cx="30" cy="30" r="6" stroke-width="1.5" fill="none"/>
+            <circle class="stroke" cx="170" cy="30" r="6" stroke-width="1.5" fill="none"/>
+            <circle class="stroke" cx="30" cy="170" r="6" stroke-width="1.5" fill="none"/>
+            <circle class="stroke" cx="170" cy="170" r="6" stroke-width="1.5" fill="none"/>
+          </svg>
+        </div>
+        <div class="body">
+          <div class="tag-row">
+            <span class="tag tag-2raw">2Raw</span>
+          </div>
+          <div>
+            <div class="p-title">SKYVIZ Frame Kit</div>
+            <div class="p-sku mt-2">IF-SV-5-CARBON-2RAW</div>
+          </div>
+          <p class="p-copy">Bare T700 carbon platform. Wound-your-own motors, bring your own AIO.</p>
+          <div class="p-price">$89.90</div>
+          <div class="p-ctas">
+            <a href="cinema.html#builder" class="btn-secondary">Learn More</a>
+            <a href="https://shop.iflight.com" class="btn-primary">Buy Now <span class="outlink">↗</span></a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FACTORY / METRIC STRIP ================= -->
+<section class="sec-md">
+  <div class="container-x">
+    <div class="sec-open">
+      <div class="lead">
+        <div class="eyebrow">FACTORY FLOOR · SHENZHEN OP-01</div>
+        <h2 class="section-title">The bench where every serial starts.</h2>
+        <p class="section-lead mt-4">iFlight builds in-house — CNC, motor winding, VTX tuning, RF chamber testing all under one roof. The numbers below tick live from the OP-01 shop floor.</p>
+      </div>
+    </div>
+
+    <div class="metric-strip mt-8">
+      <div class="metric">
+        <div class="num" id="stat-drones-shipped">1,240,000</div>
+        <div class="label">Drones Shipped All-Time</div>
+      </div>
+      <div class="metric">
+        <div class="num" id="stat-frames-cut">480,000</div>
+        <div class="label">2Raw Frames CNC'd</div>
+      </div>
+      <div class="metric">
+        <div class="num" id="stat-motors-wound">3,820,000</div>
+        <div class="label">XING Motors Wound</div>
+      </div>
+      <div class="metric">
+        <div class="num"><span class="cyan">42</span></div>
+        <div class="label">Countries Reached</div>
+        <div class="sub">Distributors on six continents · full BOM traceability</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 3-ICON SERVICE ROW ================= -->
+<section class="sec-lg">
+  <div class="container-x">
+    <div class="sec-open">
+      <div class="lead">
+        <div class="eyebrow">SERVICE · THE THREE THAT MATTER</div>
+        <h2 class="section-title">Where to buy · how to fix · why to fly safely.</h2>
+      </div>
+    </div>
+
+    <div class="service-row">
+      <a href="contact.html#dealers" class="service-cell">
+        <svg class="icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M20 4 C13 4 8 9 8 16 c0 8 12 20 12 20 s 12-12 12-20 c 0-7-5-12-12-12 Z"/>
+          <circle cx="20" cy="16" r="4"/>
+        </svg>
+        <div class="kind">01 · Distribution</div>
+        <div class="title">Where to Buy</div>
+        <p class="desc">Authorized distributors in 42 countries. Direct online orders route through shop.iflight.com — regional shipping and duty pre-cleared.</p>
+        <span class="arrow-link">Find a dealer <span aria-hidden="true">→</span></span>
+      </a>
+
+      <a href="contact.html#support" class="service-cell">
+        <svg class="icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M8 20 v-4 a12 12 0 0 1 24 0 v4"/>
+          <rect x="6" y="20" width="8" height="12" rx="2"/>
+          <rect x="26" y="20" width="8" height="12" rx="2"/>
+          <path d="M30 32 v2 a4 4 0 0 1 -4 4 h-2"/>
+        </svg>
+        <div class="kind">02 · Support</div>
+        <div class="title">Bench-Grade Support</div>
+        <p class="desc">Firmware unlocks, VTX RMA, ESC replacement, gimbal recalibration. Our engineers were flying FPV before it was cool.</p>
+        <span class="arrow-link">Talk to a tech <span aria-hidden="true">→</span></span>
+      </a>
+
+      <a href="contact.html#flysafe" class="service-cell warn">
+        <svg class="icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M20 5 L 36 33 H 4 Z"/>
+          <line x1="20" y1="16" x2="20" y2="24"/>
+          <circle cx="20" cy="28" r="1.4" fill="currentColor"/>
+        </svg>
+        <div class="kind">03 · Fly-Safe</div>
+        <div class="title">Fly Safe</div>
+        <p class="desc">Airspace, geofence, and community responsibility. Every iFlight ships with a checklist card — check yours before every session.</p>
+        <span class="arrow-link">Read the pledge <span aria-hidden="true">→</span></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= BILINGUAL MANIFESTO ================= -->
+<section class="manifesto-band">
+  <div class="container-narrow">
+    <div class="eyebrow" style="justify-content:center; display:inline-flex;">MANIFESTO · SINCE 2013</div>
+    <div class="poetic-tag poetic-tag-xl mt-8">iFlight — Where Dreams Can Fly.</div>
+    <div class="zh mt-6">让&nbsp;梦&nbsp;想&nbsp;飞&nbsp;·&nbsp;梦&nbsp;所&nbsp;至&nbsp;·&nbsp;翼&nbsp;所&nbsp;达</div>
+    <p class="body-lg mt-8" style="max-width: 640px; margin-left: auto; margin-right: auto;">
+      We build racing hardware in Shenzhen and ship it to every horizon that will have it.
+      Serial numbers on aluminum. Solder joints under a microscope. A cyan LED that lights
+      when the FC hears its radio for the first time. That LED is the point.
+    </p>
+  </div>
+</section>
+
+<!-- ================= FOOTER (shared, byte-identical across 5 pages) ================= -->
+<footer class="footer-shell">
+  <div class="container-wide">
+    <div class="footer-inner">
+      <div class="footer-brand-block">
+        <div class="brand-mark">iFLIGHT<span class="dot"></span></div>
+        <div class="poetic-tag poetic-tag-sm">iFlight — Where Dreams Can Fly.</div>
+        <p>
+          Shenzhen-based FPV manufacturer serving cinematic pilots, competition racers,
+          and longrange operators worldwide. Storefront lives on
+          shop.iflight.com — this site tells the story.
+        </p>
+        <div class="clock-row">
+          <span class="live-dot"></span>
+          <span id="footer-clock">SZ 00:00:00 · LA 00:00:00 · 2026.01.01</span>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <div class="col-eyebrow">Domains</div>
+        <ul>
+          <li><a href="cinema.html">Cinematic FPV</a></li>
+          <li><a href="racing.html">FPV Racing</a></li>
+          <li><a href="longrange.html">Longrange &amp; Industrial</a></li>
+          <li><a href="contact.html#community">Education &amp; STEM</a></li>
+          <li><a href="cinema.html#builder">2Raw Builder Platform</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <div class="col-eyebrow">Fleet</div>
+        <ul>
+          <li><a href="cinema.html#nazgul-evoque-f5">Nazgul Evoque F5</a></li>
+          <li><a href="racing.html#mach-r5">Mach R5</a></li>
+          <li><a href="longrange.html#taurus-x8">Taurus X8 Pro Max V2</a></li>
+          <li><a href="cinema.html#cineflow">CineFlow 155</a></li>
+          <li><a href="longrange.html#defender">Defender 7&quot;</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <div class="col-eyebrow">Support</div>
+        <ul>
+          <li><a href="contact.html#dealers">Where to Buy</a></li>
+          <li><a href="contact.html#support">Support Center</a></li>
+          <li><a href="contact.html#flysafe">Fly-Safe Pledge</a></li>
+          <li><a href="contact.html#community">Creator Program</a></li>
+          <li><a href="https://shop.iflight.com">Shop iFlight ↗</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p class="copyright">© 2026 Shenzhen iFlight RC Model Co., Ltd. — All rights reserved.</p>
+      <div class="socials">
+        <a href="#">Instagram</a>
+        <a href="#">YouTube</a>
+        <a href="#">Facebook</a>
+        <a href="#">Discord</a>
+      </div>
+      <div class="lines">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Compliance</a>
+        <a href="#">Sitemap</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/live.js"></script>
+</body>
+</html>

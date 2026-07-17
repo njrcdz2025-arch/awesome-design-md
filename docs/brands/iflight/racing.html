@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="iFlight FPV Racing — Mach R5, Chimera, Nazgul H5. Sub-260g open-class racers and MultiGP International-legal airframes with live lap-clock." />
+<meta name="keywords" content="iFlight FPV Racing, Mach R5, Chimera, Nazgul H5, MultiGP, racing drone, ELRS" />
+<title>FPV Racing · iFlight · Fly Fast · Fly First</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700&family=JetBrains+Mono:wght@400;500;600&family=Noto+Sans+SC:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/style.css" />
+</head>
+
+<body>
+
+<!-- ================= NAV (shared, byte-identical across 5 pages) ================= -->
+<nav class="nav-shell">
+  <div class="container-wide nav-inner">
+    <div class="nav-left">
+      <a href="index.html" class="brand-mark">iFLIGHT<span class="dot"></span></a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="cinema.html">Cinematic</a>
+        <a href="racing.html">Racing</a>
+        <a href="longrange.html">Longrange</a>
+        <a href="contact.html">Where&nbsp;to&nbsp;Buy</a>
+      </div>
+    </div>
+    <div class="nav-right">
+      <div class="nav-clock">
+        <span class="live-dot"></span>
+        <span class="city">SZ</span>
+        <span id="nav-clock-sz">00:00:00</span>
+        <span class="divider">·</span>
+        <span class="city">LA</span>
+        <span id="nav-clock-la">00:00:00</span>
+      </div>
+      <a href="https://shop.iflight.com" class="nav-cta">Buy Now <span aria-hidden="true">↗</span></a>
+    </div>
+  </div>
+</nav>
+
+<!-- ================= PAGE HERO ================= -->
+<section class="page-hero">
+  <div class="container-x">
+    <div class="eyebrow eyebrow-hero">FPV RACING · DOMAIN 02 / 03</div>
+    <h1 class="hero-headline-md" style="color: var(--if-warn);">Fly fast. Fly first.</h1>
+    <p class="hero-tagline mt-6" style="max-width: 720px;">
+      MultiGP International-legal 5-inch open-class weapons, sub-260 g race platforms,
+      and the hardware that shows up on the pole position telemetry screens week after
+      week. Built for pilots who read tune logs at 4 a.m.
+    </p>
+    <div class="dual-cta">
+      <a href="#mach-r5" class="btn-secondary">Learn More</a>
+      <a href="https://shop.iflight.com" class="btn-primary">Buy Now <span class="outlink">↗</span></a>
+    </div>
+    <div class="tag-row mt-12">
+      <span class="tag tag-racing">Racing</span>
+      <span class="tag tag-new">New Arrival</span>
+      <span class="tag tag-2raw">2Raw Frames</span>
+    </div>
+  </div>
+</section>
+
+<!-- ================= LIVE LAP CLOCK (racing signature) ================= -->
+<section class="sec-md">
+  <div class="container-x">
+    <div class="sec-open">
+      <div class="lead">
+        <div class="eyebrow" style="color: var(--if-warn);">LIVE LAP-BOARD · IFRC VEGAS QUALIFIER</div>
+        <h2 class="section-title">The clock never blinks.</h2>
+        <p class="section-lead mt-4">Rolling live timing from iFlight Race Cup Vegas Q3 pole position feed. Fastest laps update on every hot-stint session.</p>
+      </div>
+    </div>
+
+    <div class="lap-board mt-8">
+      <div class="head">
+        <div class="kind">◉ LIVE · IFRC VEGAS Q3</div>
+        <div class="venue">Track 04 · Vegas Motor Speedway infield · night 02</div>
+      </div>
+
+      <div class="big-clock">
+        <span id="race-clock">00:00</span><span id="race-clock-ms" class="ms">.000</span>
+      </div>
+      <div class="text-center caption mt-3">CURRENT HOT LAP · MACH R5 · PILOT 07 @race_wolf</div>
+
+      <div class="lap-grid mt-8">
+        <div class="lap-cell pole">
+          <div class="lap-num">Lap 01 · Pole</div>
+          <div class="lap-time">00:24.612</div>
+          <div class="lap-driver">@race_wolf · Mach R5 · ELRS 2.4 GHz</div>
+        </div>
+        <div class="lap-cell">
+          <div class="lap-num">Lap 02</div>
+          <div class="lap-time">00:24.891</div>
+          <div class="lap-driver">@dust_and_dive · Chimera 5 · TBS Crossfire</div>
+        </div>
+        <div class="lap-cell">
+          <div class="lap-num">Lap 03</div>
+          <div class="lap-time">00:25.104</div>
+          <div class="lap-driver">@node_shift · Mach R5 · ELRS 900 MHz</div>
+        </div>
+        <div class="lap-cell">
+          <div class="lap-num">Lap 04</div>
+          <div class="lap-time">00:25.216</div>
+          <div class="lap-driver">@bird.jp · Nazgul H5 · TBS Crossfire</div>
+        </div>
+        <div class="lap-cell">
+          <div class="lap-num">Lap 05</div>
+          <div class="lap-time">00:25.478</div>
+          <div class="lap-driver">@velox_it · Mach R5 · ELRS 2.4 GHz</div>
+        </div>
+        <div class="lap-cell">
+          <div class="lap-num">Lap 06</div>
+          <div class="lap-time">00:25.802</div>
+          <div class="lap-driver">@aroun_gr · Chimera 5 · ELRS 2.4 GHz</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= MACH R5 · flagship spread ================= -->
+<section id="mach-r5" class="sec-lg bg-ink-2">
+  <div class="container-x">
+    <div class="sec-open">
+      <div class="lead">
+        <div class="eyebrow">FLAGSHIP · MULTIGP INTERNATIONAL OPEN CLASS</div>
+        <h2 class="section-title">Mach R5.</h2>
+        <p class="section-lead mt-4">Sub-260 g 5-inch airframe engineered to the MultiGP 2026 Open Class ruleset. On the podium of every major North American race last season.</p>
+      </div>
+      <div class="aux">
+        <div class="mono" style="color: var(--if-cyan); font-size: 12px; letter-spacing: 0.10em;">IF-MR5-SUCEX-ELRS</div>
+        <div class="p-title mt-2 mono" style="font-size: 24px;">$429.00</div>
+      </div>
+    </div>
+
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start;" class="mt-8">
+      <div class="render plate-mach" style="height: 520px; border-radius: var(--radius-md); position: relative; box-shadow: var(--elev-1);">
+        <svg class="drone-svg" viewBox="0 0 200 200" fill="none">
+          <circle class="rotor" cx="40"  cy="40"  r="24" stroke-width="1.5"/>
+          <circle class="rotor" cx="160" cy="40"  r="24" stroke-width="1.5"/>
+          <circle class="rotor" cx="40"  cy="160" r="24" stroke-width="1.5"/>
+          <circle class="rotor" cx="160" cy="160" r="24" stroke-width="1.5"/>
+          <path class="stroke" d="M55 55 L 145 145 M145 55 L 55 145" stroke-width="2" fill="none"/>
+          <rect class="stroke" x="86" y="86" width="28" height="28" stroke-width="1.5" fill="none"/>
+          <rect class="stroke" x="94" y="76" width="12" height="8" stroke-width="1.5" fill="none"/>
+        </svg>
+      </div>
+
+      <div>
+        <div class="tag-row mb-6">
+          <span class="tag tag-racing">Racing</span>
+          <span class="tag tag-new">New Arrival</span>
+        </div>
+        <div class="sec-eyebrow-plaque">Specifications</div>
+        <div class="spec-table mt-6">
+          <div class="row"><div class="label">Motor</div>      <div class="value">SucceX-E 2306.5 · 2100KV</div></div>
+          <div class="row"><div class="label">FC / ESC</div>   <div class="value">SucceX-E F7 · 60A AIO Dshot600</div></div>
+          <div class="row"><div class="label">VTX</div>        <div class="value">SucceX Force · 25–800 mW switch</div></div>
+          <div class="row"><div class="label">Weight</div>     <div class="value">258 g (w/o battery)</div></div>
+          <div class="row"><div class="label">Battery</div>    <div class="value">6S / 850 mAh LiPo, XT30</div></div>
+          <div class="row"><div class="label">Frequency</div>  <div class="value">5.8 GHz · 40 channels raceband</div></div>
+          <div class="row"><div class="label">Diagonal</div>   <div class="value">210 mm · 5&quot; tri-blade props</div></div>
+          <div class="row"><div class="label">Receiver</div>   <div class="value">ExpressLRS 2.4 GHz / 900 MHz</div></div>
+          <div class="row"><div class="label">Ruleset</div>    <div class="value">MultiGP Int'l 2026 Open Class</div></div>
+        </div>
+        <div class="dual-cta mt-8">
+          <a href="#chimera" class="btn-secondary">Compare Chimera</a>
+          <a href="https://shop.iflight.com" class="btn-primary">Buy Now <span class="outlink">↗</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CHIMERA 5 · Sport-class ================= -->
+<section id="chimera" class="sec-lg">
+  <div class="container-x">
+    <div class="sec-open">
+      <div class="lead">
+        <div class="eyebrow">SPORT CLASS · CHIMERA 5</div>
+        <h2 class="section-title">Chimera 5 · The tune-friendly racer.</h2>
+        <p class="section-lead mt-4">Same wheelbase, softer PID window. Designed for pilots stepping up from freestyle who want race-legal geometry without the on-the-edge tune.</p>
+      </div>
+      <div class="aux">
+        <div class="mono" style="color: var(--if-cyan); font-size: 12px; letter-spacing: 0.10em;">IF-CH-5-TBS-XCRV3</div>
+        <div class="p-title mt-2 mono" style="font-size: 24px;">$369.00</div>
+      </div>
+    </div>
+
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start;" class="mt-8">
+      <div>
+        <div class="tag-row mb-6">
+          <span class="tag tag-racing">Racing</span>
+        </div>
+        <p class="body-lg">
+          The Chimera 5 shares its 210-mm wheelbase and 2306.5 motor bell with the Mach R5,
+          but ships with softer PID gains and a slightly higher wing loading. This buys the
+          tuning window that lets a new pilot survive full-power turns without ripping props
+          off. When your race times drop under 25 seconds, it's time to graduate to the R5.
+        </p>
+
+        <div class="sec-eyebrow-plaque mt-8">Race-Legal Configurations</div>
+        <div class="spec-table mt-6">
+          <div class="row"><div class="label">TBS · Analog</div>  <div class="value">TBS UNIFY Pro32 HV · 25–800 mW</div></div>
+          <div class="row"><div class="label">HD · Walksnail</div><div class="value">Walksnail Avatar Mini V2</div></div>
+          <div class="row"><div class="label">HD · DJI O4</div>   <div class="value">DJI O4 Air Unit standard</div></div>
+          <div class="row"><div class="label">HD · Vista</div>    <div class="value">Caddx Vista (legacy discontinued)</div></div>
+          <div class="row"><div class="label">Receiver</div>      <div class="value">TBS Crossfire · ELRS · Ghost</div></div>
+        </div>
+        <div class="dual-cta mt-8">
+          <a href="#nazgul-h5" class="btn-secondary">Nazgul H5</a>
+          <a href="https://shop.iflight.com" class="btn-primary">Buy Now <span class="outlink">↗</span></a>
+        </div>
+      </div>
+
+      <div class="render plate-chimera" style="height: 520px; border-radius: var(--radius-md); position: relative; box-shadow: var(--elev-1);">
+        <svg class="drone-svg" viewBox="0 0 200 200" fill="none">
+          <circle class="rotor" cx="42"  cy="42"  r="26" stroke-width="1.5"/>
+          <circle class="rotor" cx="158" cy="42"  r="26" stroke-width="1.5"/>
+          <circle class="rotor" cx="42"  cy="158" r="26" stroke-width="1.5"/>
+          <circle class="rotor" cx="158" cy="158" r="26" stroke-width="1.5"/>
+          <path class="stroke" d="M60 60 L 140 140 M140 60 L 60 140" stroke-width="1.5" fill="none"/>
+          <rect class="stroke" x="82" y="82" width="36" height="36" stroke-width="1.5" fill="none"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= NAZGUL H5 · Team Class ================= -->
+<section id="nazgul-h5" class="sec-lg bg-ink-2">
+  <div class="container-x">
+    <div class="sec-open">
+      <div class="lead">
+        <div class="eyebrow">TEAM CLASS · NAZGUL H5</div>
+        <h2 class="section-title">Nazgul H5 · Squad-ready.</h2>
+        <p class="section-lead mt-4">Bundle-priced 4-drone team pack for FPV clubs and drone leagues. Shared spare parts, one BOM, one QR-code warranty lookup.</p>
+      </div>
+      <div class="aux">
+        <div class="mono" style="color: var(--if-cyan); font-size: 12px; letter-spacing: 0.10em;">IF-NH5-TEAM-4PK</div>
+        <div class="p-title mt-2 mono" style="font-size: 24px;">$1,299.00 / 4-pack</div>
+      </div>
+    </div>
+
+    <div class="product-grid mt-8">
+      <article class="product-card">
+        <div class="render plate-nazgul">
+          <svg class="drone-svg" viewBox="0 0 200 200" fill="none">
+            <circle class="rotor" cx="40"  cy="40"  r="22" stroke-width="1.5"/>
+            <circle class="rotor" cx="160" cy="40"  r="22" stroke-width="1.5"/>
+            <circle class="rotor" cx="40"  cy="160" r="22" stroke-width="1.5"/>
+            <circle class="rotor" cx="160" cy="160" r="22" stroke-width="1.5"/>
+            <path class="stroke" d="M60 60 L 140 140 M140 60 L 60 140" stroke-width="1.5" fill="none"/>
+          </svg>
+        </div>
+        <div class="body">
+          <div class="tag-row"><span class="tag tag-racing">Racing</span></div>
+          <div>
+            <div class="p-title">Nazgul H5 · Cyan</div>
+            <div class="p-sku mt-2">IF-NH5-CY-01</div>
+          </div>
+          <p class="p-copy">Team-color 01 · single drone, ELRS 2.4 GHz, 800 mW ready.</p>
+          <div class="p-price">$349.00</div>
+          <div class="p-ctas">
+            <a href="#" class="btn-secondary">Details</a>
+            <a href="https://shop.iflight.com" class="btn-primary">Buy Now <span class="outlink">↗</span></a>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card">
+        <div class="render plate-chimera">
+          <svg class="drone-svg" viewBox="0 0 200 200" fill="none">
+            <circle class="rotor" cx="40"  cy="40"  r="22" stroke-width="1.5"/>
+            <circle class="rotor" cx="160" cy="40"  r="22" stroke-width="1.5"/>
+            <circle class="rotor" cx="40"  cy="160" r="22" stroke-width="1.5"/>
+            <circle class="rotor" cx="160" cy="160" r="22" stroke-width="1.5"/>
+            <path class="stroke" d="M60 60 L 140 140 M140 60 L 60 140" stroke-width="1.5" fill="none"/>
+          </svg>
+        </div>
+        <div class="body">
+          <div class="tag-row"><span class="tag tag-racing">Racing</span></div>
+          <div>
+            <div class="p-title">Nazgul H5 · Orange</div>
+            <div class="p-sku mt-2">IF-NH5-OR-02</div>
+          </div>
+          <p class="p-copy">Team-color 02 · single drone, ELRS 2.4 GHz, 800 mW ready.</p>
+          <div class="p-price">$349.00</div>
+          <div class="p-ctas">
+            <a href="#" class="btn-secondary">Details</a>
+            <a href="https://shop.iflight.com" class="btn-primary">Buy Now <span class="outlink">↗</span></a>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card">
+        <div class="render plate-taurus">
+          <svg class="drone-svg" viewBox="0 0 200 200" fill="none">
+            <circle class="rotor" cx="40"  cy="40"  r="22" stroke-width="1.5"/>
+            <circle class="rotor" cx="160" cy="40"  r="22" stroke-width="1.5"/>
+            <circle class="rotor" cx="40"  cy="160" r="22" stroke-width="1.5"/>
+            <circle class="rotor" cx="160" cy="160" r="22" stroke-width="1.5"/>
+            <path class="stroke" d="M60 60 L 140 140 M140 60 L 60 140" stroke-width="1.5" fill="none"/>
+          </svg>
+        </div>
+        <div class="body">
+          <div class="tag-row"><span class="tag tag-racing">Racing</span></div>
+          <div>
+            <div class="p-title">Nazgul H5 · Green</div>
+            <div class="p-sku mt-2">IF-NH5-GR-03</div>
+          </div>
+          <p class="p-copy">Team-color 03 · single drone, ELRS 2.4 GHz, 800 mW ready.</p>
+          <div class="p-price">$349.00</div>
+          <div class="p-ctas">
+            <a href="#" class="btn-secondary">Details</a>
+            <a href="https://shop.iflight.com" class="btn-primary">Buy Now <span class="outlink">↗</span></a>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card">
+        <div class="render plate-cineflow">
+          <svg class="drone-svg" viewBox="0 0 200 200" fill="none">
+            <circle class="rotor" cx="40"  cy="40"  r="22" stroke-width="1.5"/>
+            <circle class="rotor" cx="160" cy="40"  r="22" stroke-width="1.5"/>
+            <circle class="rotor" cx="40"  cy="160" r="22" stroke-width="1.5"/>
+            <circle class="rotor" cx="160" cy="160" r="22" stroke-width="1.5"/>
+            <path class="stroke" d="M60 60 L 140 140 M140 60 L 60 140" stroke-width="1.5" fill="none"/>
+          </svg>
+        </div>
+        <div class="body">
+          <div class="tag-row"><span class="tag tag-racing">Racing</span></div>
+          <div>
+            <div class="p-title">Nazgul H5 · Violet</div>
+            <div class="p-sku mt-2">IF-NH5-VT-04</div>
+          </div>
+          <p class="p-copy">Team-color 04 · single drone, ELRS 2.4 GHz, 800 mW ready.</p>
+          <div class="p-price">$349.00</div>
+          <div class="p-ctas">
+            <a href="#" class="btn-secondary">Details</a>
+            <a href="https://shop.iflight.com" class="btn-primary">Buy Now <span class="outlink">↗</span></a>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card">
+        <div class="render plate-skyviz">
+          <svg class="drone-svg" viewBox="0 0 200 200" fill="none">
+            <path class="stroke" d="M30 30 L 90 90 L 90 110 L 30 170 M170 30 L 110 90 L 110 110 L 170 170" stroke-width="1.5" fill="none"/>
+            <rect class="stroke" x="82" y="82" width="36" height="36" stroke-width="1.5" fill="none"/>
+          </svg>
+        </div>
+        <div class="body">
+          <div class="tag-row"><span class="tag tag-2raw">2Raw</span><span class="tag tag-racing">Racing</span></div>
+          <div>
+            <div class="p-title">Race Spare-Parts Kit</div>
+            <div class="p-sku mt-2">IF-RSK-5-TEAM</div>
+          </div>
+          <p class="p-copy">Frame arms, motors, ESCs, camera lenses · full BOM for a 4-drone squad.</p>
+          <div class="p-price">$189.00</div>
+          <div class="p-ctas">
+            <a href="#" class="btn-secondary">Details</a>
+            <a href="https://shop.iflight.com" class="btn-primary">Buy Now <span class="outlink">↗</span></a>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card">
+        <div class="render plate-protek">
+          <svg class="drone-svg" viewBox="0 0 200 200" fill="none">
+            <rect class="stroke" x="30" y="60" width="140" height="80" stroke-width="1.5" fill="none"/>
+            <circle class="rotor" cx="60" cy="100" r="14" stroke-width="1.5" fill="none"/>
+            <circle class="rotor" cx="140" cy="100" r="14" stroke-width="1.5" fill="none"/>
+            <path class="stroke" d="M100 60 L 100 40 M100 140 L 100 160" stroke-width="1.5" fill="none"/>
+          </svg>
+        </div>
+        <div class="body">
+          <div class="tag-row"><span class="tag tag-racing">Racing</span><span class="tag tag-new">New Arrival</span></div>
+          <div>
+            <div class="p-title">Commander 16 · Radio</div>
+            <div class="p-sku mt-2">IF-CMD-16-ELRS</div>
+          </div>
+          <p class="p-copy">16-channel ELRS-native transmitter, hall-effect gimbals · race-league approved.</p>
+          <div class="p-price">$279.00</div>
+          <div class="p-ctas">
+            <a href="#" class="btn-secondary">Details</a>
+            <a href="https://shop.iflight.com" class="btn-primary">Buy Now <span class="outlink">↗</span></a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= RACE-CUP CALENDAR ================= -->
+<section class="sec-lg">
+  <div class="container-x">
+    <div class="sec-open">
+      <div class="lead">
+        <div class="eyebrow">IFRC 2026 · RACE CALENDAR</div>
+        <h2 class="section-title">Where the clock actually runs.</h2>
+      </div>
+      <div class="aux">
+        <a href="contact.html#community" class="arrow-link">Register a team <span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+
+    <div class="mt-8">
+      <div class="spec-table">
+        <div class="row"><div class="label">MAR · Shenzhen</div>  <div class="value">IFRC Season Opener · Shenzhen Bay Sports Center · 200 pilots</div></div>
+        <div class="row"><div class="label">MAY · Vegas</div>     <div class="value">IFRC Vegas Qualifier · Vegas Motor Speedway infield · 320 pilots</div></div>
+        <div class="row"><div class="label">JUL · Munich</div>    <div class="value">IFRC EU Cup · Messe München airhall · 240 pilots</div></div>
+        <div class="row"><div class="label">SEP · Tokyo</div>     <div class="value">IFRC Tokyo Round · Odaiba freight yard · 180 pilots</div></div>
+        <div class="row"><div class="label">NOV · Sydney</div>    <div class="value">IFRC Southern Final · Sydney Motorsport Park · 220 pilots</div></div>
+        <div class="row"><div class="label">DEC · Hong Kong</div> <div class="value">IFRC World Final · West Kowloon Cultural District · 96 finalists</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FLY-SAFE BAND ================= -->
+<section class="sec-md">
+  <div class="container-x">
+    <div class="flysafe-band">
+      <div class="kind">FLY SAFE · RACE-DAY RESPONSIBILITY</div>
+      <div class="title">Race gates are boundaries. Spectator lines are the law.</div>
+      <p class="body">
+        Every IFRC event is stewarded by a Race Director whose call is final on
+        airspace suspension. Drone weights, camera-hood angles, transmitter power
+        and geofence configurations are all checked at pit-lane scrutineering.
+        A DNS at scrutineering is faster than a DQ mid-race. Pilots are asked to
+        respect fellow racers, spotters, and above all — spectators.
+      </p>
+      <a href="contact.html#flysafe" class="arrow-link mt-8" style="color: var(--if-warn);">Read the Fly-Safe pledge <span aria-hidden="true">→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= MANIFESTO ================= -->
+<section class="manifesto-band">
+  <div class="container-narrow">
+    <div class="eyebrow" style="justify-content:center; display:inline-flex;">RACING DOMAIN · IFRC 2026</div>
+    <div class="poetic-tag poetic-tag-xl mt-8">iFlight — Where Dreams Can Fly.</div>
+    <div class="zh mt-6">让&nbsp;梦&nbsp;想&nbsp;飞&nbsp;·&nbsp;梦&nbsp;所&nbsp;至&nbsp;·&nbsp;翼&nbsp;所&nbsp;达</div>
+  </div>
+</section>
+
+<!-- ================= FOOTER (shared, byte-identical across 5 pages) ================= -->
+<footer class="footer-shell">
+  <div class="container-wide">
+    <div class="footer-inner">
+      <div class="footer-brand-block">
+        <div class="brand-mark">iFLIGHT<span class="dot"></span></div>
+        <div class="poetic-tag poetic-tag-sm">iFlight — Where Dreams Can Fly.</div>
+        <p>
+          Shenzhen-based FPV manufacturer serving cinematic pilots, competition racers,
+          and longrange operators worldwide. Storefront lives on
+          shop.iflight.com — this site tells the story.
+        </p>
+        <div class="clock-row">
+          <span class="live-dot"></span>
+          <span id="footer-clock">SZ 00:00:00 · LA 00:00:00 · 2026.01.01</span>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <div class="col-eyebrow">Domains</div>
+        <ul>
+          <li><a href="cinema.html">Cinematic FPV</a></li>
+          <li><a href="racing.html">FPV Racing</a></li>
+          <li><a href="longrange.html">Longrange &amp; Industrial</a></li>
+          <li><a href="contact.html#community">Education &amp; STEM</a></li>
+          <li><a href="cinema.html#builder">2Raw Builder Platform</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <div class="col-eyebrow">Fleet</div>
+        <ul>
+          <li><a href="cinema.html#nazgul-evoque-f5">Nazgul Evoque F5</a></li>
+          <li><a href="racing.html#mach-r5">Mach R5</a></li>
+          <li><a href="longrange.html#taurus-x8">Taurus X8 Pro Max V2</a></li>
+          <li><a href="cinema.html#cineflow">CineFlow 155</a></li>
+          <li><a href="longrange.html#defender">Defender 7&quot;</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <div class="col-eyebrow">Support</div>
+        <ul>
+          <li><a href="contact.html#dealers">Where to Buy</a></li>
+          <li><a href="contact.html#support">Support Center</a></li>
+          <li><a href="contact.html#flysafe">Fly-Safe Pledge</a></li>
+          <li><a href="contact.html#community">Creator Program</a></li>
+          <li><a href="https://shop.iflight.com">Shop iFlight ↗</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p class="copyright">© 2026 Shenzhen iFlight RC Model Co., Ltd. — All rights reserved.</p>
+      <div class="socials">
+        <a href="#">Instagram</a>
+        <a href="#">YouTube</a>
+        <a href="#">Facebook</a>
+        <a href="#">Discord</a>
+      </div>
+      <div class="lines">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Compliance</a>
+        <a href="#">Sitemap</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/live.js"></script>
+</body>
+</html>
